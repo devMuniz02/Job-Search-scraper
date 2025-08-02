@@ -22,7 +22,8 @@ class JobScraper:
         for job_element in soup.find_all('div', class_='job-listing'):
             title = job_element.find('h2').text.strip()
             company = job_element.find('div', class_='company').text.strip()
-            location = job_element.find('div', class_='location').text.strip()
+            location_div = job_element.find('div', class_='location')
+            location = location_div.text.strip() if location_div else None
             jobs.append({
                 'title': title,
                 'company': company,

@@ -2,11 +2,12 @@ class JobScraper:
     def __init__(self, url):
         self.url = url
 
-    def fetch_jobs(self):
+    def fetch_jobs(self, url=None):
         import requests
         from bs4 import BeautifulSoup
 
-        response = requests.get(self.url)
+        target_url = url if url is not None else self.url
+        response = requests.get(target_url)
         if response.status_code != 200:
             raise Exception("Failed to load page")
         

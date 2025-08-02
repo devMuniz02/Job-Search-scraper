@@ -1,17 +1,17 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from scraper.job_scraper import JobScraper
+from src.scraper.job_scraper import JobScraper
 
 class TestJobScraper(unittest.TestCase):
 
-    @patch('scraper.job_scraper.requests.get')
+    @patch('src.scraper.job_scraper.requests.get')
     def test_fetch_jobs(self, mock_get):
         mock_response = MagicMock()
         mock_response.status_code = 200
         mock_response.text = '<html><body><div class="job">Job 1</div></body></html>'
         mock_get.return_value = mock_response
 
-        scraper = JobScraper()
+        scraper = JobScraper('http://fakeurl.com')
         jobs = scraper.fetch_jobs('http://fakeurl.com')
 
         self.assertEqual(len(jobs), 1)
@@ -19,7 +19,7 @@ class TestJobScraper(unittest.TestCase):
 
     def test_parse_jobs(self):
         html_content = '<html><body><div class="job">Job 1</div><div class="job">Job 2</div></body></html>'
-        scraper = JobScraper()
+        scraper = JobScraper('http://fakeurl.com')
         jobs = scraper.parse_jobs(html_content)
 
         self.assertEqual(len(jobs), 2)

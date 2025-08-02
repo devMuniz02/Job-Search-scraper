@@ -10,7 +10,7 @@ class JobScraper:
         if response.status_code != 200:
             raise Exception("Failed to load page")
         
-        return response.text
+        return self.parse_jobs(response.text)
 
     def parse_jobs(self, html):
         from bs4 import BeautifulSoup

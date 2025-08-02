@@ -12,7 +12,7 @@ class TestJobScraper(unittest.TestCase):
         mock_get.return_value = mock_response
 
         scraper = JobScraper('http://fakeurl.com')
-        jobs = scraper.fetch_jobs('http://fakeurl.com')
+        jobs = scraper.fetch_jobs()
 
         self.assertEqual(len(jobs), 1)
         self.assertEqual(jobs[0], 'Job 1')

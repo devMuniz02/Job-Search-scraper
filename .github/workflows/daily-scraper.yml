@@ -1,0 +1,121 @@
+name: Daily Microsoft Jobs Scraper
+
+on:
+  schedule:
+    # Run daily at 2:00 AM UTC (adjust timezone as needed)
+    - cron: '0 2 * * *'
+  
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  scrape-jobs:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        # Fetch full history for proper git operations
+        fetch-depth: 0
+        # Use a personal access token for pushing changes
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Install Chrome
+      run: |
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+
+    - name: Run job scraper
+      run: |
+        python ms-job-scrapper.py
+      env:
+        # Set display for headless Chrome
+        DISPLAY: :99
+
+    - name: Configure Git
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+
+    - name: Check for changes
+      id: git-check
+      run: |
+        git add .
+        if git diff --staged --quiet; then
+          echo "changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "changes=true" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit and push changes
+      if: steps.git-check.outputs.changes == 'true'
+      run: |
+        git commit -m "🤖 Daily job scraping update - $(date +'%Y-%m-%d %H:%M UTC')"
+        git push
+
+    - name: Create summary
+      if: always()
+      run: |
+        echo "## Daily Microsoft Jobs Scraping Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ -f "jobs_ms.json" ]; then
+          TOTAL_JOBS=$(python -c "import json; data=json.load(open('jobs_ms.json')); print(len(data))")
+          echo "**Total Jobs in Database:** $TOTAL_JOBS" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -f "jobs_ms_details.json" ]; then
+          DETAILED_JOBS=$(python -c "import json; data=json.load(open('jobs_ms_details.json')); print(len(data))")
+          echo "**Jobs with Details:** $DETAILED_JOBS" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -f "jobs_ms_avoid_hits_by_field.json" ]; then
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Filtered Categories:**" >> $GITHUB_STEP_SUMMARY
+          python -c "import json; data=json.load(open('jobs_ms_avoid_hits_by_field.json')); [print('- ' + k + ': ' + str(len(v.get('job_ids', [])))) for k, v in data.items()]" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -d "jobs_by_date" ]; then
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
+          find jobs_by_date -name "*.json" -exec basename {} \; | head -10 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+        fi
+
+    - name: Upload artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: job-scraping-results-${{ github.run_number }}
+        path: |
+          jobs_ms.json
+          jobs_ms_details.json
+          jobs_ms_avoid_hits_by_field.json
+          jobs_by_date/
+        retention-days: 30
+
+    - name: Notify on failure
+      if: failure()
+      run: |
+        echo "❌ Job scraping failed. Check the logs for details." >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Possible issues:**" >> $GITHUB_STEP_SUMMARY
+        echo "- Website structure changes" >> $GITHUB_STEP_SUMMARY
+        echo "- Network connectivity issues" >> $GITHUB_STEP_SUMMARY
+        echo "- Chrome/Selenium compatibility issues" >> $GITHUB_STEP_SUMMARY
+        echo "- Rate limiting from the target website" >> $GITHUB_STEP_SUMMARY

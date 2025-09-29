@@ -1,0 +1,48 @@
+[
+  {
+    "job_id": "1839980",
+    "title": "Software Engineer II - CTJ - Poly",
+    "locations": [
+      "Multiple Locations, United States + 4 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 27, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1839980/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "Master's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Software Engineering IC3 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1882860",
+    "title": "Software Engineer II",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 27, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882860/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years of experience working within AI/ML agent architectures, tools orchestration, or Copilot like experiences.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. OR Master's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Problem solving and collaboration skills; comfortable communicating in English across remote and in office settings. Experience building Windows desktop apps with Windows SDK. Demonstrated foundation in data structures, algorithms, and object oriented design principles. Industry experience with .NET 9 APIs (e.g., modern threading) or earlier .NET Core versions AND C#. Software Engineering IC3 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  }
+]

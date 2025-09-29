@@ -1,0 +1,25 @@
+[
+  {
+    "job_id": "1864545",
+    "title": "Senior Fabric IP Verification Engineer",
+    "locations": [
+      "Austin, Texas, United States + 4 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1864545/",
+    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience. 4+ years of pre-silicon subsystem or IP verification experience. Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": "Demonstrated experience in verifying designs that utilize Coherent Hub Interface (CHI) and Advanced Microcontroller Bus Architecture (AMBA) protocols Understanding of cache coherency architectures and microarchitectures Experience with verification for a full product cycle from definition to silicon, including writing test plans, developing tests, debugging failures and coverage signoff Experience creating, maintaining, or integrating test benches, checkers and stimulus using Universal Verification Methodology (UVM), System Verilog Test Bench (SVTB), and optionally Python based post-processing checking Aptitude for writing scripts/software with industry standard languages like Python Experience applying generative AI to day-to-day tasks Silicon Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  }
+]

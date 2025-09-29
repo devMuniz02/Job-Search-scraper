@@ -162,7 +162,7 @@ cython_debug/
 # Project specific
 # Scraped data files
 *.csv
-*.json
+# *.json
 output/
 data/
 results/

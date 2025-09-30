@@ -1,0 +1,48 @@
+[
+  {
+    "job_id": "1883565",
+    "title": "Software Engineer II",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 30, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883565/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years of experience writing code in C#. 1+ years of experience in Azure Technologies design.",
+    "preferred_qualifications_text": ": Experience with Performing Troubleshooting using Troubleshooting Tools including but not limited to WinDBG, Visual Studio Debugger, Windows Event Logs, KQL, SQL. Experience with AI Based Software Development Tools including but limited to GitHub Copilot, Visual Studio/VS Code Agent Mode, Building/Enhancing Agents with Custom Prompts/Tool Integration. Software Engineering IC3 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1884159",
+    "title": "UX Engineer 2",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 30, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884159/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Proficiency in Figma and a range of design processes including journey mapping, design sprints, and prototyping. Interaction and visual design skills with hands-on experience creating wireframes, high-fidelity prototypes, and design artifacts in fast-paced tech environments. Front-end development skills with proficiency in React and a solid understanding of design systems and component libraries. Communication , storytelling, and collaboration skills with the ability to scope, prioritize, and lead design efforts independently. Maintaining a high bar for craft, usability, and user impact. Interest in deep learning and NL/ML using Python Experience within the Security , Compliance, or Identity domain s Experience in Enterprise UX Experience with AI-assisted creation tools is highly valued ( e.g. GitHub Copilot, Cursor, Lovable AI, Claude) UX Engineering IC3 - The",
+    "other_requirements_text": ": The ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  }
+]

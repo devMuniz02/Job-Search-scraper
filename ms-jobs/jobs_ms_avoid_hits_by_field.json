@@ -7,6 +7,7 @@
       "1841354",
       "1841942",
       "1846112",
+      "1846814",
       "1847481",
       "1851179",
       "1851485",
@@ -21,17 +22,21 @@
       "1875541",
       "1875800",
       "1876873",
+      "1876918",
       "1877519",
       "1877646",
       "1878000",
       "1879063",
+      "1879092",
       "1879174",
       "1879466",
       "1879533",
       "1880576",
+      "1880695",
       "1881153",
       "1881241",
       "1881332",
+      "1881551",
       "1881667",
       "1881669",
       "1881728",
@@ -371,6 +376,31 @@
         "required_qualifications_text": [
           "6+ years"
         ]
+      },
+      "1881551": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1846814": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1879092": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1876918": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1880695": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
       }
     }
   },
@@ -401,6 +431,7 @@
       "1875861",
       "1876002",
       "1876026",
+      "1876485",
       "1877519",
       "1878008",
       "1878035",
@@ -430,6 +461,7 @@
       "1881364",
       "1881367",
       "1881646",
+      "1881696",
       "1881818",
       "1881824",
       "1881921",
@@ -444,9 +476,11 @@
       "1882697",
       "1883197",
       "1883207",
+      "1883666",
       "1883691",
       "1883863",
-      "1884194"
+      "1884194",
+      "1884322"
     ],
     "matches": {
       "1879566": {
@@ -846,6 +880,27 @@
         "required_qualifications_text": [
           "user experience"
         ]
+      },
+      "1876485": {
+        "required_qualifications_text": [
+          "user experience"
+        ]
+      },
+      "1884322": {
+        "required_qualifications_text": [
+          "user experience"
+        ]
+      },
+      "1883666": {
+        "required_qualifications_text": [
+          "marketing",
+          "sales"
+        ]
+      },
+      "1881696": {
+        "title": [
+          "marketing"
+        ]
       }
     }
   },
@@ -868,6 +923,8 @@
       "1842932",
       "1846112",
       "1846716",
+      "1846814",
+      "1849459",
       "1851573",
       "1852186",
       "1852560",
@@ -890,6 +947,7 @@
       "1864253",
       "1864645",
       "1869160",
+      "1870634",
       "1872469",
       "1872492",
       "1872506",
@@ -903,6 +961,7 @@
       "1874987",
       "1875049",
       "1875607",
+      "1876151",
       "1876570",
       "1877646",
       "1878007",
@@ -912,6 +971,7 @@
       "1879174",
       "1879479",
       "1879533",
+      "1879658",
       "1879796",
       "1879811",
       "1880104",
@@ -921,6 +981,7 @@
       "1880576",
       "1880656",
       "1880670",
+      "1880695",
       "1880869",
       "1880968",
       "1881053",
@@ -934,11 +995,13 @@
       "1881313",
       "1881327",
       "1881332",
+      "1881551",
       "1881575",
       "1881646",
       "1881676",
       "1881683",
       "1881728",
+      "1881873",
       "1881912",
       "1881918",
       "1881919",
@@ -967,6 +1030,7 @@
       "1882314",
       "1882620",
       "1882648",
+      "1882690",
       "1882697",
       "1882748",
       "1882761",
@@ -978,14 +1042,18 @@
       "1882970",
       "1883009",
       "1883284",
+      "1883565",
       "1883645",
+      "1884068",
       "1884120",
       "1884141",
       "1884146",
       "1884153",
       "1884156",
+      "1884162",
       "1884196",
-      "1884231"
+      "1884231",
+      "1885085"
     ],
     "matches": {
       "1878935": {
@@ -1997,6 +2065,105 @@
           "go ",
           "java"
         ]
+      },
+      "1883565": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1881551": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1849459": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1879658": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1884162": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1885085": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1881873": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1846814": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1876151": {
+        "required_qualifications_text": [
+          "c++",
+          "java"
+        ]
+      },
+      "1884068": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1880695": {
+        "required_qualifications_text": [
+          "c#"
+        ]
+      },
+      "1870634": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1882690": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
       }
     }
   },
@@ -2011,6 +2178,7 @@
       "1828770",
       "1830570",
       "1833803",
+      "1835499",
       "1836060",
       "1836776",
       "1839391",
@@ -2019,9 +2187,11 @@
       "1842582",
       "1842932",
       "1846716",
+      "1846814",
       "1848031",
       "1849013",
       "1849447",
+      "1849459",
       "1851573",
       "1852186",
       "1852516",
@@ -2054,6 +2224,7 @@
       "1864645",
       "1864732",
       "1869160",
+      "1870634",
       "1870870",
       "1872469",
       "1872492",
@@ -2073,7 +2244,10 @@
       "1875607",
       "1875959",
       "1876065",
+      "1876151",
       "1876570",
+      "1876692",
+      "1877458",
       "1877646",
       "1877977",
       "1878007",
@@ -2086,6 +2260,7 @@
       "1879217",
       "1879479",
       "1879533",
+      "1879658",
       "1879713",
       "1879796",
       "1879811",
@@ -2098,6 +2273,7 @@
       "1880656",
       "1880670",
       "1880675",
+      "1880695",
       "1880869",
       "1880968",
       "1881032",
@@ -2111,12 +2287,14 @@
       "1881327",
       "1881332",
       "1881356",
+      "1881551",
       "1881575",
       "1881646",
       "1881676",
       "1881683",
       "1881728",
       "1881837",
+      "1881873",
       "1881912",
       "1881918",
       "1881919",
@@ -2128,6 +2306,7 @@
       "1882126",
       "1882128",
       "1882132",
+      "1882133",
       "1882147",
       "1882154",
       "1882156",
@@ -2150,6 +2329,7 @@
       "1882646",
       "1882648",
       "1882655",
+      "1882690",
       "1882697",
       "1882748",
       "1882761",
@@ -2162,19 +2342,26 @@
       "1883009",
       "1883330",
       "1883354",
+      "1883498",
       "1883548",
+      "1883565",
       "1883643",
       "1883645",
       "1883845",
       "1883884",
+      "1883889",
+      "1884068",
       "1884120",
       "1884141",
       "1884146",
       "1884153",
       "1884156",
+      "1884159",
+      "1884162",
       "1884196",
       "1884231",
-      "1885079"
+      "1885079",
+      "1885085"
     ],
     "matches": {
       "1878935": {
@@ -3791,6 +3978,184 @@
         "preferred_qualifications_text": [
           "python"
         ]
+      },
+      "1884159": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1883565": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1881551": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1849459": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1879658": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1877458": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1884162": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1885085": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1881873": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1846814": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1876151": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1883889": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1884068": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1880695": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1870634": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1876692": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1882690": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1883498": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1835499": {
+        "qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1882133": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
       }
     }
   },
@@ -3800,6 +4165,7 @@
       "1827539",
       "1836060",
       "1846716",
+      "1846814",
       "1852962",
       "1857933",
       "1859937",
@@ -3812,6 +4178,7 @@
       "1881303",
       "1881646",
       "1881918",
+      "1882133",
       "1882176",
       "1882214",
       "1882243",
@@ -3822,7 +4189,8 @@
       "1882620",
       "1882874",
       "1882896",
-      "1882923"
+      "1882923",
+      "1883882"
     ],
     "matches": {
       "1882874": {
@@ -3977,6 +4345,22 @@
         "required_qualifications_text": [
           "Full Stack"
         ]
+      },
+      "1883882": {
+        "required_qualifications_text": [
+          "React"
+        ]
+      },
+      "1846814": {
+        "required_qualifications_text": [
+          "Full Stack",
+          "React"
+        ]
+      },
+      "1882133": {
+        "required_qualifications_text": [
+          "API"
+        ]
       }
     }
   },
@@ -3993,7 +4377,8 @@
       "1882655",
       "1882878",
       "1883321",
-      "1884077"
+      "1884077",
+      "1885137"
     ],
     "matches": {
       "1878027": {
@@ -4060,6 +4445,12 @@
       },
       "1862382": {
         "other_requirements_text": [
+          "security clearance"
+        ]
+      },
+      "1885137": {
+        "other_requirements_text": [
+          "polygraph",
           "security clearance"
         ]
       }

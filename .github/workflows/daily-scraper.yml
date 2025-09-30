@@ -75,38 +75,38 @@ jobs:
         echo "**Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         
-        if [ -f "jobs_ms.json" ]; then
-          TOTAL_JOBS=$(python -c "import json; data=json.load(open('jobs_ms.json')); print(len(data))")
+        if [ -f "ms-jobs/jobs_ms.json" ]; then
+          TOTAL_JOBS=$(python -c "import json; data=json.load(open('ms-jobs/jobs_ms.json')); print(len(data))")
           echo "**Total Jobs in Database:** $TOTAL_JOBS" >> $GITHUB_STEP_SUMMARY
         fi
         
-        if [ -f "jobs_ms_details.json" ]; then
-          DETAILED_JOBS=$(python -c "import json; data=json.load(open('jobs_ms_details.json')); print(len(data))")
+        if [ -f "ms-jobs/jobs_ms_details.json" ]; then
+          DETAILED_JOBS=$(python -c "import json; data=json.load(open('ms-jobs/jobs_ms_details.json')); print(len(data))")
           echo "**Jobs with Details:** $DETAILED_JOBS" >> $GITHUB_STEP_SUMMARY
         fi
         
-        if [ -f "jobs_ms_avoid_hits_by_field.json" ]; then
+        if [ -f "ms-jobs/jobs_ms_avoid_hits_by_field.json" ]; then
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Filtered Categories:**" >> $GITHUB_STEP_SUMMARY
-          python -c "import json; data=json.load(open('jobs_ms_avoid_hits_by_field.json')); [print('- ' + k + ': ' + str(len(v.get('job_ids', [])))) for k, v in data.items()]" >> $GITHUB_STEP_SUMMARY
+          python -c "import json; data=json.load(open('ms-jobs/jobs_ms_avoid_hits_by_field.json')); [print('- ' + k + ': ' + str(len(v.get('job_ids', [])))) for k, v in data.items()]" >> $GITHUB_STEP_SUMMARY
         fi
         
-        if [ -d "jobs_by_date" ]; then
+        if [ -d "ms-jobs/jobs_by_date" ]; then
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
-          find jobs_by_date -name "*.json" -exec basename {} \; | head -10 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          find ms-jobs/jobs_by_date -name "*.json" -exec basename {} \; | head -10 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
         fi
 
     - name: Upload artifacts
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: job-scraping-results-${{ github.run_number }}
         path: |
-          jobs_ms.json
-          jobs_ms_details.json
-          jobs_ms_avoid_hits_by_field.json
-          jobs_by_date/
+          ms-jobs/jobs_ms.json
+          ms-jobs/jobs_ms_details.json
+          ms-jobs/jobs_ms_avoid_hits_by_field.json
+          ms-jobs/jobs_by_date/
         retention-days: 30
 
     - name: Notify on failure

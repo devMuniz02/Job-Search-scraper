@@ -1,28 +1,5 @@
 [
   {
-    "job_id": "1828770",
-    "title": "Senior Applied Scientist-Word",
-    "locations": [
-      "Redmond, Washington, United States"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Sep 23, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1828770/",
-    "required_qualifications_text": ": Bachelor's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 4+ years related experience (e.g., statistics predictive analytics, research) OR Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 1+ year(s) related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years of research or product experience in NLP. 3+ years of hands-on experience in Deep Learning using PyTorch or similar. 3+ years of software engineering experience in Python or C#.",
-    "preferred_qualifications_text": ": Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 6+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years experience creating publications (e.g., patents, libraries, peer-reviewed academic papers). Experience presenting at conferences or other events in the outside research/industry community as an invited speaker. 3+ years experience conducting research as part of a research program (in academic or industry settings). 1+ year(s) experience developing and deploying live production systems, as part of a product team. 1+ year(s) experience developing and deploying products or systems at multiple points in the product cycle from ideation to shipping. PhD degree in Computational Linguistics or Computer Science with a focus on NLP. Fluency with recent NLP & LLM advancement as well as a driven passion for discovering the next generation of technology. Experience conducting applied research and publishing papers. Experience working in collaborative multiple team environment and ship production features in a fast-paced environment. Effective communication, collaboration, and problem-solving skills and a customer-centric mindset. Applied Sciences IC4 - The",
-    "other_requirements_text": "",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
-      }
-    ]
-  },
-  {
     "job_id": "1879713",
     "title": "Senior Software Engineer",
     "locations": [
@@ -46,17 +23,17 @@
     ]
   },
   {
-    "job_id": "1882171",
-    "title": "Senior Software Engineer",
+    "job_id": "1828770",
+    "title": "Senior Applied Scientist-Word",
     "locations": [
-      "Multiple Locations, United States"
+      "Redmond, Washington, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Sep 23, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1882171/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, OR Java, JavaScript, or Python OR equivalent experience. 2+ years of experience with distributed systems or networking.",
-    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, OR Python OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years experience with generative AI models (e.g., LLMs, diffusion models) and frameworks such as OpenAI, Hugging Face Transformers, LangChain, or Semantic Kernel. Experience with agentic AI architectures, including planning, memory, tool use, and orchestration. Software Engineering IC4 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1828770/",
+    "required_qualifications_text": ": Bachelor's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 4+ years related experience (e.g., statistics predictive analytics, research) OR Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 1+ year(s) related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years of research or product experience in NLP. 3+ years of hands-on experience in Deep Learning using PyTorch or similar. 3+ years of software engineering experience in Python or C#.",
+    "preferred_qualifications_text": ": Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 6+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years experience creating publications (e.g., patents, libraries, peer-reviewed academic papers). Experience presenting at conferences or other events in the outside research/industry community as an invited speaker. 3+ years experience conducting research as part of a research program (in academic or industry settings). 1+ year(s) experience developing and deploying live production systems, as part of a product team. 1+ year(s) experience developing and deploying products or systems at multiple points in the product cycle from ideation to shipping. PhD degree in Computational Linguistics or Computer Science with a focus on NLP. Fluency with recent NLP & LLM advancement as well as a driven passion for discovering the next generation of technology. Experience conducting applied research and publishing papers. Experience working in collaborative multiple team environment and ship production features in a fast-paced environment. Effective communication, collaboration, and problem-solving skills and a customer-centric mindset. Applied Sciences IC4 - The",
+    "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
@@ -65,29 +42,6 @@
       {
         "region": "SF Bay Area / NYC",
         "range": "USD $158,400 - $258,000"
-      }
-    ]
-  },
-  {
-    "job_id": "1864645",
-    "title": "Software Engineer II",
-    "locations": [
-      "Multiple Locations, United States"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Sep 23, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1864645/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) of experience in IP networking and/or distributed systems. 1+ year(s) of experience in Linux operating system.",
-    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 3+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 5+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years experience with Network OS, RDMA, switching and routing, routing protocols, such as BGP. 1+ years experience with container-based technologies Software Engineering IC3 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $100,600 - $199,000"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $131,400 - $215,400"
       }
     ]
   },
@@ -115,6 +69,29 @@
     ]
   },
   {
+    "job_id": "1882171",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 23, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882171/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, OR Java, JavaScript, or Python OR equivalent experience. 2+ years of experience with distributed systems or networking.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, OR Python OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years experience with generative AI models (e.g., LLMs, diffusion models) and frameworks such as OpenAI, Hugging Face Transformers, LangChain, or Semantic Kernel. Experience with agentic AI architectures, including planning, memory, tool use, and orchestration. Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
     "job_id": "1857039",
     "title": "Principal Software Engineer",
     "locations": [
@@ -134,6 +111,29 @@
       {
         "region": "SF Bay Area / NYC",
         "range": "USD $188,000 - $304,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1864645",
+    "title": "Software Engineer II",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Sep 23, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1864645/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) of experience in IP networking and/or distributed systems. 1+ year(s) of experience in Linux operating system.",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 3+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 5+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years experience with Network OS, RDMA, switching and routing, routing protocols, such as BGP. 1+ years experience with container-based technologies Software Engineering IC3 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
       }
     ]
   }

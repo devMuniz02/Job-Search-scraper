@@ -8,6 +8,11 @@ on:
   # Allow manual triggering
   workflow_dispatch:
 
+# Grant necessary permissions for the workflow
+permissions:
+  contents: write
+  actions: read
+
 jobs:
   scrape-jobs:
     runs-on: ubuntu-latest

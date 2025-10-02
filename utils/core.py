@@ -664,14 +664,45 @@ def organize_jobs_by_date(details_path: str, filtered_path: str):
     output_dir = "ms-jobs/jobs_by_date"
     os.makedirs(output_dir, exist_ok=True)
     
+    files_created = 0
+    files_updated = 0
+    files_skipped = 0
+    
     for date_str, jobs_list in jobs_by_date.items():
         filename = f"jobs_{date_str}.json"
         filepath = os.path.join(output_dir, filename)
         
-        with open(filepath, 'w', encoding='utf-8') as f:
-            json.dump(jobs_list, f, ensure_ascii=False, indent=2)
+        # Prepare current content
+        current_content = json.dumps(jobs_list, ensure_ascii=False, indent=2)
         
-        print(f"Saved {len(jobs_list)} jobs to {filepath}")
+        # Check if file exists and compare content
+        should_save = True
+        if os.path.exists(filepath):
+            try:
+                with open(filepath, 'r', encoding='utf-8') as f:
+                    existing_content = f.read()
+                
+                # Compare content
+                if current_content == existing_content:
+                    should_save = False
+                    files_skipped += 1
+                    print(f"Skipped {filename} - content unchanged ({len(jobs_list)} jobs)")
+                else:
+                    files_updated += 1
+                    print(f"Updated {filename} - content changed ({len(jobs_list)} jobs)")
+            except Exception as e:
+                print(f"Error reading existing file {filepath}: {e}")
+                # If we can't read the existing file, save anyway
+                files_updated += 1
+                print(f"Overwriting {filename} due to read error ({len(jobs_list)} jobs)")
+        else:
+            files_created += 1
+            print(f"Created {filename} - new file ({len(jobs_list)} jobs)")
+        
+        # Save file only if needed
+        if should_save:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(current_content)
     
-    print(f"Total files created: {len(jobs_by_date)}")
-    print(f"Total jobs saved: {sum(len(jobs) for jobs in jobs_by_date.values())}")
+    print(f"Summary: {files_created} files created, {files_updated} files updated, {files_skipped} files skipped")
+    print(f"Total jobs processed: {sum(len(jobs) for jobs in jobs_by_date.values())}")

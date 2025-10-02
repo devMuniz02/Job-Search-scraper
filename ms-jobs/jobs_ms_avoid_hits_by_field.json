@@ -80,6 +80,7 @@
       "1882970",
       "1883136",
       "1883198",
+      "1883219",
       "1883535",
       "1883548",
       "1883641",
@@ -91,6 +92,7 @@
       "1884231",
       "1885091",
       "1885165",
+      "1885192",
       "1885195",
       "1885271",
       "1885682",
@@ -576,6 +578,17 @@
         "required_qualifications_text": [
           "6+ years"
         ]
+      },
+      "1883219": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1885192": {
+        "required_qualifications_text": [
+          "12+ years",
+          "6+ years"
+        ]
       }
     }
   },
@@ -668,9 +681,11 @@
       "1882696",
       "1882697",
       "1882847",
+      "1883035",
       "1883154",
       "1883197",
       "1883207",
+      "1883219",
       "1883574",
       "1883641",
       "1883666",
@@ -1301,6 +1316,18 @@
           "finance",
           "sales"
         ]
+      },
+      "1883219": {
+        "required_qualifications_text": [
+          "finance",
+          "marketing"
+        ]
+      },
+      "1883035": {
+        "required_qualifications_text": [
+          "marketing",
+          "sales"
+        ]
       }
     }
   },
@@ -1310,6 +1337,7 @@
       "1823064",
       "1823218",
       "1823366",
+      "1824215",
       "1826999",
       "1827271",
       "1828317",
@@ -1487,6 +1515,7 @@
       "1883009",
       "1883188",
       "1883284",
+      "1883338",
       "1883504",
       "1883532",
       "1883535",
@@ -1515,6 +1544,7 @@
       "1885085",
       "1885117",
       "1885165",
+      "1885192",
       "1885258",
       "1885271",
       "1885325",
@@ -3191,6 +3221,26 @@
           "java",
           "javascript"
         ]
+      },
+      "1883338": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java"
+        ]
+      },
+      "1824215": {
+        "required_qualifications_text": [
+          "c++"
+        ]
+      },
+      "1885192": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
       }
     }
   },
@@ -3433,6 +3483,7 @@
       "1883188",
       "1883306",
       "1883330",
+      "1883338",
       "1883354",
       "1883456",
       "1883471",
@@ -3473,6 +3524,7 @@
       "1884262",
       "1885079",
       "1885085",
+      "1885192",
       "1885258",
       "1885271",
       "1885325",
@@ -6189,6 +6241,28 @@
           "python"
         ],
         "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1883338": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1885192": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
           "python"
         ]
       }

@@ -1,0 +1,39 @@
+[
+  {
+    "job_id": "1883338",
+    "title": "Principal Software Engineer - Azure Storage",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 02, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883338/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C++, C#, Java, or Python OR equivalent experience. 8+ years of systems experience in hands-on development of reliable and performant distributed systems.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C++, C#, Java or Python OR Master's Degree in Computer Science or related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C++, C#, Java or Python OR equivalent experience. Experiences with storage systems in the areas like availability, remote copy, high performance, durability schemes . Knowledge of distributed systems. Software Engineering IC6 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $163,000 - $296,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $220,800 - $331,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1885258",
+    "title": "Software Engineer: Full-stack",
+    "locations": [
+      "Mexico City, México, Mexico"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 02, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885258/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline with proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python o OR equivalent experience Business fluency in English (read, write, speak).",
+    "preferred_qualifications_text": ": Exposure to Microsoft Azure or other cloud platforms (GCP, AWS). Familiarity with AI/ML fundamentals, tools (like Azure ML, OpenAI), or data analytics workflows. Understanding of version control systems (e.g., Git) and DevOps and CI/CD practices. Cloud Native Architecture, with a strong understanding of cost management, Scalability and observability. Hands-on experience with Selenium or any automation tools and SQL. Curiosity, collaboration mindset, and a passion for solving real-world customer problems. #EiP\nRequired Qualifications:\n• Bachelor's Degree in Computer Science, or related technical discipline with proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python o OR equivalent experience\n• Business fluency in English (read, write, speak).\nBachelor's Degree in Computer Science, or related technical discipline with proven experience coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python\no OR equivalent experience\nPreferred Qualifications:\n• Exposure to Microsoft Azure or other cloud platforms (GCP, AWS).\n• Familiarity with AI/ML fundamentals, tools (like Azure ML, OpenAI), or data analytics workflows.\n• Understanding of version control systems (e.g., Git) and DevOps and CI/CD practices.\n• Cloud Native Architecture, with a strong understanding of cost management, Scalability and observability.\n• Hands-on experience with Selenium or any automation tools and SQL.\n• Curiosity, collaboration mindset, and a passion for solving real-world customer problems.\n#EiP",
+    "other_requirements_text": "",
+    "pay_ranges": []
+  }
+]

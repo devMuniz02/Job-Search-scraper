@@ -13,22 +13,29 @@
       "1847481",
       "1851179",
       "1851485",
+      "1855843",
       "1857752",
       "1858698",
+      "1860340",
       "1860463",
       "1861593",
+      "1864309",
+      "1871158",
       "1872309",
       "1872492",
       "1872507",
       "1872980",
       "1874276",
       "1874987",
+      "1875095",
       "1875541",
       "1875800",
+      "1876773",
       "1876873",
       "1876918",
       "1877519",
       "1877646",
+      "1877912",
       "1878000",
       "1879063",
       "1879092",
@@ -75,15 +82,19 @@
       "1883198",
       "1883535",
       "1883548",
+      "1883641",
       "1883863",
       "1884039",
       "1884146",
       "1884196",
+      "1884226",
       "1884231",
       "1885091",
+      "1885165",
       "1885195",
       "1885271",
       "1885682",
+      "1885778",
       "1885868"
     ],
     "matches": {
@@ -509,6 +520,62 @@
         "required_qualifications_text": [
           "6+ years"
         ]
+      },
+      "1885778": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1883641": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1875095": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1885165": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1871158": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1876773": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1884226": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1877912": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1860340": {
+        "required_qualifications_text": [
+          "10+ years",
+          "6+ years"
+        ]
+      },
+      "1855843": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
+      },
+      "1864309": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
       }
     }
   },
@@ -536,6 +603,7 @@
       "1872980",
       "1874007",
       "1874783",
+      "1874842",
       "1875535",
       "1875563",
       "1875638",
@@ -546,6 +614,8 @@
       "1876002",
       "1876026",
       "1876485",
+      "1876491",
+      "1876799",
       "1877519",
       "1878008",
       "1878035",
@@ -569,8 +639,10 @@
       "1880539",
       "1880567",
       "1880594",
+      "1881034",
       "1881134",
       "1881141",
+      "1881163",
       "1881165",
       "1881216",
       "1881231",
@@ -580,6 +652,7 @@
       "1881367",
       "1881646",
       "1881696",
+      "1881810",
       "1881818",
       "1881824",
       "1881921",
@@ -599,18 +672,25 @@
       "1883197",
       "1883207",
       "1883574",
+      "1883641",
       "1883666",
       "1883691",
       "1883863",
       "1883871",
       "1883908",
+      "1883973",
       "1884165",
       "1884194",
+      "1884271",
       "1884280",
       "1884322",
+      "1885117",
       "1885324",
+      "1885580",
       "1885682",
-      "1885859"
+      "1885859",
+      "1886276",
+      "1886988"
     ],
     "matches": {
       "1879566": {
@@ -1147,6 +1227,80 @@
         "required_qualifications_text": [
           "sales"
         ]
+      },
+      "1874842": {
+        "title": [
+          "marketing"
+        ]
+      },
+      "1876799": {
+        "required_qualifications_text": [
+          "user experience"
+        ]
+      },
+      "1883641": {
+        "title": [
+          "sales"
+        ],
+        "required_qualifications_text": [
+          "marketing",
+          "sales"
+        ]
+      },
+      "1881163": {
+        "required_qualifications_text": [
+          "user experience"
+        ]
+      },
+      "1876491": {
+        "title": [
+          "sales"
+        ]
+      },
+      "1886988": {
+        "title": [
+          "sales"
+        ]
+      },
+      "1883973": {
+        "title": [
+          "compliance",
+          "sales"
+        ]
+      },
+      "1886276": {
+        "title": [
+          "marketing"
+        ]
+      },
+      "1885580": {
+        "title": [
+          "marketing"
+        ]
+      },
+      "1881034": {
+        "required_qualifications_text": [
+          "finance",
+          "marketing",
+          "sales"
+        ]
+      },
+      "1885117": {
+        "required_qualifications_text": [
+          "finance"
+        ]
+      },
+      "1884271": {
+        "required_qualifications_text": [
+          "user experience"
+        ]
+      },
+      "1881810": {
+        "required_qualifications_text": [
+          "accounting",
+          "finance",
+          "sales"
+        ]
       }
     }
   },
@@ -1157,6 +1311,7 @@
       "1823218",
       "1823366",
       "1826999",
+      "1827271",
       "1828317",
       "1828770",
       "1829111",
@@ -1182,13 +1337,18 @@
       "1852962",
       "1854056",
       "1854615",
+      "1855843",
       "1856225",
       "1856745",
       "1856943",
+      "1857051",
       "1858310",
       "1858569",
+      "1858598",
+      "1859478",
       "1859554",
       "1859937",
+      "1861310",
       "1861360",
       "1861505",
       "1861510",
@@ -1197,17 +1357,23 @@
       "1861611",
       "1861814",
       "1861955",
+      "1863208",
       "1863861",
       "1864253",
+      "1864309",
+      "1864334",
       "1864645",
+      "1864894",
       "1869160",
       "1870634",
       "1872395",
       "1872469",
       "1872492",
+      "1872499",
       "1872506",
       "1872507",
       "1872980",
+      "1873493",
       "1874005",
       "1874232",
       "1874255",
@@ -1218,9 +1384,11 @@
       "1874727",
       "1874914",
       "1874987",
+      "1875035",
       "1875049",
       "1875607",
       "1876151",
+      "1876152",
       "1876570",
       "1877544",
       "1877609",
@@ -1230,6 +1398,7 @@
       "1878947",
       "1878953",
       "1879028",
+      "1879039",
       "1879083",
       "1879174",
       "1879479",
@@ -1248,10 +1417,12 @@
       "1880576",
       "1880618",
       "1880656",
+      "1880669",
       "1880670",
       "1880695",
       "1880869",
       "1880968",
+      "1881043",
       "1881053",
       "1881100",
       "1881109",
@@ -1289,6 +1460,7 @@
       "1882231",
       "1882243",
       "1882244",
+      "1882248",
       "1882250",
       "1882251",
       "1882256",
@@ -1315,11 +1487,14 @@
       "1883009",
       "1883188",
       "1883284",
+      "1883504",
+      "1883532",
       "1883535",
       "1883565",
       "1883629",
       "1883631",
       "1883645",
+      "1883751",
       "1883864",
       "1883971",
       "1884068",
@@ -1330,19 +1505,28 @@
       "1884156",
       "1884162",
       "1884165",
+      "1884180",
       "1884196",
+      "1884199",
+      "1884219",
       "1884231",
+      "1884250",
+      "1884262",
       "1885085",
+      "1885117",
+      "1885165",
       "1885271",
       "1885325",
       "1885365",
       "1885397",
+      "1885778",
       "1885857",
       "1885860",
       "1885862",
       "1885864",
       "1885866",
-      "1885868"
+      "1885868",
+      "1886879"
     ],
     "matches": {
       "1878935": {
@@ -2771,6 +2955,233 @@
           "c++",
           "java"
         ]
+      },
+      "1884262": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java"
+        ]
+      },
+      "1884250": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java"
+        ]
+      },
+      "1881043": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1876152": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1885778": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1864894": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1886879": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1859478": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java"
+        ]
+      },
+      "1863208": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1879039": {
+        "required_qualifications_text": [
+          "c#"
+        ]
+      },
+      "1827271": {
+        "required_qualifications_text": [
+          "java",
+          "scala"
+        ]
+      },
+      "1885117": {
+        "required_qualifications_text": [
+          "c#"
+        ]
+      },
+      "1864334": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1885165": {
+        "required_qualifications_text": [
+          "c#",
+          "c++"
+        ]
+      },
+      "1875035": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1882248": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1884180": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1880669": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1861310": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1858598": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1883751": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1884199": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1883504": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "golang",
+          "java"
+        ]
+      },
+      "1883532": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "golang",
+          "java"
+        ]
+      },
+      "1884219": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1872499": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1855843": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1873493": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1864309": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
+      },
+      "1857051": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
       }
     }
   },
@@ -2781,7 +3192,9 @@
       "1823064",
       "1823218",
       "1823366",
+      "1823586",
       "1826999",
+      "1827271",
       "1827539",
       "1828317",
       "1828770",
@@ -2799,15 +3212,19 @@
       "1842582",
       "1842932",
       "1842989",
+      "1843069",
       "1844289",
       "1845465",
+      "1845967",
       "1846716",
       "1846814",
       "1846848",
+      "1847521",
       "1848031",
       "1849013",
       "1849447",
       "1849459",
+      "1850603",
       "1851573",
       "1852186",
       "1852516",
@@ -2816,16 +3233,24 @@
       "1854056",
       "1854615",
       "1854695",
+      "1855843",
       "1856225",
       "1856745",
       "1856943",
       "1857039",
+      "1857051",
       "1857312",
+      "1857474",
       "1858310",
       "1858569",
+      "1858598",
       "1859554",
+      "1859892",
       "1859937",
       "1860402",
+      "1860405",
+      "1860472",
+      "1861310",
       "1861360",
       "1861364",
       "1861505",
@@ -2835,18 +3260,24 @@
       "1861814",
       "1862283",
       "1862877",
+      "1863208",
+      "1863326",
       "1863861",
       "1863900",
       "1864253",
+      "1864309",
+      "1864334",
       "1864545",
       "1864645",
       "1864732",
+      "1864894",
       "1869160",
       "1870634",
       "1870870",
       "1872395",
       "1872469",
       "1872492",
+      "1872499",
       "1872506",
       "1872507",
       "1872980",
@@ -2854,6 +3285,7 @@
       "1873243",
       "1873268",
       "1873390",
+      "1873493",
       "1874005",
       "1874232",
       "1874255",
@@ -2864,11 +3296,15 @@
       "1874727",
       "1874914",
       "1874987",
+      "1875035",
       "1875049",
+      "1875539",
       "1875607",
       "1875959",
+      "1876022",
       "1876065",
       "1876151",
+      "1876152",
       "1876570",
       "1876692",
       "1877458",
@@ -2882,6 +3318,7 @@
       "1878953",
       "1878955",
       "1879028",
+      "1879039",
       "1879064",
       "1879083",
       "1879174",
@@ -2904,12 +3341,15 @@
       "1880576",
       "1880618",
       "1880656",
+      "1880669",
       "1880670",
       "1880675",
       "1880695",
+      "1880786",
       "1880869",
       "1880968",
       "1881032",
+      "1881043",
       "1881053",
       "1881100",
       "1881106",
@@ -2926,6 +3366,7 @@
       "1881676",
       "1881683",
       "1881728",
+      "1881810",
       "1881837",
       "1881873",
       "1881909",
@@ -2952,6 +3393,8 @@
       "1882231",
       "1882243",
       "1882244",
+      "1882245",
+      "1882248",
       "1882250",
       "1882251",
       "1882256",
@@ -2985,6 +3428,8 @@
       "1883456",
       "1883471",
       "1883498",
+      "1883504",
+      "1883532",
       "1883535",
       "1883536",
       "1883548",
@@ -2994,6 +3439,7 @@
       "1883643",
       "1883645",
       "1883647",
+      "1883751",
       "1883845",
       "1883864",
       "1883884",
@@ -3009,20 +3455,28 @@
       "1884159",
       "1884162",
       "1884165",
+      "1884180",
       "1884196",
+      "1884199",
+      "1884219",
       "1884231",
+      "1884250",
+      "1884262",
       "1885079",
       "1885085",
       "1885271",
       "1885325",
       "1885365",
+      "1885778",
       "1885857",
       "1885860",
       "1885862",
       "1885864",
       "1885866",
       "1885868",
-      "1885990"
+      "1885990",
+      "1886879",
+      "1886969"
     ],
     "matches": {
       "1878935": {
@@ -5324,6 +5778,398 @@
         "preferred_qualifications_text": [
           "python"
         ]
+      },
+      "1884262": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1884250": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1881043": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1876152": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1885778": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1863326": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1864894": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1843069": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1886879": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1886969": {
+        "qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1863208": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1879039": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1827271": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1882245": {
+        "qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1864334": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1875035": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1882248": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1884180": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1880669": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1861310": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1858598": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1883751": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1884199": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1859892": {
+        "qualifications_text": [
+          "python"
+        ]
+      },
+      "1860405": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1850603": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1883504": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1847521": {
+        "qualifications_text": [
+          "python"
+        ]
+      },
+      "1883532": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1876022": {
+        "qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1875539": {
+        "qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1860472": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1857474": {
+        "qualifications_text": [
+          "python"
+        ]
+      },
+      "1884219": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1880786": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1872499": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1823586": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1845967": {
+        "qualifications_text": [
+          "python"
+        ],
+        "other_requirements_text": [
+          "python"
+        ]
+      },
+      "1855843": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1873493": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1864309": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1881810": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1857051": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
       }
     }
   },
@@ -5340,7 +6186,9 @@
       "1859937",
       "1860821",
       "1861611",
+      "1863208",
       "1863861",
+      "1864894",
       "1874314",
       "1874987",
       "1876570",
@@ -5352,6 +6200,7 @@
       "1882176",
       "1882214",
       "1882243",
+      "1882248",
       "1882251",
       "1882256",
       "1882263",
@@ -5365,7 +6214,10 @@
       "1883631",
       "1883864",
       "1883882",
-      "1885397"
+      "1884180",
+      "1885117",
+      "1885397",
+      "1886597"
     ],
     "matches": {
       "1882874": {
@@ -5574,6 +6426,41 @@
         "required_qualifications_text": [
           "Angular",
           "React"
+        ]
+      },
+      "1864894": {
+        "required_qualifications_text": [
+          "Full Stack",
+          "React"
+        ]
+      },
+      "1863208": {
+        "required_qualifications_text": [
+          "API"
+        ]
+      },
+      "1885117": {
+        "required_qualifications_text": [
+          "API",
+          "Angular",
+          "Node.js",
+          "React"
+        ]
+      },
+      "1882248": {
+        "required_qualifications_text": [
+          "Backend"
+        ]
+      },
+      "1884180": {
+        "required_qualifications_text": [
+          "React"
+        ]
+      },
+      "1886597": {
+        "required_qualifications_text": [
+          "HTTPS",
+          "https"
         ]
       }
     }

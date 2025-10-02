@@ -602,12 +602,160 @@ def filter_jobs(details_path: str, output_path: str):
 
 # ==================== JOB ORGANIZATION ====================
 
+def cleanup_old_jobs(details_path: str):
+    """Remove jobs older than 10 days from the database."""
+    import datetime as dt
+    
+    cutoff_date = dt.date.today() - dt.timedelta(days=10)
+    print(f"Removing jobs older than: {cutoff_date}")
+    
+    details_db = load_db(details_path)
+    original_count = len(details_db)
+    removed_count = 0
+    
+    # Find jobs to remove
+    jobs_to_remove = []
+    for job_id, job in details_db.items():
+        date_posted = job.get('date_posted', 'unknown')
+        
+        if date_posted and date_posted != 'unknown':
+            try:
+                parsed_date = parse_date(date_posted)
+                if parsed_date != dt.datetime.max:
+                    job_date = parsed_date.date()
+                    if job_date < cutoff_date:
+                        jobs_to_remove.append(job_id)
+            except:
+                pass
+    
+    # Remove old jobs
+    for job_id in jobs_to_remove:
+        del details_db[job_id]
+        removed_count += 1
+    
+    # Save updated database
+    if removed_count > 0:
+        save_db_atomic(details_path, details_db)
+        print(f"Removed {removed_count} old jobs from {details_path}")
+        print(f"Jobs remaining: {len(details_db)} (was {original_count})")
+    else:
+        print("No old jobs found to remove")
+    
+    # Return the list of removed job IDs for cleanup in main DB
+    return jobs_to_remove
+
+
+def cleanup_main_jobs_db(main_db_path: str, old_job_ids: list = None):
+    """Remove jobs from the main jobs database using job IDs from details cleanup."""
+    
+    main_db = load_db(main_db_path)
+    original_count = len(main_db)
+    removed_count = 0
+    
+    if old_job_ids:
+        print(f"Cleaning main jobs DB - removing {len(old_job_ids)} old job IDs")
+        
+        # Remove jobs by ID
+        for job_id in old_job_ids:
+            if job_id in main_db:
+                del main_db[job_id]
+                removed_count += 1
+        
+        # Save updated database
+        if removed_count > 0:
+            save_db_atomic(main_db_path, main_db)
+            print(f"Removed {removed_count} old jobs from {main_db_path}")
+            print(f"Jobs remaining: {len(main_db)} (was {original_count})")
+        else:
+            print("No matching old jobs found to remove from main DB")
+    else:
+        print("No old job IDs provided - skipping main DB cleanup")
+    
+    return removed_count
+
+
+def cleanup_old_job_files():
+    """Remove job files older than 10 days from ms-jobs/jobs_by_date/."""
+    import os
+    import datetime as dt
+    import glob
+    
+    cutoff_date = dt.date.today() - dt.timedelta(days=10)
+    output_dir = "ms-jobs/jobs_by_date"
+    
+    if not os.path.exists(output_dir):
+        return 0
+    
+    # Find all job files
+    pattern = os.path.join(output_dir, "jobs_*.json")
+    job_files = glob.glob(pattern)
+    
+    files_removed = 0
+    
+    for filepath in job_files:
+        filename = os.path.basename(filepath)
+        
+        # Extract date from filename (jobs_dd_month_yyyy.json)
+        try:
+            # Remove 'jobs_' prefix and '.json' suffix
+            date_part = filename[5:-5]  # Remove 'jobs_' and '.json'
+            
+            # Parse the date format: dd_month_yyyy
+            parts = date_part.split('_')
+            if len(parts) >= 3:
+                day = int(parts[0])
+                month_name = parts[1]
+                year = int(parts[2])
+                
+                # Convert month name to number
+                month_names = {
+                    'january': 1, 'february': 2, 'march': 3, 'april': 4,
+                    'may': 5, 'june': 6, 'july': 7, 'august': 8,
+                    'september': 9, 'october': 10, 'november': 11, 'december': 12
+                }
+                
+                month = month_names.get(month_name.lower())
+                if month:
+                    file_date = dt.date(year, month, day)
+                    
+                    if file_date < cutoff_date:
+                        os.remove(filepath)
+                        files_removed += 1
+                        print(f"Removed old file: {filename} (date: {file_date})")
+        except (ValueError, IndexError, KeyError) as e:
+            print(f"Could not parse date from filename {filename}: {e}")
+            continue
+    
+    if files_removed > 0:
+        print(f"Removed {files_removed} old job files")
+    else:
+        print("No old job files found to remove")
+    
+    return files_removed
+
+
 def organize_jobs_by_date(details_path: str, filtered_path: str):
-    """Organize filtered Python jobs by date posted."""
+    """Organize filtered Python jobs by date posted - only yesterday and today."""
     from collections import defaultdict
     import os
     import json
     import datetime as dt
+    from .config import DB_PATH
+    
+    # First, cleanup old jobs and files
+    print("=== CLEANUP PHASE ===")
+    old_job_ids = cleanup_old_jobs(details_path)  # Clean details database first and get old job IDs
+    cleanup_main_jobs_db(DB_PATH, old_job_ids)  # Clean main jobs database using the old job IDs
+    cleanup_old_job_files()  # Clean old job files
+    
+    print("\n=== ORGANIZATION PHASE ===")
+    
+    # Calculate date range (yesterday and today)
+    today = dt.date.today()
+    yesterday = today - dt.timedelta(days=1)
+    target_dates = {today, yesterday}
+    
+    print(f"Processing jobs from: {yesterday} and {today}")
     
     # Load data
     details_db = load_db(details_path)
@@ -627,23 +775,35 @@ def organize_jobs_by_date(details_path: str, filtered_path: str):
     print(f"Total knowledge fullstack jobs: {len(knowledge_fullstack)}")
     print(f"Total wanted Python jobs: {len(wanted_python_jobs)}")
     
-    # Group jobs by date
+    # Group jobs by date (only for target dates)
     jobs_by_date = defaultdict(list)
+    jobs_processed = 0
+    jobs_skipped_old = 0
     
     for job_id in wanted_python_jobs:
         job = details_db.get(job_id, {})
         date_posted = job.get('date_posted', 'unknown')
         
-        # Create filename-friendly date
+        # Parse and check if job is from target dates
+        job_date = None
         if date_posted and date_posted != 'unknown':
             try:
                 parsed_date = parse_date(date_posted)
                 if parsed_date != dt.datetime.max:
-                    filename_date = parsed_date.strftime("%d_%B_%Y").lower()
-                else:
-                    filename_date = date_posted.replace("-", "_").replace(" ", "_").replace(",", "")
+                    job_date = parsed_date.date()
             except:
-                filename_date = date_posted.replace("-", "_").replace(" ", "_").replace(",", "")
+                pass
+        
+        # Skip jobs not from yesterday or today
+        if job_date not in target_dates:
+            jobs_skipped_old += 1
+            continue
+        
+        jobs_processed += 1
+        
+        # Create filename-friendly date
+        if job_date:
+            filename_date = job_date.strftime("%d_%B_%Y").lower()
         else:
             filename_date = "unknown_date"
         
@@ -672,25 +832,43 @@ def organize_jobs_by_date(details_path: str, filtered_path: str):
         filename = f"jobs_{date_str}.json"
         filepath = os.path.join(output_dir, filename)
         
-        # Prepare current content
-        current_content = json.dumps(jobs_list, ensure_ascii=False, indent=2)
-        
         # Check if file exists and compare content
         should_save = True
         if os.path.exists(filepath):
             try:
                 with open(filepath, 'r', encoding='utf-8') as f:
-                    existing_content = f.read()
+                    existing_data = json.load(f)
                 
-                # Compare content
-                if current_content == existing_content:
+                # Quick check: if job counts differ, content definitely changed
+                if len(jobs_list) != len(existing_data):
+                    should_save = True
+                    files_updated += 1
+                    print(f"Updated {filename} - job count changed: {len(existing_data)} -> {len(jobs_list)} jobs")
+                # If counts are the same, do full content comparison
+                elif jobs_list == existing_data:
                     should_save = False
                     files_skipped += 1
                     print(f"Skipped {filename} - content unchanged ({len(jobs_list)} jobs)")
                 else:
+                    should_save = True
                     files_updated += 1
-                    print(f"Updated {filename} - content changed ({len(jobs_list)} jobs)")
-            except Exception as e:
+                    print(f"Updated {filename} - content changed (same count: {len(jobs_list)} jobs)")
+                    
+                    # Debug: Find what changed
+                    if len(jobs_list) <= 5:  # Only debug for small files to avoid spam
+                        existing_ids = {job.get('job_id') for job in existing_data}
+                        current_ids = {job.get('job_id') for job in jobs_list}
+                        
+                        if existing_ids != current_ids:
+                            added = current_ids - existing_ids
+                            removed = existing_ids - current_ids
+                            if added:
+                                print(f"    -> Added job IDs: {sorted(added)}")
+                            if removed:
+                                print(f"    -> Removed job IDs: {sorted(removed)}")
+                        else:
+                            print(f"    -> Same job IDs, but job details changed")
+            except (json.JSONDecodeError, FileNotFoundError, IOError) as e:
                 print(f"Error reading existing file {filepath}: {e}")
                 # If we can't read the existing file, save anyway
                 files_updated += 1
@@ -702,7 +880,9 @@ def organize_jobs_by_date(details_path: str, filtered_path: str):
         # Save file only if needed
         if should_save:
             with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(current_content)
+                json.dump(jobs_list, f, ensure_ascii=False, indent=2)
     
     print(f"Summary: {files_created} files created, {files_updated} files updated, {files_skipped} files skipped")
-    print(f"Total jobs processed: {sum(len(jobs) for jobs in jobs_by_date.values())}")
+    print(f"Jobs processed for yesterday/today: {jobs_processed}")
+    print(f"Jobs skipped (older than yesterday): {jobs_skipped_old}")
+    print(f"Total jobs saved to files: {sum(len(jobs) for jobs in jobs_by_date.values())}")

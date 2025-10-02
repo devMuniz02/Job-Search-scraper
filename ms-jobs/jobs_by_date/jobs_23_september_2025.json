@@ -1,24 +1,24 @@
 [
   {
-    "job_id": "1836776",
-    "title": "Software Engineer II - Virtualization and Kernel",
+    "job_id": "1828770",
+    "title": "Senior Applied Scientist-Word",
     "locations": [
       "Redmond, Washington, United States"
     ],
-    "travel": "None",
+    "travel": "0-25 %",
     "date_posted": "Sep 23, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1836776/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year experience building virtualization, operating system, device drivers, or firmware features. Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
-    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with ccoding in C or C++ OR Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in C or C++. Software Engineering IC3 - The",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1828770/",
+    "required_qualifications_text": ": Bachelor's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 4+ years related experience (e.g., statistics predictive analytics, research) OR Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 1+ year(s) related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years of research or product experience in NLP. 3+ years of hands-on experience in Deep Learning using PyTorch or similar. 3+ years of software engineering experience in Python or C#.",
+    "preferred_qualifications_text": ": Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 6+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years experience creating publications (e.g., patents, libraries, peer-reviewed academic papers). Experience presenting at conferences or other events in the outside research/industry community as an invited speaker. 3+ years experience conducting research as part of a research program (in academic or industry settings). 1+ year(s) experience developing and deploying live production systems, as part of a product team. 1+ year(s) experience developing and deploying products or systems at multiple points in the product cycle from ideation to shipping. PhD degree in Computational Linguistics or Computer Science with a focus on NLP. Fluency with recent NLP & LLM advancement as well as a driven passion for discovering the next generation of technology. Experience conducting applied research and publishing papers. Experience working in collaborative multiple team environment and ship production features in a fast-paced environment. Effective communication, collaboration, and problem-solving skills and a customer-centric mindset. Applied Sciences IC4 - The",
     "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $100,600 - $199,000"
+        "range": "USD $119,800 - $234,700"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $131,400 - $215,400"
+        "range": "USD $158,400 - $258,000"
       }
     ]
   },
@@ -69,29 +69,6 @@
     ]
   },
   {
-    "job_id": "1828770",
-    "title": "Senior Applied Scientist-Word",
-    "locations": [
-      "Redmond, Washington, United States"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Sep 23, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1828770/",
-    "required_qualifications_text": ": Bachelor's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 4+ years related experience (e.g., statistics predictive analytics, research) OR Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 1+ year(s) related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years of research or product experience in NLP. 3+ years of hands-on experience in Deep Learning using PyTorch or similar. 3+ years of software engineering experience in Python or C#.",
-    "preferred_qualifications_text": ": Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 6+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 3+ years related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years experience creating publications (e.g., patents, libraries, peer-reviewed academic papers). Experience presenting at conferences or other events in the outside research/industry community as an invited speaker. 3+ years experience conducting research as part of a research program (in academic or industry settings). 1+ year(s) experience developing and deploying live production systems, as part of a product team. 1+ year(s) experience developing and deploying products or systems at multiple points in the product cycle from ideation to shipping. PhD degree in Computational Linguistics or Computer Science with a focus on NLP. Fluency with recent NLP & LLM advancement as well as a driven passion for discovering the next generation of technology. Experience conducting applied research and publishing papers. Experience working in collaborative multiple team environment and ship production features in a fast-paced environment. Effective communication, collaboration, and problem-solving skills and a customer-centric mindset. Applied Sciences IC4 - The",
-    "other_requirements_text": "",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
-      }
-    ]
-  },
-  {
     "job_id": "1857039",
     "title": "Principal Software Engineer",
     "locations": [
@@ -134,6 +111,29 @@
       {
         "region": "SF Bay Area / NYC",
         "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1836776",
+    "title": "Software Engineer II - Virtualization and Kernel",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "None",
+    "date_posted": "Sep 23, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1836776/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year experience building virtualization, operating system, device drivers, or firmware features. Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with ccoding in C or C++ OR Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in C or C++. Software Engineering IC3 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
       }
     ]
   }

@@ -1,13 +1,22 @@
 # Core web scraping dependencies
-requests>=2.32.0
-beautifulsoup4>=4.14.0
-selenium>=4.35.0
+requests
+beautifulsoup4
+selenium
 
 # HTML/XML parsing optimization
-lxml>=6.0.0
+lxml
+
+# WebDriver management
+webdriver-manager
+
+# Data manipulation and analysis
+pandas
 
 # Testing framework
-pytest>=8.4.0
+pytest
 
 # Standard library typing extensions (for Python < 3.11)
-typing-extensions>=4.14.0
+typing-extensions
+
+# Additional utilities for file and path handling
+pathlib

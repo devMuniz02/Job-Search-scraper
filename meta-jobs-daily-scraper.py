@@ -5,7 +5,7 @@ import time
 from pathlib import Path
 from urllib.parse import urljoin
 from typing import Dict, List, Any
-from datetime import datetime
+import datetime
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By

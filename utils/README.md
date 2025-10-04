@@ -1,23 +1,25 @@
 # Utils Package Documentation
 
-The `utils` package provides a comprehensive set of utility functions for the Microsoft Jobs Scraper project. The package is organized into specialized modules for better maintainability and reusability.
+The `utils` package provides a comprehensive set of utility functions for the Microsoft & Meta Jobs Scraper project. The package is organized into specialized modules for better maintainability and reusability across both scraping systems.
 
 ## Package Structure
 
 ```
 utils/
 ├── __init__.py              # Package initialization and exports
-├── core.py                  # Core utility functions
-├── selenium_helpers.py      # Selenium web automation utilities
-├── config.py               # Configuration constants and settings
-└── patterns.py             # Regex patterns
+├── core.py                  # Core utility functions (677 lines)
+├── selenium_helpers.py      # Selenium web automation utilities (216 lines)
+├── config.py               # Microsoft Jobs configuration constants (140 lines)
+├── meta_config.py          # Meta Jobs configuration constants & settings
+├── patterns.py             # Regex patterns (20 lines)
+└── README.md               # This documentation file
 ```
 
 ## Module Overview
 
 ### `utils.core` - Core Utilities
 
-Contains general-purpose utility functions organized by category:
+Contains general-purpose utility functions used by both Microsoft and Meta scrapers, organized by category:
 
 **String Processing:**
 - `norm(s)` - Normalize whitespace in strings
@@ -57,16 +59,16 @@ Contains general-purpose utility functions organized by category:
 
 ### `utils.selenium_helpers` - Selenium Automation
 
-Selenium-specific functions for web scraping and browser automation:
+Selenium-specific functions for web scraping and browser automation used by both Microsoft and Meta scrapers:
 
 **Browser Management:**
 - `launch_chrome(local_chromedriver)` - Launch Chrome with optimal settings
 
 **DOM Interaction:**
-- `find_cards(driver)` - Find job listing cards
-- `title_from_card(card)` - Extract job titles from cards
-- `job_id_from_card(card)` - Extract job IDs from cards
-- `link_from_card(card, job_id)` - Extract job URLs from cards
+- `find_cards(driver)` - Find job listing cards (Microsoft-specific)
+- `title_from_card(card)` - Extract job titles from cards (Microsoft-specific)
+- `job_id_from_card(card)` - Extract job IDs from cards (Microsoft-specific)
+- `link_from_card(card, job_id)` - Extract job URLs from cards (Microsoft-specific)
 
 **Navigation:**
 - `click_next_if_possible(driver)` - Click pagination next button
@@ -74,11 +76,11 @@ Selenium-specific functions for web scraping and browser automation:
 - `wait_for_elements(driver, css_selector, timeout)` - Wait for elements to load
 
 **Page Processing:**
-- `process_cards_on_page(driver)` - Process all job cards on current page
+- `process_cards_on_page(driver)` - Process all job cards on current page (Microsoft-specific)
 
-### `utils.config` - Configuration Management
+### `utils.config` - Microsoft Jobs Configuration
 
-Centralized configuration constants:
+Centralized configuration constants for Microsoft Jobs scraper:
 
 **URLs & Paths:**
 - `SEARCH_URL` - Microsoft jobs search URL
@@ -97,13 +99,42 @@ Centralized configuration constants:
 **Filtering Rules:**
 - `AVOID_RULES` - Job filtering criteria
 
+**Filtering Rules:**
+- `AVOID_RULES` - Job filtering criteria
+
 **Request Settings:**
-- `USER_AGENT` - HTTP user agent string
-- `HTTP_TIMEOUT` - HTTP request timeout
+- Chrome options and user agent configurations
+
+### `utils.meta_config` - Meta Jobs Configuration
+
+Specialized configuration for Meta Jobs incremental scraper:
+
+**URLs & Paths:**
+- `BASE_URL` - Meta job details base URL
+- `JOBS_LIST_URL` - Meta jobs listing page URL  
+- `OUT_PATH`, `DETAILS_PATH` - Output file paths
+
+**Scraping Settings:**
+- `MAX_PAGES` - Maximum pages for incremental scraping
+- `HEADLESS` - Browser headless mode setting
+- `DELAY_BETWEEN_PAGES` - Delay between page scraping
+- `DELAY_BETWEEN_JOBS` - Delay between job detail scraping
+- `REACT_RENDER_DELAY` - Wait time for React rendering
+
+**CSS Selectors & XPaths:**
+- `JOB_LINKS_XPATH` - XPath for job links
+- `JOB_ID_PATTERN` - Regex pattern for job ID extraction
+- `JOB_DETAIL_CLASSES` - CSS classes for job detail extraction
+- `COOKIE_XPATHS` - Cookie consent button selectors
+
+**Browser Configuration:**
+- `CHROME_OPTIONS` - Chrome browser options
+- `HEADLESS_OPTIONS` - Additional options for headless mode
+- `WINDOW_WIDTH`, `WINDOW_HEIGHT` - Browser window dimensions
 
 ### `utils.patterns` - Regex Patterns
 
-Compiled regex patterns used throughout the scraper:
+Compiled regex patterns for job parsing (shared between scrapers):
 
 - `JOB_ID_FROM_ARIA` - Extract job IDs from ARIA labels
 - `ISO_DATE_RE` - ISO date format pattern
@@ -115,60 +146,63 @@ Compiled regex patterns used throughout the scraper:
 
 ## Usage Examples
 
-### Basic Import and Usage
+### Microsoft Jobs Scraper Usage
 
 ```python
-# Import specific functions
-from utils import norm, parse_date, load_db, launch_chrome
-
-# Import configuration
-from utils import SEARCH_URL, MAX_PAGES, AVOID_RULES
-
-# Import patterns
-from utils import USD_RANGE, REQ_RE
-```
-
-### Complete Scraper Example
-
-```python
+# Import Microsoft-specific utilities
 from utils import (
     launch_chrome, find_cards, title_from_card,
     load_db, save_db_atomic, sleep_a_bit,
-    SEARCH_URL, PAGE_LOAD_TIMEOUT
+    SEARCH_URL, MAX_PAGES, AVOID_RULES
 )
 
-# Setup
+# Setup Microsoft scraper
 driver = launch_chrome()
-driver.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
-db = load_db("jobs.json")
-
-# Scrape
 driver.get(SEARCH_URL)
 cards = find_cards(driver)
 
 for card in cards:
     title = title_from_card(card)
-    print(f"Found job: {title}")
-    sleep_a_bit()
-
-# Save and cleanup
-save_db_atomic("jobs.json", db)
+    print(f"Found Microsoft job: {title}")
+    
 driver.quit()
 ```
 
-### Processing Utilities
+### Meta Jobs Scraper Usage
 
 ```python
-from utils import extract_pay_ranges, split_qualifications
+# Import Meta-specific configuration
+from utils.meta_config import *
 
-# Extract salary information
+# Setup Meta incremental scraper
+existing_ids = load_existing_ids(OUT_PATH)
+driver = setup_driver(headless=HEADLESS)
+
+# Scrape new jobs until known IDs found
+new_job_ids = scrape_new_jobs_until_known_id(
+    driver, JOBS_LIST_URL, existing_ids, max_pages=MAX_PAGES
+)
+
+print(f"Found {len(new_job_ids)} new Meta jobs")
+```
+
+### Shared Processing Utilities
+
+```python
+from utils import extract_pay_ranges, split_qualifications, parse_date
+
+# Extract salary information (works for both companies)
 text = "The salary range is USD $80,000 - $120,000"
 ranges = extract_pay_ranges(text)
 print(ranges)  # [{'region': 'U.S.', 'range': 'USD $80,000 - $120,000'}]
 
-# Split job qualifications
+# Split job qualifications (Microsoft-specific)
 qual_text = "Required Qualifications: Python experience. Preferred Qualifications: AWS knowledge."
 req, pref, other = split_qualifications(qual_text)
+
+# Parse dates (shared utility)
+date_obj = parse_date("Jan 15, 2024")
+print(date_obj)  # 2024-01-15 00:00:00
 ```
 
 ## Installation and Setup
@@ -177,13 +211,19 @@ The utils package is automatically available when you're in the project director
 
 ```bash
 # Activate virtual environment
-C:/path/to/venv/Scripts/activate
+# Windows
+venv\Scripts\activate
+# Linux/Mac  
+source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Test the package
-python -c "from utils import norm; print('✓ Utils package working')"
+# Test Microsoft utils
+python -c "from utils import norm; print('✓ Microsoft utils working')"
+
+# Test Meta utils  
+python -c "from utils.meta_config import BASE_URL; print('✓ Meta utils working')"
 ```
 
 ## Testing
@@ -202,6 +242,35 @@ The test suite validates:
 - URL manipulation
 - Pattern matching
 - Configuration loading
+- Cross-scraper compatibility
+
+## Configuration Files Comparison
+
+| Feature | `utils/config.py` (Microsoft) | `utils/meta_config.py` (Meta) |
+|---------|-------------------------------|-------------------------------|
+| **Purpose** | Microsoft Jobs scraper config | Meta Jobs incremental scraper |
+| **Filtering** | Advanced rule-based filtering | No filtering (collect all) |
+| **Scraping Mode** | Full pagination | Incremental (stop at known IDs) |
+| **Data Organization** | By posting date + filtering | By discovery date |
+| **Main URL** | Microsoft Careers | Meta Careers |
+| **Complexity** | High (140+ lines) | Medium (130+ lines) |
+
+## Architecture Benefits
+
+### 🎯 **Modular Design**
+- **Shared Core**: Common utilities work for both scrapers
+- **Specialized Config**: Company-specific settings isolated
+- **Reusable Components**: Browser automation shared across projects
+
+### ⚡ **Performance**
+- **Smart Caching**: Incremental Meta scraping reduces redundant work
+- **Optimized Timing**: Different delay strategies per company
+- **Resource Management**: Proper browser lifecycle management
+
+### 🛡️ **Maintainability**  
+- **Single Source of Truth**: Centralized configuration
+- **Easy Testing**: Comprehensive test coverage
+- **Clear Separation**: Company-specific vs shared functionality
 
 ## Benefits of the Package Structure
 

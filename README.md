@@ -1,50 +1,81 @@
-# Microsoft Jobs Scraper
+# Microsoft & Meta Jobs Scraper
 
-A comprehensive Python web scraper for extracting job listings from Microsoft Careers website with advanced filtering, data processing, and modular utility architecture.
+A comprehensive Python web scraper for extracting job listings from both Microsoft Careers and Meta Careers websites with advanced filtering, data processing, incremental scraping, and automated daily collection via GitHub Actions.
 
 ## 🌟 Features
 
+### 🏢 **Microsoft Jobs Scraper**
 - **✅ Modular Architecture**: Clean 55-line main script using utils package
 - **🔄 Automated Job Scraping**: Extract job listings from Microsoft careers page
 - **🎯 Intelligent Filtering**: Filter jobs based on visa requirements, experience level, technologies
 - **📊 Data Processing**: Parse job details, salary ranges, locations, and qualifications
 - **📅 Date Organization**: Automatically organize scraped jobs by posting date
+
+### 🌐 **Meta Jobs Scraper**
+- **⚡ Incremental Scraping**: Smart detection to only scrape new jobs since last run
+- **🔄 Daily Automation**: Automated daily collection via GitHub Actions
+- **� Daily Tracking**: Save each day's new jobs to separate dated files
+- **�🛡️ Duplicate Prevention**: Stops scraping when previously known jobs are encountered
+- **🎯 Efficient Processing**: Only scrapes details for newly discovered jobs
+
+### 🤖 **Shared Features**
 - **🛡️ Robust Error Handling**: Retry mechanisms and graceful failure handling
 - **🤖 Headless Browser Support**: Selenium automation with Chrome headless mode
 - **🧪 Comprehensive Testing**: Complete test suite for all utility functions
 - **⚡ Enhanced Performance**: Improved timing and wait mechanisms for reliable scraping
+- **🚀 GitHub Actions**: Automated daily scraping with comprehensive reporting
 
 ## 📁 Project Structure
 
 ```
 Job-Search-scrapper/
-├── ms-job-scrapper.py          # 🎯 Main scraper script (refactored modular version)
-├── old-ms-job-scrapper.py      # 📦 Original monolithic version (backup)
-├── test_utils.py              # 🧪 Comprehensive test suite for utils
-├── scrapper.ipynb             # 📝 Jupyter notebook for experimentation
-├── requirements.txt           # 📋 Python dependencies
-├── README.md                  # 📖 Main project documentation (this file)
-├── README_UTILS.md            # 🔧 Utils package detailed documentation
-├── REFACTORING_ANALYSIS.md    # 📊 Refactoring analysis and comparison
-├── utils/                     # 🛠️ Modular utilities package
-│   ├── __init__.py           # Package initialization
-│   ├── core.py               # Core utility functions (677 lines)
-│   ├── selenium_helpers.py   # Browser automation utilities (216 lines)
-│   ├── config.py             # Configuration constants (140 lines)
-│   └── patterns.py           # Regex patterns (20 lines)
-└── ms-jobs/                  # 📂 Output directory for scraped job data
-    ├── jobs_ms.json          # Raw job listings
-    ├── jobs_ms_details.json  # Detailed job information
-    ├── jobs_ms_avoid_hits_by_field.json # Filtered jobs by rules
-    ├── jobs_ms_avoid_hits.json # Legacy filtered jobs format
-    └── jobs_by_date/         # Jobs organized by posting date
-        ├── jobs_18_september_2025.json
-        ├── jobs_23_september_2025.json
-        ├── jobs_24_september_2025.json
-        ├── jobs_25_september_2025.json
-        ├── jobs_26_september_2025.json
-        ├── jobs_27_september_2025.json
-        └── jobs_29_september_2025.json
+├── 🏢 Microsoft Jobs Scraper
+│   ├── ms-job-scrapper.py          # 🎯 Main MS scraper script (refactored modular version)
+│   └── old-ms-job-scrapper.py      # 📦 Original monolithic version (backup)
+├── 🌐 Meta Jobs Scraper  
+│   ├── meta-jobs-daily-scraper.py  # 🔄 Daily incremental Meta scraper
+│   ├── temp-meta-jobs-incremental-scraper.py # 🧪 Development version
+│   └── temp-meta-job-scrapper.ipynb # 📝 Jupyter notebook for experimentation
+├── 🧪 Testing & Development
+│   ├── test_utils.py              # 🧪 Comprehensive test suite for utils
+│   ├── test_content_comparison.py # 🔍 Content comparison tests
+│   ├── example_scraper.py         # � Example implementation
+│   └── remove_ids.ipynb           # 🧹 Data cleanup utilities
+├── ⚙️ Configuration & Setup
+│   ├── requirements.txt           # 📋 Python dependencies
+│   ├── CONFIG_GUIDE.md            # ⚙️ Configuration guide
+│   ├── README.md                  # 📖 Main project documentation (this file)
+│   ├── README_UTILS.md            # 🔧 Utils package detailed documentation
+│   └── LICENSE                    # � MIT License
+├── 🤖 Automation
+│   └── .github/workflows/
+│       └── daily-scraper.yml      # 🚀 GitHub Actions daily automation
+├── utils/                         # 🛠️ Modular utilities package
+│   ├── __init__.py               # Package initialization
+│   ├── core.py                   # Core utility functions (677 lines)
+│   ├── selenium_helpers.py       # Browser automation utilities (216 lines)
+│   ├── config.py                 # MS Jobs configuration constants (140 lines)
+│   ├── meta_config.py            # Meta Jobs configuration constants
+│   ├── patterns.py               # Regex patterns (20 lines)
+│   └── README.md                 # Utils package documentation
+├── 📂 Microsoft Jobs Data
+│   └── ms-jobs/                  # 📂 Output directory for MS job data
+│       ├── jobs_ms.json          # Raw job listings
+│       ├── jobs_ms_details.json  # Detailed job information
+│       ├── jobs_ms_avoid_hits_by_field.json # Filtered jobs by rules
+│       ├── jobs_ms_avoid_hits.json # Legacy filtered jobs format
+│       └── jobs_by_date/         # Jobs organized by posting date
+│           ├── jobs_01_october_2025.json
+│           ├── jobs_02_october_2025.json
+│           └── jobs_03_october_2025.json
+└── 📂 Meta Jobs Data
+    └── meta-jobs/                # 📂 Output directory for Meta job data
+        ├── meta_job_ids.json     # All Meta job IDs (incremental)
+        ├── meta_job_details.json # All Meta job details
+        └── jobs_by_date/         # Daily new jobs
+            ├── jobs_01_october_2025.json
+            ├── jobs_02_october_2025.json
+            └── jobs_03_october_2025.json
 ```
 
 ### 🔄 **Refactoring Achievement**
@@ -92,11 +123,30 @@ Job-Search-scrapper/
 
 ### Basic Usage
 
-#### **Recommended: Use the Refactored Version**
+#### **🏢 Microsoft Jobs Scraper**
 ```bash
+# Recommended: Use the refactored modular version
 python ms-job-scrapper.py
+
+# Backup: Use the original monolithic version
+python old-ms-job-scrapper.py
 ```
-*This is the clean, modular version with identical functionality*
+
+#### **🌐 Meta Jobs Scraper (Incremental)**
+```bash
+# Run daily incremental scraping (recommended)
+python meta-jobs-daily-scraper.py
+
+# Run development version
+python temp-meta-jobs-incremental-scraper.py
+```
+
+#### **🤖 Automated Daily Collection**
+The project includes GitHub Actions automation that runs both scrapers daily:
+- **Schedule**: 7:00 AM UTC daily
+- **Manual trigger**: Available via GitHub Actions interface
+- **Output**: Comprehensive reports and artifact uploads
+- **Auto-commit**: Results automatically committed to repository
 
 #### **Backup: Use the Original Version**
 ```bash
@@ -106,11 +156,15 @@ python old-ms-job-scrapper.py
 
 #### **Custom Implementation: Use Utils Package**
 ```python
+# Microsoft Jobs - Custom implementation
 from utils import (
     launch_chrome, find_cards, title_from_card,
     load_db, save_db_atomic, extract_pay_ranges,
     SEARCH_URL, MAX_PAGES
 )
+
+# Meta Jobs - Custom implementation  
+from utils.meta_config import *
 
 # Your custom scraping logic here
 driver = launch_chrome()
@@ -121,7 +175,7 @@ cards = find_cards(driver)
 
 ## 📊 Configuration
 
-### Scraping Settings
+### Microsoft Jobs Settings
 Edit `utils/config.py` to customize:
 
 ```python
@@ -130,7 +184,17 @@ PAGE_LOAD_TIMEOUT = 60           # Page load timeout (seconds)
 SLEEP_BETWEEN = (0.6, 1.2)      # Delay between requests
 ```
 
-### Filtering Rules
+### Meta Jobs Settings
+Edit `utils/meta_config.py` to customize:
+
+```python
+MAX_PAGES = 999                   # Maximum pages for incremental scraping
+HEADLESS = True                   # Run browser in headless mode
+DELAY_BETWEEN_PAGES = 2           # Delay between pages (seconds)
+DELAY_BETWEEN_JOBS = 1            # Delay between job detail scraping
+```
+
+### Filtering Rules (Microsoft Only)
 Customize job filtering in `utils/config.py`:
 
 ```python
@@ -162,10 +226,10 @@ The project features a modular utils package with the following components:
 - **DOM Interaction**: `find_cards()`, `title_from_card()`, `job_id_from_card()`
 - **Navigation**: `click_next_if_possible()`, `wait_for_new_page()`
 
-### Configuration (`utils.config`)
-- URLs, paths, and scraping settings
-- Field definitions and filtering rules
-- Request configurations
+### Configuration (`utils.config` & `utils.meta_config`)
+- **Microsoft**: URLs, paths, scraping settings, and filtering rules
+- **Meta**: Job scraping configuration, CSS selectors, and incremental settings
+- Request configurations and browser options
 
 ### Patterns (`utils.patterns`)
 - Compiled regex patterns for job parsing
@@ -173,7 +237,7 @@ The project features a modular utils package with the following components:
 
 ## 📈 Usage Examples
 
-### Basic Job Scraping
+### Basic Job Scraping - Microsoft
 ```python
 from utils import launch_chrome, find_cards, SEARCH_URL
 
@@ -187,6 +251,23 @@ for card in cards:
     print(f"Found: {title} (ID: {job_id})")
 
 driver.quit()
+```
+
+### Basic Job Scraping - Meta (Incremental)
+```python
+from utils.meta_config import *
+import time
+
+# Load existing IDs to implement incremental scraping
+existing_ids = load_existing_ids("meta-jobs/meta_job_ids.json")
+
+# Scrape new jobs until finding known IDs
+driver = setup_driver(headless=True)
+new_job_ids = scrape_new_jobs_until_known_id(
+    driver, JOBS_LIST_URL, existing_ids, max_pages=10
+)
+
+print(f"Found {len(new_job_ids)} new jobs")
 ```
 
 ### Data Processing
@@ -248,9 +329,9 @@ Testing string utilities...
 
 ## 📋 Output Data
 
-The scraper generates several data files:
+### Microsoft Jobs Output
 
-### `jobs_ms.json`
+#### `ms-jobs/jobs_ms.json`
 Raw job listings with basic information:
 ```json
 {
@@ -263,14 +344,46 @@ Raw job listings with basic information:
 }
 ```
 
-### `jobs_ms_details.json`
+#### `ms-jobs/jobs_ms_details.json`
 Detailed job information including qualifications, descriptions, and metadata.
 
-### `jobs_ms_avoid_hits_by_field.json`
+#### `ms-jobs/jobs_ms_avoid_hits_by_field.json`
 Filtered jobs based on the configured filtering rules.
 
-### `jobs_by_date/`
+#### `ms-jobs/jobs_by_date/`
 Jobs organized by posting date for easier analysis.
+
+### Meta Jobs Output
+
+#### `meta-jobs/meta_job_ids.json`
+Array of all Meta job IDs (incremental collection):
+```json
+["123456", "789012", "345678"]
+```
+
+#### `meta-jobs/meta_job_details.json`
+Detailed job information for all Meta jobs:
+```json
+{
+  "123456": {
+    "title": "Software Engineer",
+    "URL": "https://www.metacareers.com/jobs/123456",
+    "location": "Menlo Park, CA",
+    "responsibilities": "...",
+    "minimum_qualifications": "...",
+    "preferred_qualifications": "...",
+    "compensation": "..."
+  }
+}
+```
+
+#### `meta-jobs/jobs_by_date/`
+Daily collections of new jobs only:
+```json
+{
+  "123456": { /* job details for jobs found on this specific date */ }
+}
+```
 
 ## ⚙️ Advanced Configuration
 
@@ -354,16 +467,26 @@ For issues, questions, or contributions:
 
 ## 📈 Roadmap
 
-- [x] **Modular architecture refactoring** *(Completed September 2025)*
-- [x] **Comprehensive test suite** *(Completed September 2025)*
-- [x] **Enhanced timing and reliability** *(Completed September 2025)*
-- [ ] Database integration (PostgreSQL, MongoDB)
-- [ ] Web dashboard for job analytics
-- [ ] Email notifications for new jobs
-- [ ] Multi-company support (Google, Amazon, etc.)
-- [ ] Machine learning job recommendation
-- [ ] Docker containerization
-- [ ] REST API interface
+### ✅ Completed Features
+- [x] **Microsoft Jobs**: Modular architecture refactoring *(Completed September 2025)*
+- [x] **Microsoft Jobs**: Comprehensive test suite *(Completed September 2025)*
+- [x] **Microsoft Jobs**: Enhanced timing and reliability *(Completed September 2025)*
+- [x] **Meta Jobs**: Incremental scraping system *(Completed October 2025)*
+- [x] **Meta Jobs**: Daily automated collection *(Completed October 2025)*
+- [x] **Automation**: GitHub Actions daily workflow *(Completed October 2025)*
+- [x] **Data Organization**: Daily job tracking by date *(Completed October 2025)*
+
+### 🚀 Upcoming Features
+- [ ] **Multi-Company Expansion**: Google, Amazon, Apple job scrapers
+- [ ] **Database Integration**: PostgreSQL, MongoDB support
+- [ ] **Web Dashboard**: Job analytics and visualization interface
+- [ ] **Email Notifications**: Alerts for new jobs matching criteria
+- [ ] **Machine Learning**: Job recommendation system
+- [ ] **Docker Support**: Containerization for easy deployment
+- [ ] **REST API**: Interface for programmatic access
+- [ ] **Advanced Filtering**: ML-based job relevance scoring
+- [ ] **Real-time Updates**: WebSocket-based live job updates
+- [ ] **Mobile App**: React Native app for job browsing
 
 ---
 

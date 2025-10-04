@@ -1,4 +1,4 @@
-name: Daily Microsoft Jobs Scraper
+name: Daily Microsoft & Meta Jobs Scraper
 
 on:
   schedule:
@@ -44,9 +44,16 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
 
-    - name: Run job scraper
+    - name: Run Microsoft job scraper
       run: |
         python ms-job-scrapper.py
+      env:
+        # Set display for headless Chrome
+        DISPLAY: :99
+
+    - name: Run Meta job scraper
+      run: |
+        python meta-jobs-daily-scraper.py
       env:
         # Set display for headless Chrome
         DISPLAY: :99
@@ -75,11 +82,12 @@ jobs:
     - name: Create summary
       if: always()
       run: |
-        echo "## Daily Microsoft Jobs Scraping Results" >> $GITHUB_STEP_SUMMARY
+        echo "## Daily Microsoft & Meta Jobs Scraping Results" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         echo "**Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
         echo "" >> $GITHUB_STEP_SUMMARY
         
+        echo "### 🏢 Microsoft Jobs" >> $GITHUB_STEP_SUMMARY
         if [ -f "ms-jobs/jobs_ms.json" ]; then
           TOTAL_JOBS=$(python -c "import json; data=json.load(open('ms-jobs/jobs_ms.json')); print(len(data))")
           echo "**Total Jobs in Database:** $TOTAL_JOBS" >> $GITHUB_STEP_SUMMARY
@@ -98,8 +106,26 @@ jobs:
         
         if [ -d "ms-jobs/jobs_by_date" ]; then
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
-          find ms-jobs/jobs_by_date -name "*.json" -exec basename {} \; | head -10 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+          echo "**MS Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
+          find ms-jobs/jobs_by_date -name "*.json" -exec basename {} \; | head -5 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### 🌐 Meta Jobs" >> $GITHUB_STEP_SUMMARY
+        if [ -f "meta-jobs/meta_job_ids.json" ]; then
+          META_TOTAL_JOBS=$(python -c "import json; data=json.load(open('meta-jobs/meta_job_ids.json')); print(len(data))")
+          echo "**Total Meta Jobs in Database:** $META_TOTAL_JOBS" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -f "meta-jobs/meta_job_details.json" ]; then
+          META_DETAILED_JOBS=$(python -c "import json; data=json.load(open('meta-jobs/meta_job_details.json')); print(len(data))")
+          echo "**Meta Jobs with Details:** $META_DETAILED_JOBS" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ -d "meta-jobs/jobs_by_date" ]; then
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Meta Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
+          find meta-jobs/jobs_by_date -name "*.json" -exec basename {} \; | head -5 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
         fi
 
     - name: Upload artifacts
@@ -112,6 +138,9 @@ jobs:
           ms-jobs/jobs_ms_details.json
           ms-jobs/jobs_ms_avoid_hits_by_field.json
           ms-jobs/jobs_by_date/
+          meta-jobs/meta_job_ids.json
+          meta-jobs/meta_job_details.json
+          meta-jobs/jobs_by_date/
         retention-days: 30
 
     - name: Notify on failure

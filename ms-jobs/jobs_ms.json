@@ -1097,78 +1097,6 @@
     "url": "https://jobs.careers.microsoft.com/global/en/job/1878975/",
     "date_posted": null
   },
-  "1878035": {
-    "name": "Product Designer II",
-    "job_id": "1878035",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1878035/",
-    "date_posted": null
-  },
-  "1881276": {
-    "name": "Principal Product Manager",
-    "job_id": "1881276",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1881276/",
-    "date_posted": null
-  },
-  "1828770": {
-    "name": "Senior Applied Scientist-Word",
-    "job_id": "1828770",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1828770/",
-    "date_posted": null
-  },
-  "1879713": {
-    "name": "Senior Software Engineer",
-    "job_id": "1879713",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1879713/",
-    "date_posted": null
-  },
-  "1876026": {
-    "name": "Digital Solution Engineer - Cloud & AI Data",
-    "job_id": "1876026",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1876026/",
-    "date_posted": null
-  },
-  "1857039": {
-    "name": "Principal Software Engineer",
-    "job_id": "1857039",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1857039/",
-    "date_posted": null
-  },
-  "1882198": {
-    "name": "Senior Cloud Solution Architect",
-    "job_id": "1882198",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1882198/",
-    "date_posted": null
-  },
-  "1864645": {
-    "name": "Software Engineer II",
-    "job_id": "1864645",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1864645/",
-    "date_posted": null
-  },
-  "1882171": {
-    "name": "Senior Software Engineer",
-    "job_id": "1882171",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1882171/",
-    "date_posted": null
-  },
-  "1836776": {
-    "name": "Software Engineer II - Virtualization and Kernel",
-    "job_id": "1836776",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1836776/",
-    "date_posted": null
-  },
-  "1882176": {
-    "name": "Software Engineer II",
-    "job_id": "1882176",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1882176/",
-    "date_posted": null
-  },
-  "1877646": {
-    "name": "Principal Software Engineer - Azure Storage",
-    "job_id": "1877646",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1877646/",
-    "date_posted": null
-  },
   "1881942": {
     "name": "Principal Product Manager - Windows Fundamentals",
     "job_id": "1881942",
@@ -4482,5 +4410,605 @@
     "job_id": "1884264",
     "title": "Principal Software Engineer",
     "url": "https://jobs.careers.microsoft.com/global/en/job/1884264/"
+  },
+  "1887789": {
+    "job_id": "1887789",
+    "title": "Technical Principal Program Manager, Azure Compute & Efficiency Services",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887789/"
+  },
+  "1887944": {
+    "job_id": "1887944",
+    "title": "Senior Software Engineer - OneDrive & SharePoint AI",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887944/"
+  },
+  "1864981": {
+    "job_id": "1864981",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1864981/"
+  },
+  "1887633": {
+    "job_id": "1887633",
+    "title": "Senior Product Manager, Partner Support & Success",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887633/"
+  },
+  "1877531": {
+    "job_id": "1877531",
+    "title": "AI Business Processes- Growth Product Marketing Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1877531/"
+  },
+  "1885294": {
+    "job_id": "1885294",
+    "title": "Data Scientist II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885294/"
+  },
+  "1889021": {
+    "job_id": "1889021",
+    "title": "Content Creator - Creators & Fandom",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889021/"
+  },
+  "1885322": {
+    "job_id": "1885322",
+    "title": "Senior Security Operations Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885322/"
+  },
+  "1845343": {
+    "job_id": "1845343",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1845343/"
+  },
+  "1884058": {
+    "job_id": "1884058",
+    "title": "Director Sales Insights and Excellence",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884058/"
+  },
+  "1887034": {
+    "job_id": "1887034",
+    "title": "Senior Product Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887034/"
+  },
+  "1884067": {
+    "job_id": "1884067",
+    "title": "Senior AI Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884067/"
+  },
+  "1889513": {
+    "job_id": "1889513",
+    "title": "Critical Environment Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889513/"
+  },
+  "1889491": {
+    "job_id": "1889491",
+    "title": "Data Center Inventory & Asset Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889491/"
+  },
+  "1842746": {
+    "job_id": "1842746",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1842746/"
+  },
+  "1889448": {
+    "job_id": "1889448",
+    "title": "Graphics Technical Artist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889448/"
+  },
+  "1883599": {
+    "job_id": "1883599",
+    "title": "Senior Software Engineer- Minecraft Marketplace",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883599/"
+  },
+  "1887027": {
+    "job_id": "1887027",
+    "title": "Sales Strategy Enablement Lead",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887027/"
+  },
+  "1887171": {
+    "job_id": "1887171",
+    "title": "Group Impact Investments Manager -Sustainability",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887171/"
+  },
+  "1838180": {
+    "job_id": "1838180",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1838180/"
+  },
+  "1885814": {
+    "job_id": "1885814",
+    "title": "Principal Software Engineer - Front End",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885814/"
+  },
+  "1877923": {
+    "job_id": "1877923",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1877923/"
+  },
+  "1886884": {
+    "job_id": "1886884",
+    "title": "Digital Account Executive",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886884/"
+  },
+  "1885173": {
+    "job_id": "1885173",
+    "title": "Principal Product Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885173/"
+  },
+  "1886631": {
+    "job_id": "1886631",
+    "title": "Senior Software Engineer - Real-Time Communications",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886631/"
+  },
+  "1887169": {
+    "job_id": "1887169",
+    "title": "Senior AI Product Manager, M365 AI Experiences",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887169/"
+  },
+  "1889446": {
+    "job_id": "1889446",
+    "title": "Mission Account Executive",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889446/"
+  },
+  "1886951": {
+    "job_id": "1886951",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886951/"
+  },
+  "1833842": {
+    "job_id": "1833842",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1833842/"
+  },
+  "1879087": {
+    "job_id": "1879087",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1879087/"
+  },
+  "1886519": {
+    "job_id": "1886519",
+    "title": "Senior Applied Scientist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886519/"
+  },
+  "1883470": {
+    "job_id": "1883470",
+    "title": "Principal Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883470/"
+  },
+  "1854048": {
+    "job_id": "1854048",
+    "title": "Principal Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1854048/"
+  },
+  "1861363": {
+    "job_id": "1861363",
+    "title": "Principal Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1861363/"
+  },
+  "1862774": {
+    "job_id": "1862774",
+    "title": "Software Engineer II - Windows Debugging",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1862774/"
+  },
+  "1889393": {
+    "job_id": "1889393",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889393/"
+  },
+  "1889380": {
+    "job_id": "1889380",
+    "title": "Critical Environment Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889380/"
+  },
+  "1889392": {
+    "job_id": "1889392",
+    "title": "Data Center Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889392/"
+  },
+  "1877929": {
+    "job_id": "1877929",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1877929/"
+  },
+  "1889398": {
+    "job_id": "1889398",
+    "title": "Data Center Inventory & Asset Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889398/"
+  },
+  "1885741": {
+    "job_id": "1885741",
+    "title": "Principal Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885741/"
+  },
+  "1832615": {
+    "job_id": "1832615",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1832615/"
+  },
+  "1883851": {
+    "job_id": "1883851",
+    "title": "Worldwide Growth and Analytics Lead",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883851/"
+  },
+  "1862623": {
+    "job_id": "1862623",
+    "title": "Senior Security Researcher",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1862623/"
+  },
+  "1889290": {
+    "job_id": "1889290",
+    "title": "Principal Firmware AI Architect",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889290/"
+  },
+  "1884363": {
+    "job_id": "1884363",
+    "title": "Dynamics 365 Sales, Service and Power Platform Solution Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884363/"
+  },
+  "1885791": {
+    "job_id": "1885791",
+    "title": "Partner Enablement Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885791/"
+  },
+  "1827725": {
+    "job_id": "1827725",
+    "title": "Senior Machine Learning Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1827725/"
+  },
+  "1884064": {
+    "job_id": "1884064",
+    "title": "Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884064/"
+  },
+  "1877145": {
+    "job_id": "1877145",
+    "title": "Senior Director of Washington State Government Affairs",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1877145/"
+  },
+  "1887172": {
+    "job_id": "1887172",
+    "title": "Principal Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887172/"
+  },
+  "1885384": {
+    "job_id": "1885384",
+    "title": "Technical Program Manager 2",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885384/"
+  },
+  "1883878": {
+    "job_id": "1883878",
+    "title": "Senior Supply Chain Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883878/"
+  },
+  "1889251": {
+    "job_id": "1889251",
+    "title": "Critical Environment Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889251/"
+  },
+  "1889306": {
+    "job_id": "1889306",
+    "title": "Data Center Technician Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889306/"
+  },
+  "1885822": {
+    "job_id": "1885822",
+    "title": "Operational Excellence Events Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885822/"
+  },
+  "1881117": {
+    "job_id": "1881117",
+    "title": "Product Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1881117/"
+  },
+  "1887723": {
+    "job_id": "1887723",
+    "title": "Solution Specialist – AI Business Solutions",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887723/"
+  },
+  "1864486": {
+    "job_id": "1864486",
+    "title": "Principal Security Engineering Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1864486/"
+  },
+  "1884428": {
+    "job_id": "1884428",
+    "title": "Sales Enablement Lead, World-Wide (WW) Public Sector",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884428/"
+  },
+  "1889324": {
+    "job_id": "1889324",
+    "title": "Software Engineer - Azure Core Compute Team",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889324/"
+  },
+  "1889071": {
+    "job_id": "1889071",
+    "title": "Business Program Manager: MBA Internship Opportunity - Surface Business Team",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889071/"
+  },
+  "1877883": {
+    "job_id": "1877883",
+    "title": "Senior Business Planner - Microsoft Advertising",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1877883/"
+  },
+  "1882973": {
+    "job_id": "1882973",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882973/"
+  },
+  "1855330": {
+    "job_id": "1855330",
+    "title": "Principal Applied AI Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1855330/"
+  },
+  "1884191": {
+    "job_id": "1884191",
+    "title": "Senior Investigator",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884191/"
+  },
+  "1887936": {
+    "job_id": "1887936",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887936/"
+  },
+  "1887467": {
+    "job_id": "1887467",
+    "title": "TECHNICAL PROGRAM MANAGER II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887467/"
+  },
+  "1854069": {
+    "job_id": "1854069",
+    "title": "Principal Applied Scientist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1854069/"
+  },
+  "1884244": {
+    "job_id": "1884244",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884244/"
+  },
+  "1886975": {
+    "job_id": "1886975",
+    "title": "Senior Technical Program Manager (Compliance)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886975/"
+  },
+  "1887049": {
+    "job_id": "1887049",
+    "title": "Senior Business Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887049/"
+  },
+  "1872064": {
+    "job_id": "1872064",
+    "title": "Senior, AI Business Process Specialist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1872064/"
+  },
+  "1883580": {
+    "job_id": "1883580",
+    "title": "Director, Partner Support & Success",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883580/"
+  },
+  "1876472": {
+    "job_id": "1876472",
+    "title": "Security Operations Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1876472/"
+  },
+  "1886965": {
+    "job_id": "1886965",
+    "title": "Integrated Planning Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886965/"
+  },
+  "1886922": {
+    "job_id": "1886922",
+    "title": "Senior Technical Program Manager (Enterprise Risk Management)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886922/"
+  },
+  "1889148": {
+    "job_id": "1889148",
+    "title": "Post Doc Researcher - Economics – Microsoft Research",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889148/"
+  },
+  "1863230": {
+    "job_id": "1863230",
+    "title": "Environmental Health & Safety IC4",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1863230/"
+  },
+  "1885877": {
+    "job_id": "1885877",
+    "title": "Principle Engineer-Networking",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885877/"
+  },
+  "1863228": {
+    "job_id": "1863228",
+    "title": "Environmental Health & Safety IC4",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1863228/"
+  },
+  "1887808": {
+    "job_id": "1887808",
+    "title": "Principal Product Manager (Mobile)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887808/"
+  },
+  "1884061": {
+    "job_id": "1884061",
+    "title": "Principal AI Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884061/"
+  },
+  "1885787": {
+    "job_id": "1885787",
+    "title": "Senior Applied Scientist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885787/"
+  },
+  "1889077": {
+    "job_id": "1889077",
+    "title": "Cloud Solution Architect",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889077/"
+  },
+  "1889172": {
+    "job_id": "1889172",
+    "title": "Research Intern - MSR AI Interaction and Learning",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889172/"
+  },
+  "1842830": {
+    "job_id": "1842830",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1842830/"
+  },
+  "1882649": {
+    "job_id": "1882649",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882649/"
+  },
+  "1885221": {
+    "job_id": "1885221",
+    "title": "Environmental Compliance Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885221/"
+  },
+  "1886662": {
+    "job_id": "1886662",
+    "title": "Principal Data Scientist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886662/"
+  },
+  "1884294": {
+    "job_id": "1884294",
+    "title": "Software Engineer Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884294/"
+  },
+  "1844349": {
+    "job_id": "1844349",
+    "title": "Senior Software Engineer (AI/ML)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1844349/"
+  },
+  "1885812": {
+    "job_id": "1885812",
+    "title": "Business Operations Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885812/"
+  },
+  "1878041": {
+    "job_id": "1878041",
+    "title": "Service Engineer II - CTJ - Poly",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1878041/"
+  },
+  "1885306": {
+    "job_id": "1885306",
+    "title": "Technical Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885306/"
+  },
+  "1887841": {
+    "job_id": "1887841",
+    "title": "Sales Skilling Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887841/"
+  },
+  "1885693": {
+    "job_id": "1885693",
+    "title": "Content & Stakeholder Experience Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885693/"
+  },
+  "1887363": {
+    "job_id": "1887363",
+    "title": "Senior Scale Solution Providers Partner Development Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887363/"
+  },
+  "1882978": {
+    "job_id": "1882978",
+    "title": "Senior Security Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882978/"
+  },
+  "1877506": {
+    "job_id": "1877506",
+    "title": "Senior Data Center Technician - Night Shift",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1877506/"
+  },
+  "1858486": {
+    "job_id": "1858486",
+    "title": "Machine Learning Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1858486/"
+  },
+  "1835516": {
+    "job_id": "1835516",
+    "title": "Senior Software Engineer",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1835516/"
+  },
+  "1879178": {
+    "job_id": "1879178",
+    "title": "Circular Center Inventory & Asset Technician",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1879178/"
+  },
+  "1860879": {
+    "job_id": "1860879",
+    "title": "Senior Software Engineer – Windows Silicon and Hardware Enablement",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1860879/"
+  },
+  "1885842": {
+    "job_id": "1885842",
+    "title": "Senior Partner Development Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885842/"
+  },
+  "1883428": {
+    "job_id": "1883428",
+    "title": "Senior Business Planner",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1883428/"
+  },
+  "1881829": {
+    "job_id": "1881829",
+    "title": "Senior Cloud Solution Architect - AI Business Process (Multiple Openings)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1881829/"
+  },
+  "1882664": {
+    "job_id": "1882664",
+    "title": "Industry Advisor - Mobility",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882664/"
+  },
+  "1885639": {
+    "job_id": "1885639",
+    "title": "Senior Technical Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885639/"
+  },
+  "1882046": {
+    "job_id": "1882046",
+    "title": "Integrated Marketing Communications Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1882046/"
+  },
+  "1887833": {
+    "job_id": "1887833",
+    "title": "Senior Technical Program Manager",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887833/"
+  },
+  "1838658": {
+    "job_id": "1838658",
+    "title": "Back-End Software Engineer IIs & Senior Software Engineers",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1838658/"
+  },
+  "1853744": {
+    "job_id": "1853744",
+    "title": "Senior Data Center Inventory & Asset Technician",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1853744/"
+  },
+  "1853746": {
+    "job_id": "1853746",
+    "title": "Senior Data Center Inventory & Asset Technician (Night Shift)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1853746/"
+  },
+  "1879882": {
+    "job_id": "1879882",
+    "title": "Senior Critical Environment Technician (Night Shift)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1879882/"
+  },
+  "1855854": {
+    "job_id": "1855854",
+    "title": "Senior Critical Environment Technician (Training)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1855854/"
+  },
+  "1855857": {
+    "job_id": "1855857",
+    "title": "Senior Critical Environment Technician (Training Night Shift)",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1855857/"
+  },
+  "1884166": {
+    "job_id": "1884166",
+    "title": "Software Engineer II",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884166/"
+  },
+  "1884267": {
+    "job_id": "1884267",
+    "title": "Senior Account Technology Strategist",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884267/"
+  },
+  "1884265": {
+    "job_id": "1884265",
+    "title": "Senior Account Executive",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884265/"
   }
 }

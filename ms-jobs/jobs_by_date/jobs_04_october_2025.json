@@ -1,5 +1,28 @@
 [
   {
+    "job_id": "1879561",
+    "title": "Software Engineer",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 04, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1879561/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline with proven experience coding in languages including, but not limited to, C++, Rust, C#, Go, Java, or Python, OR equivalent experience. Academic and/or professional experience with cloud infrastructure, including: Networking and security fundamentals. Containerization technologies (e.g. Docker and/or Kubernetes). Cloud platforms (e.g., Azure, AWS, and/or GCP).",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 1+ year(s) technical engineering experience with coding in languages including, but not limited to, C#, Go, Java, or Python, OR Master's Degree in Computer Science or related technical field with proven experience coding in languages including, but not limited to, C#, Go, Java, or Python OR equivalent experience. Software Engineering IC2 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $84,200 - $165,200"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $109,000 - $180,400"
+      }
+    ]
+  },
+  {
     "job_id": "1864981",
     "title": "Software Engineer II",
     "locations": [

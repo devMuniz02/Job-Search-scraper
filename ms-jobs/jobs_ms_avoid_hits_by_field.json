@@ -43,7 +43,6 @@
       "1876873",
       "1876918",
       "1877519",
-      "1877646",
       "1877824",
       "1877912",
       "1878000",
@@ -129,7 +128,8 @@
       "1887172",
       "1887789",
       "1888073",
-      "1889446"
+      "1889446",
+      "1889704"
     ],
     "matches": {
       "1881669": {
@@ -239,11 +239,6 @@
         ]
       },
       "1875800": {
-        "required_qualifications_text": [
-          "6+ years"
-        ]
-      },
-      "1877646": {
         "required_qualifications_text": [
           "6+ years"
         ]
@@ -782,6 +777,11 @@
         "required_qualifications_text": [
           "6+ years"
         ]
+      },
+      "1889704": {
+        "required_qualifications_text": [
+          "6+ years"
+        ]
       }
     }
   },
@@ -821,14 +821,12 @@
       "1875818",
       "1875861",
       "1876002",
-      "1876026",
       "1876485",
       "1876491",
       "1876799",
       "1877519",
       "1877531",
       "1878008",
-      "1878035",
       "1878119",
       "1878810",
       "1878863",
@@ -929,7 +927,8 @@
       "1886988",
       "1887027",
       "1887818",
-      "1887841"
+      "1887841",
+      "1889704"
     ],
     "matches": {
       "1879566": {
@@ -1124,16 +1123,6 @@
       "1875563": {
         "title": [
           "copywriter"
-        ]
-      },
-      "1878035": {
-        "required_qualifications_text": [
-          "user experience"
-        ]
-      },
-      "1876026": {
-        "required_qualifications_text": [
-          "sales"
         ]
       },
       "1880539": {
@@ -1720,12 +1709,18 @@
         "title": [
           "marketing"
         ]
+      },
+      "1889704": {
+        "required_qualifications_text": [
+          "marketing"
+        ]
       }
     }
   },
   "unwanted_languages": {
     "job_ids": [
       "1819339",
+      "1822701",
       "1823064",
       "1823218",
       "1823366",
@@ -1734,14 +1729,12 @@
       "1827271",
       "1827725",
       "1828317",
-      "1828770",
       "1829111",
       "1832615",
       "1833842",
       "1836060",
       "1836063",
       "1836064",
-      "1836776",
       "1838658",
       "1839391",
       "1841252",
@@ -1798,7 +1791,6 @@
       "1864253",
       "1864309",
       "1864334",
-      "1864645",
       "1864894",
       "1864981",
       "1869160",
@@ -1831,7 +1823,6 @@
       "1876726",
       "1877544",
       "1877609",
-      "1877646",
       "1877929",
       "1878007",
       "1878935",
@@ -1845,6 +1836,7 @@
       "1879174",
       "1879479",
       "1879533",
+      "1879561",
       "1879591",
       "1879658",
       "1879689",
@@ -1894,8 +1886,6 @@
       "1882132",
       "1882147",
       "1882156",
-      "1882171",
-      "1882176",
       "1882182",
       "1882212",
       "1882214",
@@ -2418,51 +2408,6 @@
         ]
       },
       "1881313": {
-        "required_qualifications_text": [
-          "c#",
-          "c++",
-          "java",
-          "javascript"
-        ]
-      },
-      "1828770": {
-        "required_qualifications_text": [
-          "c#"
-        ]
-      },
-      "1864645": {
-        "required_qualifications_text": [
-          "c#",
-          "c++",
-          "java",
-          "javascript"
-        ]
-      },
-      "1882171": {
-        "required_qualifications_text": [
-          "c#",
-          "c++",
-          "java",
-          "javascript"
-        ]
-      },
-      "1836776": {
-        "required_qualifications_text": [
-          "c#",
-          "c++",
-          "java",
-          "javascript"
-        ]
-      },
-      "1882176": {
-        "required_qualifications_text": [
-          "c#",
-          "c++",
-          "java",
-          "javascript"
-        ]
-      },
-      "1877646": {
         "required_qualifications_text": [
           "c#",
           "c++",
@@ -4073,6 +4018,21 @@
           "java",
           "javascript"
         ]
+      },
+      "1879561": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java"
+        ]
+      },
+      "1822701": {
+        "required_qualifications_text": [
+          "c#",
+          "c++",
+          "java",
+          "javascript"
+        ]
       }
     }
   },
@@ -4080,6 +4040,7 @@
     "job_ids": [
       "1819339",
       "1819624",
+      "1822701",
       "1823064",
       "1823218",
       "1823366",
@@ -4089,7 +4050,6 @@
       "1827539",
       "1827725",
       "1828317",
-      "1828770",
       "1829111",
       "1830570",
       "1832615",
@@ -4100,7 +4060,6 @@
       "1835499",
       "1835516",
       "1836060",
-      "1836776",
       "1838180",
       "1838658",
       "1839391",
@@ -4144,7 +4103,6 @@
       "1856225",
       "1856745",
       "1856943",
-      "1857039",
       "1857051",
       "1857312",
       "1857474",
@@ -4183,7 +4141,6 @@
       "1864309",
       "1864334",
       "1864545",
-      "1864645",
       "1864732",
       "1864894",
       "1864981",
@@ -4226,7 +4183,6 @@
       "1876692",
       "1877458",
       "1877609",
-      "1877646",
       "1877824",
       "1877923",
       "1877925",
@@ -4250,10 +4206,10 @@
       "1879239",
       "1879479",
       "1879533",
+      "1879561",
       "1879591",
       "1879658",
       "1879689",
-      "1879713",
       "1879714",
       "1879796",
       "1879811",
@@ -4310,8 +4266,6 @@
       "1882147",
       "1882154",
       "1882156",
-      "1882171",
-      "1882176",
       "1882182",
       "1882212",
       "1882214",
@@ -4451,7 +4405,8 @@
       "1887944",
       "1888073",
       "1889290",
-      "1889393"
+      "1889393",
+      "1889704"
     ],
     "matches": {
       "1878935": {
@@ -5093,76 +5048,6 @@
           "python"
         ],
         "preferred_qualifications_text": [
-          "python"
-        ]
-      },
-      "1828770": {
-        "qualifications_text": [
-          "python"
-        ],
-        "required_qualifications_text": [
-          "python"
-        ]
-      },
-      "1879713": {
-        "qualifications_text": [
-          "python"
-        ],
-        "other_requirements_text": [
-          "python"
-        ]
-      },
-      "1857039": {
-        "qualifications_text": [
-          "python"
-        ]
-      },
-      "1864645": {
-        "qualifications_text": [
-          "python"
-        ],
-        "required_qualifications_text": [
-          "python"
-        ],
-        "preferred_qualifications_text": [
-          "python"
-        ]
-      },
-      "1882171": {
-        "qualifications_text": [
-          "python"
-        ],
-        "required_qualifications_text": [
-          "python"
-        ],
-        "preferred_qualifications_text": [
-          "python"
-        ]
-      },
-      "1836776": {
-        "qualifications_text": [
-          "python"
-        ],
-        "required_qualifications_text": [
-          "python"
-        ]
-      },
-      "1882176": {
-        "qualifications_text": [
-          "python"
-        ],
-        "required_qualifications_text": [
-          "python"
-        ],
-        "preferred_qualifications_text": [
-          "python"
-        ]
-      },
-      "1877646": {
-        "qualifications_text": [
-          "python"
-        ],
-        "required_qualifications_text": [
           "python"
         ]
       },
@@ -7913,11 +7798,39 @@
         "required_qualifications_text": [
           "python"
         ]
+      },
+      "1879561": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
+      },
+      "1822701": {
+        "qualifications_text": [
+          "python"
+        ],
+        "required_qualifications_text": [
+          "python"
+        ]
+      },
+      "1889704": {
+        "qualifications_text": [
+          "python"
+        ],
+        "preferred_qualifications_text": [
+          "python"
+        ]
       }
     }
   },
   "knowledge_fullstack": {
     "job_ids": [
+      "1822701",
       "1823218",
       "1823366",
       "1827539",
@@ -7943,7 +7856,6 @@
       "1881646",
       "1881918",
       "1882133",
-      "1882176",
       "1882214",
       "1882243",
       "1882248",
@@ -8030,14 +7942,6 @@
         "required_qualifications_text": [
           "API",
           "REST"
-        ]
-      },
-      "1882176": {
-        "required_qualifications_text": [
-          "HTTP",
-          "HTTPS",
-          "http",
-          "https"
         ]
       },
       "1859937": {
@@ -8275,6 +8179,11 @@
         "required_qualifications_text": [
           "REST"
         ]
+      },
+      "1822701": {
+        "required_qualifications_text": [
+          "Backend"
+        ]
       }
     }
   },
@@ -8432,18 +8341,6 @@
         "other_requirements_text": [
           "polygraph",
           "security clearance"
-        ]
-      }
-    }
-  },
-  "visa_sponsorship_block": {
-    "job_ids": [
-      "1882198"
-    ],
-    "matches": {
-      "1882198": {
-        "other_requirements_text": [
-          "U.S. citizens"
         ]
       }
     }

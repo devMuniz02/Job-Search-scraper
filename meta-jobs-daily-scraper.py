@@ -244,13 +244,13 @@ def scrape_details(list_of_job_ids: List[str], driver) -> Dict[str, Any]:
             # Compensation
             compensation = safe_pick(items_1, JOB_DETAIL_CLASSES["compensation_class"], 1, label="compensation")
 
-            print("--- Extracted Data ---")
-            print("Title:", title)
-            print("Location:", location)
-            print("Responsibilities:", responsibilities[:MAX_PREVIEW_CHARS] + ("..." if len(responsibilities) > MAX_PREVIEW_CHARS else ""))
-            print("Minimum Qualifications:", minimum_qualifications[:MAX_PREVIEW_CHARS] + ("..." if len(minimum_qualifications) > MAX_PREVIEW_CHARS else ""))
-            print("Preferred Qualifications:", preferred_qualifications[:MAX_PREVIEW_CHARS] + ("..." if len(preferred_qualifications) > MAX_PREVIEW_CHARS else ""))
-            print("Compensation:", compensation)
+            # print("--- Extracted Data ---")
+            # print("Title:", title)
+            # print("Location:", location)
+            # print("Responsibilities:", responsibilities[:MAX_PREVIEW_CHARS] + ("..." if len(responsibilities) > MAX_PREVIEW_CHARS else ""))
+            # print("Minimum Qualifications:", minimum_qualifications[:MAX_PREVIEW_CHARS] + ("..." if len(minimum_qualifications) > MAX_PREVIEW_CHARS else ""))
+            # print("Preferred Qualifications:", preferred_qualifications[:MAX_PREVIEW_CHARS] + ("..." if len(preferred_qualifications) > MAX_PREVIEW_CHARS else ""))
+            # print("Compensation:", compensation)
 
             results[job] = {
                 "title": title,

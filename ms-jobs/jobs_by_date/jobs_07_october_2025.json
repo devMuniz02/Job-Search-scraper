@@ -1,0 +1,48 @@
+[
+  {
+    "job_id": "1890925",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 07, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1890925/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Software Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1857949",
+    "title": "Senior Software Engineer - Azure Office of the CTO",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 07, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1857949/",
+    "required_qualifications_text": ": Bachelor’s Degree in Computer Science or a related technical discipline AND 4+ years of experience in software engineering using languages such as Go or Python, OR equivalent experience. 2+ years of experience building orchestration frameworks in cloud-native environments. 2+ years of experience working with Terraform, CloudFormation or Azure ARM (Azure Resource Manager) templates",
+    "preferred_qualifications_text": ": Expertise in Kubernetes, including CRDs (Custom Resources Definition), controllers, and operator patterns. Experience with DevOps automation and build, test and release pipelines. Experience building and maintaining CLI (Command Line Interface) tools. Commitment to fostering an inclusive, collaborative, and respectful culture. Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  }
+]

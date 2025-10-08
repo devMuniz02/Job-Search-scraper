@@ -1,0 +1,125 @@
+[
+  {
+    "job_id": "1891916",
+    "title": "Research Intern - Artificial Intelligence",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "None",
+    "date_posted": "Oct 08, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1891916/",
+    "required_qualifications_text": "Currently enrolled in a Master or PhD program in Computer Science, Electrical Engineering, Mathematics or a related field.",
+    "preferred_qualifications_text": "Ability to work independently and collaboratively in a dynamic and vibrant research environment. Willingness to embrace knowledge outside your field of research interest. Solid programming skill in Python, PyTorch and experience conducting experiments and writing papers. Familiarity with current various world modeling methods. Experience in LLM, either pre-train or post-train. Experience in RL, Computer Vision or Signal Processing is a plus. Relevant publications such as CVPR, ACL, ICML, ICCV, ECCV, NeurIPS, ICLR, EMNLP etc. Applied Sciences IC2 :",
+    "other_requirements_text": "Research Interns are expected to be physically located in their manager’s Microsoft worksite location for the duration of their internship. In addition to the qualifications below, you’ll need to submit a minimum of two reference letters for this position as well as a cover letter and any relevant work or research samples. After you submit your application, a request for letters may be sent to your list of references on your behalf. Note that reference letters cannot be requested until after you have submitted your application, and furthermore, that they might not be automatically requested for all candidates. You may wish to alert your letter writers in advance, so they will be ready to submit your letter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $5,460 -$10,680"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $7,040 -$11,640"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $6,550 -$12,880"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $8,480 - $13,"
+      }
+    ]
+  },
+  {
+    "job_id": "1886878",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 08, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1886878/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages C# and/or Python OR equivalent experience. 4+ years of demonstrated understanding of software architecture and design patterns. 1+ years of experience in AI engineering, and optimizing the efficiency of LLM solutions. 1+ years experience with distributed systems and cloud platforms.",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C# and/or Python OR Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to C# and/or Python OR equivalent experience. 5+ years of professional software development experience. Experience with Azure preferred. Experience with semantic data pipelines, ML model integration, or UX development. Familiarity with tools like Aether, Cosmos DB, Object Store, and XAP. Contributions to open-source projects or published research. Experience with Agile methodologies and DevOps practices. Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1863573",
+    "title": "Software Engineer II",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "None",
+    "date_posted": "Oct 08, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1863573/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience 1+ year(s) of experience with Cloud Services 1+ year(s) of experience using Generative AI (Gen AI) to build features and experiences",
+    "preferred_qualifications_text": "Master's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Experience in building AI-driven applications, prompt engineering and model evaluation. Web development skills (ASP.NET, React, etc.) SQL, Kusto and Machine Learning (ML) Self-driven and ability to work with minimal direction to research solutions to challenging business/technical problems. Data-driven approach to software engineering Software Engineering IC3 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1885826",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 08, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1885826/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience 1+ year experience with agentic AI development including, but not limited to Large Language Models (LLMs), Semantic Kernel, and LangChain",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ year(s) technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python. OR equivalent experience. 2+ years demonstrated familiarity and passion for AI technologies. Previous experience with Windows development. Communicates effectively and has experience working across disciplines and functions.‌ All qualified applicants will receive consideration for employment without regard to age, ancestry, color, family or medical care leave, gender identity or expression, genetic information, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran status, race, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable laws, regulations and ordinances. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. If you need assistance and/or a reasonable accommodation due to a disability during the application or the recruiting process, please send a request via the Accommodation request form . The",
+    "other_requirements_text": "s : Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check : This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1887378",
+    "title": "Back-End Senior Software Engineer - Security AI",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 08, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1887378/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 3+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices . 3+ years of experience designing, building, and operating scalable, highly available cloud services or distributed systems on platforms such as Azure, AWS, GCP, or comparable cloud environments , with production ownership and CI/CD pipeline integration .​ 2+ years of experience applying distributed systems concepts such as concurrency, conflict resolution , and consensus algorithms to build resilient and maintainable back-end architectures .​ 2+ years of experience building systems with emphasis on reliability , durability , and operational efficiency , including experience with live site operations , incident response , and performance optimization .​",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 2+ years of experience designing or working with secure execution environments (e.g., sandboxing , containerization , virtualization ) for safe workload handling , including exposure to malware analysis or threat intelligence workflows . 2+ years of experience in MLOps , AIOps , or SecDevOps , including deploying and maintaining ML/AI services on cloud platforms such as Azure , AWS , or GCP , with a focus on automation , scalability , and security .​ Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. Additional or",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  }
+]

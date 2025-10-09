@@ -1,0 +1,48 @@
+[
+  {
+    "job_id": "1875957",
+    "title": "Sr Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "None",
+    "date_posted": "Oct 09, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1875957/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Experience with Data Handling at scale Experience building and operating cloud-based mission critical software Experience with Kubernetes/AWS/GCP/Azure is a big plus Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Additional or",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1891952",
+    "title": "Principal Software Engineer - Azure Core",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 09, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1891952/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) experience bootstrapping and managing data center (DC) infrastructure , including device inventory, diagnosis, and repairs. Bare-metal provisioning using Preboot Execution Environment (PXE), iPXE, Redfish, Open Baseboard Management Controller (OpenBMC), Intelligent Platform Management Interface (IPMI), and Simple Network Management Protocol (SNMP). Networking and security expertise in high-performance networking technologies such as NVIDIA Collective Communications Library (NCCL), InfiniBand Extensions for Scalable High-Performance Computing (IMEX), Remote Direct Memory Access (RDMA) over InfiniBand or RDMA over Converged Ethernet version 2 (RoCEv2), and Extended Berkeley Packet Filter (eBPF). Driver and firmware lifecycle management, including Graphics Processing Unit (GPU) diagnostics. 1+ year(s) experience with storage and acceleration technologies for Artificial Intelligence (AI) workloads, including distributed storage systems for multi-exabyte AI workloads, high-throughput data pipelines, preprocessing, and dataset versioning. Data Processing Unit (DPU) acceleration. Linux and GPU internals expertise for performance optimization and troubleshooting. Kernel-level performance tuning, including Non-Uniform Memory Access (NUMA) awareness, Interrupt Request (IRQ) balancing, and control group (cgroup) tuning for GPUs.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, OR Python OR Master's Degree in Computer Science or related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) experience with Artificial Intelligence (AI) and Machine Learning (ML) job scheduling and orchestration at scale, using technologies such as Simple Linux Utility for Resource Management (SLURM), Ray, and Kueue. Model training optimization for performance and scalability. 1+ year(s) experience improving model serving and inference efficiency, ensuring low latency and high throughput for production workloads. Software Engineering IC6 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $163,000 - $296,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $220,800 - $331,200"
+      }
+    ]
+  }
+]

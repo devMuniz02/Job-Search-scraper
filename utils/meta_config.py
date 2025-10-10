@@ -19,7 +19,7 @@ BASE_URL = "https://www.metacareers.com/jobs/"
 JOBS_LIST_URL = "https://www.metacareers.com/jobs?sort_by_new=true&offices[0]=North%20America"
 
 # Output file paths
-OUTPUT_DIR = "meta-jobs"
+OUTPUT_DIR = "Meta-jobs"
 JOB_IDS_FILE = "meta_job_ids.json"
 JOB_DETAILS_FILE = "meta_job_details.json"
 

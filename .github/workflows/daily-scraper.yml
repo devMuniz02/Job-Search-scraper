@@ -46,7 +46,7 @@ jobs:
 
     - name: Run Microsoft job scraper
       run: |
-        python ms-job-scrapper.py
+        python ms-jobs-daily-scrapper.py
       env:
         # Set display for headless Chrome
         DISPLAY: :99
@@ -82,51 +82,95 @@ jobs:
     - name: Create summary
       if: always()
       run: |
-        echo "## Daily Microsoft & Meta Jobs Scraping Results" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "**Date:** $(date +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-        
-        echo "### 🏢 Microsoft Jobs" >> $GITHUB_STEP_SUMMARY
-        if [ -f "ms-jobs/jobs_ms.json" ]; then
-          TOTAL_JOBS=$(python -c "import json; data=json.load(open('ms-jobs/jobs_ms.json')); print(len(data))")
-          echo "**Total Jobs in Database:** $TOTAL_JOBS" >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        if [ -f "ms-jobs/jobs_ms_details.json" ]; then
-          DETAILED_JOBS=$(python -c "import json; data=json.load(open('ms-jobs/jobs_ms_details.json')); print(len(data))")
-          echo "**Jobs with Details:** $DETAILED_JOBS" >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        if [ -f "ms-jobs/jobs_ms_avoid_hits_by_field.json" ]; then
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Filtered Categories:**" >> $GITHUB_STEP_SUMMARY
-          python -c "import json; data=json.load(open('ms-jobs/jobs_ms_avoid_hits_by_field.json')); [print('- ' + k + ': ' + str(len(v.get('job_ids', [])))) for k, v in data.items()]" >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        if [ -d "ms-jobs/jobs_by_date" ]; then
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**MS Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
-          find ms-jobs/jobs_by_date -name "*.json" -exec basename {} \; | head -5 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "### 🌐 Meta Jobs" >> $GITHUB_STEP_SUMMARY
-        if [ -f "meta-jobs/meta_job_ids.json" ]; then
-          META_TOTAL_JOBS=$(python -c "import json; data=json.load(open('meta-jobs/meta_job_ids.json')); print(len(data))")
-          echo "**Total Meta Jobs in Database:** $META_TOTAL_JOBS" >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        if [ -f "meta-jobs/meta_job_details.json" ]; then
-          META_DETAILED_JOBS=$(python -c "import json; data=json.load(open('meta-jobs/meta_job_details.json')); print(len(data))")
-          echo "**Meta Jobs with Details:** $META_DETAILED_JOBS" >> $GITHUB_STEP_SUMMARY
-        fi
-        
-        if [ -d "meta-jobs/jobs_by_date" ]; then
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "**Meta Jobs by Date Files:**" >> $GITHUB_STEP_SUMMARY
-          find meta-jobs/jobs_by_date -name "*.json" -exec basename {} \; | head -5 | sed 's/^/- /' >> $GITHUB_STEP_SUMMARY
-        fi
+        python - <<'PY'
+        import json
+        import os
+        import glob
+        from pathlib import Path
+        from datetime import datetime
+
+        cfg = json.load(open('config.json'))
+        out_path = os.environ.get('GITHUB_STEP_SUMMARY', None)
+        if not out_path:
+            # Fallback to stdout if the environment variable is missing
+            import sys
+            _out = sys.stdout
+        else:
+            _out = open(out_path, 'a', encoding='utf-8')
+
+        def write(s=''):
+            _out.write(s + '\n')
+
+        company_names = ', '.join(c.get('companyName', '') for c in cfg.get('companies', []))
+        write(f"## Daily {company_names} Jobs Scraping Results")
+        write()
+        write(f"**Date:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
+        write()
+
+        # Look for any folders that end with '-jobs' and try to match company name to folder name (case-insensitive)
+        jobs_folders = [p for p in glob.glob('*-jobs')]
+
+        for comp in cfg.get('companies', []):
+            name = comp.get('companyName')
+            write(f"### 🏢 {name} Jobs")
+
+            # find best matching folder
+            candidates = [p for p in jobs_folders if name.lower() in p.lower()]
+            folder = Path(candidates[0]) if candidates else None
+
+            if folder and folder.exists():
+                # total ids file (look for *_ids.json)
+                ids_files = list(folder.glob('*_ids.json'))
+                if ids_files:
+                    try:
+                        data = json.load(open(ids_files[0], encoding='utf-8'))
+                        write(f"**Total Jobs in Database:** {len(data)}")
+                    except Exception:
+                        write(f"**Total Jobs in Database:** (could not read {ids_files[0].name})")
+
+                # details file (look for *_details.json)
+                details_files = list(folder.glob('*_details.json'))
+                if details_files:
+                    try:
+                        data = json.load(open(details_files[0], encoding='utf-8'))
+                        write(f"**Jobs with Details:** {len(data)}")
+                    except Exception:
+                        write(f"**Jobs with Details:** (could not read {details_files[0].name})")
+
+                # filtered / avoid files
+                avoid_files = [p for p in folder.glob('*avoid*.json')]
+                if avoid_files:
+                    write()
+                    write("**Filtered Categories:**")
+                    try:
+                        data = json.load(open(avoid_files[0], encoding='utf-8'))
+                        if isinstance(data, dict):
+                            for k, v in data.items():
+                                count = 0
+                                if isinstance(v, dict):
+                                    count = len(v.get('job_ids', []))
+                                write(f"- {k}: {count}")
+                        else:
+                            write(f"- (unexpected format in {avoid_files[0].name})")
+                    except Exception:
+                        write(f"- (could not read {avoid_files[0].name})")
+
+                # jobs_by_date listing
+                bydate = folder / 'jobs_by_date'
+                if bydate.exists() and bydate.is_dir():
+                    write()
+                    write(f"**{name} Jobs by Date Files:**")
+                    files = sorted([f.name for f in bydate.glob('*.json')], reverse=True)[:5]
+                    for fn in files:
+                        write(f"- {fn}")
+            else:
+                write(f"(No job folder found for {name})")
+
+            write()
+
+        if out_path:
+            _out.close()
+        PY
 
     - name: Upload artifacts
       if: always()
@@ -134,13 +178,13 @@ jobs:
       with:
         name: job-scraping-results-${{ github.run_number }}
         path: |
-          ms-jobs/jobs_ms.json
-          ms-jobs/jobs_ms_details.json
-          ms-jobs/jobs_ms_avoid_hits_by_field.json
-          ms-jobs/jobs_by_date/
-          meta-jobs/meta_job_ids.json
-          meta-jobs/meta_job_details.json
-          meta-jobs/jobs_by_date/
+          Microsoft-jobs/ms_job_ids.json
+          Microsoft-jobs/ms_job_details.json
+          Microsoft-jobs/ms_job_avoid_hits_by_field.json
+          Microsoft-jobs/jobs_by_date/
+          Meta-jobs/meta_job_ids.json
+          Meta-jobs/meta_job_details.json
+          Meta-jobs/jobs_by_date/
         retention-days: 30
 
     - name: Notify on failure

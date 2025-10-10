@@ -32,14 +32,15 @@ with open("config.json") as f:
 # URLs and paths
 SEARCH_URL = config["companies"][0]["searchSettings"]["searchURL"]
 FOLDER = f"{config['companies'][0]['companyName']}-jobs"
-DB_PATH = f"{FOLDER}/jobs_ms.json"
-DB_PATH_DETAILS = f"{FOLDER}/jobs_ms_details.json"
-DB_PATH_FILTERED = f"{FOLDER}/jobs_ms_avoid_hits_by_field.json"
+DB_PATH = f"{FOLDER}/ms_job_ids.json"
+DB_PATH_DETAILS = f"{FOLDER}/ms_job_details.json"
+DB_PATH_FILTERED = f"{FOLDER}/ms_jobs_avoid_hits_by_field.json"
+DAYS_TO_KEEP = config["scrapingSettings"].get("daysToKeep", 10)
 
 FILTERS = config["companies"][0].get("filters", None)
 
 # Scraping settings
-MAX_PAGES = 1
+MAX_PAGES = config["companies"][0]["searchSettings"].get("numberOfPages", 10)
 PAGE_LOAD_TIMEOUT = 60
 WAIT_PER_PAGE = 25
 DELAY_AFTER_NEXT = 1.2
@@ -835,6 +836,140 @@ def filter_jobs(details_path: str, output_path: str):
 
 # ==================== JOB ORGANIZATION ====================
 
+
+def cleanup_old_jobs(details_path: str, days: int = 10) -> list[str]:
+    """Remove jobs older than 10 days from the database."""
+    import datetime as dt
+    
+    cutoff_date = dt.date.today() - dt.timedelta(days=days)
+    print(f"Removing jobs older than: {cutoff_date}")
+    
+    details_db = load_db_atomic(details_path)
+    original_count = len(details_db)
+    removed_count = 0
+    
+    # Find jobs to remove
+    jobs_to_remove = []
+    for job_id, job in details_db.items():
+        date_posted = job.get('date_posted', 'unknown')
+        
+        if date_posted and date_posted != 'unknown':
+            try:
+                parsed_date = parse_date(date_posted)
+                if parsed_date != dt.datetime.max:
+                    job_date = parsed_date.date()
+                    if job_date < cutoff_date:
+                        jobs_to_remove.append(job_id)
+            except:
+                pass
+    
+    # Remove old jobs
+    for job_id in jobs_to_remove:
+        del details_db[job_id]
+        removed_count += 1
+    
+    # Save updated database
+    if removed_count > 0:
+        save_db_atomic(details_path, details_db)
+        print(f"Removed {removed_count} old jobs from {details_path}")
+        print(f"Jobs remaining: {len(details_db)} (was {original_count})")
+    else:
+        print("No old jobs found to remove")
+    
+    # Return the list of removed job IDs for cleanup in main DB
+    return jobs_to_remove
+
+
+def cleanup_main_jobs_db(main_db_path: str, old_job_ids: list = None):
+    """Remove jobs from the main jobs database using job IDs from details cleanup."""
+
+    main_db_ids = set(load_db(main_db_path))
+    original_count = len(main_db_ids)
+    removed_count = 0
+    
+    if old_job_ids:
+        print(f"Cleaning main jobs DB - removing {len(old_job_ids)} old job IDs")
+        
+        # Remove jobs by ID
+        for job_id in old_job_ids:
+            if job_id in main_db_ids:
+                main_db_ids.remove(job_id)
+                removed_count += 1
+        
+        # Save updated database
+        if removed_count > 0:
+            save_db_atomic(main_db_path, main_db_ids)
+            print(f"Removed {removed_count} old jobs from {main_db_path}")
+            print(f"Jobs remaining: {len(main_db_ids)} (was {original_count})")
+        else:
+            print("No matching old jobs found to remove from main DB")
+    else:
+        print("No old job IDs provided - skipping main DB cleanup")
+    
+    return removed_count
+
+
+def cleanup_old_job_files(save_path: str) -> int:
+    """Remove job files older than 10 days from ms-jobs/jobs_by_date/."""
+    import os
+    import datetime as dt
+    import glob
+    
+    cutoff_date = dt.date.today() - dt.timedelta(days=10)
+    output_dir = f"{save_path}"
+    output_dir = os.path.join(output_dir, "jobs_by_date")
+    os.makedirs(output_dir, exist_ok=True)
+    
+    if not os.path.exists(output_dir):
+        return 0
+    
+    # Find all job files
+    pattern = os.path.join(output_dir, "jobs_*.json")
+    job_files = glob.glob(pattern)
+    
+    files_removed = 0
+    
+    for filepath in job_files:
+        filename = os.path.basename(filepath)
+        
+        # Extract date from filename (jobs_dd_month_yyyy.json)
+        try:
+            # Remove 'jobs_' prefix and '.json' suffix
+            date_part = filename[5:-5]  # Remove 'jobs_' and '.json'
+            
+            # Parse the date format: dd_month_yyyy
+            parts = date_part.split('_')
+            if len(parts) >= 3:
+                day = int(parts[0])
+                month_name = parts[1]
+                year = int(parts[2])
+                
+                # Convert month name to number
+                month_names = {
+                    'january': 1, 'february': 2, 'march': 3, 'april': 4,
+                    'may': 5, 'june': 6, 'july': 7, 'august': 8,
+                    'september': 9, 'october': 10, 'november': 11, 'december': 12
+                }
+                
+                month = month_names.get(month_name.lower())
+                if month:
+                    file_date = dt.date(year, month, day)
+                    
+                    if file_date < cutoff_date:
+                        os.remove(filepath)
+                        files_removed += 1
+                        print(f"Removed old file: {filename} (date: {file_date})")
+        except (ValueError, IndexError, KeyError) as e:
+            print(f"Could not parse date from filename {filename}: {e}")
+            continue
+    
+    if files_removed > 0:
+        print(f"Removed {files_removed} old job files")
+    else:
+        print("No old job files found to remove")
+    
+    return files_removed
+
 def organize_jobs_by_date(save_path: str, details_path: str, filtered_path: str = None):
     """Organize filtered Python jobs by date posted."""
     # Load data
@@ -963,6 +1098,15 @@ def main():
         # Step 4: Organize by date
         print("\n[STEP 4] Organizing jobs by date...")
         organize_jobs_by_date(FOLDER, DB_PATH_DETAILS, DB_PATH_FILTERED)
+
+    # Step 5: Cleanup old jobs from details DB and main jobs DB
+    print(f"\n[STEP 5] Cleaning up old jobs from details and main DB up to {DAYS_TO_KEEP} days old...")
+    old_job_ids = cleanup_old_jobs(DB_PATH_DETAILS, days=DAYS_TO_KEEP)  # Remove jobs older than 10 days from details DB
+    print(f"Total old jobs removed from details DB: {len(old_job_ids)}")
+    removed_count = cleanup_main_jobs_db(DB_PATH, old_job_ids)  # Remove the same jobs from main jobs DB
+    print(f"Total old jobs removed from main DB: {removed_count}")
+    files_removed = cleanup_old_job_files(FOLDER)
+    print(f"Total files removed in jobs by date: {files_removed}")
 
     print(f"\n=== Scraping completed at {dt.datetime.now().isoformat()} ===")
 

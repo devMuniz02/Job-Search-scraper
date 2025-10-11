@@ -45,6 +45,17 @@ from utils.meta_config import (
 )
 
 def setup_driver(headless: bool = True):
+    """Create and return a configured Selenium Chrome WebDriver.
+
+    This applies headless and other chrome options defined in the
+    project's configuration and sets a page load timeout.
+
+    Args:
+        headless: If True, enable headless/browserless options from config.
+
+    Returns:
+        A configured instance of selenium.webdriver.Chrome.
+    """
     opts = ChromeOptions()
     if headless:
         for option in HEADLESS_OPTIONS:
@@ -63,6 +74,15 @@ def setup_driver(headless: bool = True):
 
 
 def accept_cookies_if_present(driver):
+    """Attempt to accept cookie dialogs using configured XPATHs.
+
+    Iterates over `COOKIE_XPATHS` and clicks the first clickable
+    element found. Ignores timeouts and stale element errors so
+    the caller can continue if no cookie banner is present.
+
+    Args:
+        driver: Selenium WebDriver instance already pointed at a page.
+    """
     for xp in COOKIE_XPATHS:
         try:
             btn = WebDriverWait(driver, COOKIE_WAIT_TIMEOUT).until(EC.element_to_be_clickable((By.XPATH, xp)))
@@ -74,6 +94,17 @@ def accept_cookies_if_present(driver):
 
 
 def scroll_infinite(driver, pause_s: float = SCROLL_PAUSE, rounds: int = SCROLL_ROUNDS):
+    """Scroll the page to the bottom multiple times to trigger lazy loading.
+
+    Performs `rounds` iterations of scrolling to the document bottom and
+    waits `pause_s` seconds between iterations. Stops early if the
+    document height does not change between rounds.
+
+    Args:
+        driver: Selenium WebDriver instance.
+        pause_s: Seconds to wait between scroll rounds.
+        rounds: Maximum number of scroll rounds to attempt.
+    """
     last_h = driver.execute_script("return document.body.scrollHeight")
     for _ in range(rounds):
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -85,7 +116,18 @@ def scroll_infinite(driver, pause_s: float = SCROLL_PAUSE, rounds: int = SCROLL_
 
 
 def load_existing_ids(path: str) -> set:
-    """Load existing IDs from a JSON file if present; return set of numeric strings."""
+    """Load existing job IDs from a JSON file and return as a set of strings.
+
+    The function tolerates missing files and malformed JSON and only returns
+    numeric-like IDs (strings made of digits). This is used to compare
+    previously scraped job IDs when doing incremental scrapes.
+
+    Args:
+        path: Path to a JSON file containing a list or iterable of IDs.
+
+    Returns:
+        A set of numeric string IDs found in the file, or an empty set.
+    """
     p = Path(path)
     if not p.exists():
         return set()
@@ -99,7 +141,16 @@ def load_existing_ids(path: str) -> set:
 
 
 def load_existing_details(path: str) -> Dict[str, Any]:
-    """Load existing job details from JSON file."""
+    """Load existing job details from a JSON file.
+
+    If the file is missing or contains invalid JSON an empty dict is returned.
+
+    Args:
+        path: Path to the JSON file with job detail records.
+
+    Returns:
+        A dict parsed from the file or an empty dict on error.
+    """
     p = Path(path)
     if not p.exists():
         return {}
@@ -111,10 +162,36 @@ def load_existing_details(path: str) -> Dict[str, Any]:
 
 
 def clean(s: str) -> str:
+    """Normalize whitespace and trim a string.
+
+    Replaces runs of whitespace (including newlines and tabs) with a single
+    space according to `WHITESPACE_PATTERN` from the configuration and strips
+    leading/trailing whitespace. Accepts None safely.
+
+    Args:
+        s: Input string (or None).
+
+    Returns:
+        A cleaned string with normalized internal whitespace.
+    """
     return re.sub(WHITESPACE_PATTERN, " ", s or "").strip()
 
 
 def extract_from_div(soup: BeautifulSoup, class_name: str) -> Dict[str, List[str]]:
+    """Extract text grouped by element classes from a DIV with `class_name`.
+
+    Finds the first <div> with the provided class name and iterates its child
+    tags collecting cleaned text grouped by the tag's class attribute. Useful
+    for exploring the structure of job detail pages where sections share a
+    container class.
+
+    Args:
+        soup: BeautifulSoup-parsed document.
+        class_name: Class name of the container div to search for.
+
+    Returns:
+        A mapping of class-string -> list of texts extracted from elements.
+    """
     container = soup.find("div", class_=class_name)
     if not container:
         return {}
@@ -130,6 +207,19 @@ def extract_from_div(soup: BeautifulSoup, class_name: str) -> Dict[str, List[str
 
 
 def preview_items(items: Dict[str, List[str]], label: str, max_items: int = MAX_PREVIEW_ITEMS, max_chars: int = MAX_PREVIEW_CHARS):
+    """Pretty-print a compact preview of extracted class groups and texts.
+
+    This helper prints up to `max_items` of the keys in `items` and a short
+    preview of the text found for each key (truncated to `max_chars`). It is
+    primarily used for debugging and understanding HTML structure during
+    scraping.
+
+    Args:
+        items: Mapping of class-name -> list of extracted texts.
+        label: Label used in the printed header.
+        max_items: Maximum number of groups to show.
+        max_chars: Maximum characters to display per group preview.
+    """
     print(f"\n[Preview] {label}: found {len(items)} class groups")
     for i, (cls, texts) in enumerate(items.items()):
         if i >= max_items:
@@ -288,6 +378,20 @@ def scrape_new_jobs_until_known_id(driver, base_url: str, existing_ids: set, max
 
 
 def scrape_details(list_of_job_ids: List[str], driver) -> Dict[str, Any]:
+    """Fetch job detail pages for a list of job IDs and extract structured fields.
+
+    For each job ID the function builds the job URL (using `BASE_URL`), loads
+    the page with Selenium, waits briefly for React to render, then uses
+    BeautifulSoup and helper functions to extract fields such as title,
+    location, qualifications and compensation.
+
+    Args:
+        list_of_job_ids: Iterable of job id strings to fetch.
+        driver: Selenium WebDriver instance used to load pages.
+
+    Returns:
+        A dict mapping job_id -> extracted fields (title, URL, location, etc.).
+    """
     results: Dict[str, Any] = {}
     try:
         for job in list_of_job_ids:

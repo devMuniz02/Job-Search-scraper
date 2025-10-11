@@ -7,18 +7,8 @@ scraping settings, and filtering rules used by the scraper.
 
 from typing import Dict, List, Tuple
 
-# ==================== URLS AND PATHS ====================
-
-SEARCH_URL = ("https://jobs.careers.microsoft.com/global/en/search"
-              "?lc=Mexico&lc=United%20States&l=en_us&pg=1&pgSz=20&o=Recent&flt=true")
-
-DB_PATH = "ms-jobs/jobs_ms.json"
-DB_PATH_DETAILS = "ms-jobs/jobs_ms_details.json"
-DB_PATH_FILTERED = "ms-jobs/jobs_ms_avoid_hits_by_field.json"
-
 # ==================== SCRAPING SETTINGS ====================
 
-MAX_PAGES = 10
 PAGE_LOAD_TIMEOUT = 60
 WAIT_PER_PAGE = 25
 DELAY_AFTER_NEXT = 1.2
@@ -138,3 +128,34 @@ LABELS = [
 # Browser control settings
 RESTART_EVERY = 20
 MAX_RETRIES = 3
+
+# ==================== PROJECT-LEVEL DEFAULTS (from top-level config.json) ====
+# These are convenience defaults so utils can reference common project paths.
+import json
+from pathlib import Path
+
+_root = Path(__file__).resolve().parents[1]
+_cfg_path = _root / "config.json"
+
+SEARCH_URL = ""
+DB_PATH = "ms-jobs/ms_job_ids.json"
+DB_PATH_DETAILS = "ms-jobs/ms_job_details.json"
+DB_PATH_FILTERED = "ms-jobs/ms_jobs_avoid_hits_by_field.json"
+MAX_PAGES = 10
+
+try:
+    if _cfg_path.exists():
+        with open(_cfg_path, "r", encoding="utf-8") as _f:
+            _c = json.load(_f)
+        companies = _c.get("companies") or []
+        if companies:
+            c0 = companies[0]
+            SEARCH_URL = c0.get("searchSettings", {}).get("searchURL", SEARCH_URL)
+            MAX_PAGES = c0.get("searchSettings", {}).get("numberOfPages", MAX_PAGES)
+            folder = f"{c0.get('companyName','ms')}-jobs"
+            DB_PATH = f"{folder}/ms_job_ids.json"
+            DB_PATH_DETAILS = f"{folder}/ms_job_details.json"
+            DB_PATH_FILTERED = f"{folder}/ms_jobs_avoid_hits_by_field.json"
+except (OSError, json.JSONDecodeError):
+    # If reading config fails, fall back to defaults defined above
+    pass

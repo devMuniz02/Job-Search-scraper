@@ -28,13 +28,12 @@ Job-Search-scrapper/
 │   └── jobs_by_date/
 │       ├── jobs_"date".json
 └── utils/                          # helper modules used by scrapers
-  ├── __init__.py
-  ├── config.py
-  ├── core.py
-  ├── meta_config.py
-  ├── patterns.py
-  ├── selenium_helpers.py
-  └── README.md
+    ├── __init__.py
+    ├── meta_config.py
+    ├── ms_config.py
+    ├── ms_core.py
+    ├── selenium_helpers.py
+    └── README.md
 
 ```
 
@@ -76,6 +75,7 @@ Example `config.json` snippet:
   }
 }
 ```
+For more specialized configurations modify the utils/**CompanyName**_config.py file 
 
 ## 🚀 Quick Start — Fork & run (GitHub Actions)
 

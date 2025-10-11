@@ -15,18 +15,6 @@ from typing import List
 # Base URL for individual job details
 BASE_URL = "https://www.metacareers.com/jobs/"
 
-# URL for job listings page
-JOBS_LIST_URL = "https://www.metacareers.com/jobs?sort_by_new=true&offices[0]=North%20America"
-
-# Output file paths
-OUTPUT_DIR = "Meta-jobs"
-JOB_IDS_FILE = "meta_job_ids.json"
-JOB_DETAILS_FILE = "meta_job_details.json"
-
-# Full paths (can be overridden by environment variables)
-OUT_PATH = os.getenv("OUT", f"{OUTPUT_DIR}/{JOB_IDS_FILE}")
-DETAILS_PATH = f"{OUTPUT_DIR}/{JOB_DETAILS_FILE}"
-
 # ==================== SCRAPING SETTINGS ====================
 
 # Browser settings

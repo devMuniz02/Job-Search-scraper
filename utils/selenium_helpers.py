@@ -15,9 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import WebDriverException, TimeoutException, NoSuchElementException
 
-# Import the regex pattern from patterns module
-from .patterns import JOB_ID_FROM_ARIA
-
+JOB_ID_FROM_ARIA = re.compile(r"Job item\s+(\d+)")
 
 # ==================== BROWSER SETUP ====================
 
@@ -172,8 +170,8 @@ def process_cards_on_page(driver: webdriver.Chrome) -> list:
 
 def scrape_paginated(max_pages: int) -> list:
     """Scrape job listings across multiple pages."""
-    from .config import SEARCH_URL
-    from .core import sleep_a_bit
+    from .ms_config import SEARCH_URL
+    from .ms_core import sleep_a_bit
     
     driver = launch_chrome()
     all_rows = []

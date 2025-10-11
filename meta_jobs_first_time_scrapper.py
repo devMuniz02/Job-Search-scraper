@@ -28,7 +28,7 @@ def main():
     finally:
         try:
             driver.quit()
-        except Exception:
+        except AttributeError:
             pass
 
     # Merge con JSON existente y guardar
@@ -66,7 +66,7 @@ def main():
         with open(details_path, "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
         print(f"\nSaved {len(results)} jobs to {details_path}")
-    except Exception as e:
+    except (OSError, IOError) as e:
         print(f"\n[Warn] Could not save results: {e}")
 
 if __name__ == "__main__":

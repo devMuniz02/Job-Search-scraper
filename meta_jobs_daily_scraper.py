@@ -1,11 +1,24 @@
 import os
 import json
 import time
-from typing import Dict, Any, List
 
-# Import configuration and shared helpers
-from utils.meta_config import *
-from utils.meta_core import *
+# Import configuration
+from utils.meta_config import (
+    OUT_PATH,
+    JOBS_LIST_URL,
+    JOB_DETAILS_FILE,
+    MAX_PAGES,
+    HEADLESS,
+)
+
+# Import shared helper functions from utils.meta_core
+from utils.meta_core import (
+    setup_driver,
+    scrape_details,
+    load_existing_ids,
+    load_existing_details,
+    scrape_new_jobs_until_known_id,
+)
 
 
 def main():
@@ -24,12 +37,12 @@ def main():
     finally:
         try:
             driver.quit()
-        except Exception:
+        except AttributeError:
             pass
 
     # Update the master list of job IDs
     all_ids = existing_ids | new_job_ids
-    ids_sorted = sorted(all_ids, key=lambda x: int(x))
+    ids_sorted = sorted(all_ids, key=int)
 
     # Save updated job IDs list
     with open(OUT_PATH, "w", encoding="utf-8") as f:
@@ -46,7 +59,7 @@ def main():
         print(f"\n🔍 Scraping details for {len(new_job_ids)} new jobs...")
 
         # Convert set to sorted list for consistent processing
-        new_job_ids_list = sorted(list(new_job_ids), key=lambda x: int(x))
+        new_job_ids_list = sorted(new_job_ids, key=int)
 
         # Scrape details for new jobs only
         driver = setup_driver(headless=HEADLESS)
@@ -73,7 +86,7 @@ def main():
             with open(yesterday_jobs_path, "w", encoding="utf-8") as f:
                 json.dump(new_details, f, ensure_ascii=False, indent=2)
 
-            print(f"\n💾 Job Details Summary:")
+            print("\n💾 Job Details Summary:")
             print(f"  - Previously had details for: {len(existing_details)} jobs")
             print(f"  - Scraped details for: {len(new_details)} new jobs")
             print(f"  - Total details: {len(all_details)} jobs")
@@ -83,9 +96,8 @@ def main():
         except Exception as e:
             print(f"\n❌ Error saving job details: {e}")
     else:
-        print(f"\n✅ No new jobs found - details file unchanged")
+        print("\n✅ No new jobs found - details file unchanged")
         print("All jobs on current pages are already in our database!")
 
 if __name__ == "__main__":
     main()
-    

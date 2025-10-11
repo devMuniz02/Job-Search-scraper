@@ -60,7 +60,7 @@ def main():
 
     # Optional: write results next to your OUT_PATH
     out_dir = os.path.dirname(OUT_PATH) or "."
-    details_path = os.path.join(out_dir, JOB_DETAILS_FILE)
+    details_path = JOB_DETAILS_FILE
     try:
         os.makedirs(out_dir, exist_ok=True)
         with open(details_path, "w", encoding="utf-8") as f:

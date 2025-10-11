@@ -12,6 +12,10 @@ from urllib.parse import urljoin
 from typing import Dict, List, Any
 
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+import os
+import contextlib
+import subprocess
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.support.ui import WebDriverWait
@@ -67,8 +71,22 @@ def setup_driver(headless: bool = True):
     
     opts.add_argument(f"--window-size={WINDOW_WIDTH},{WINDOW_HEIGHT}")
     opts.add_argument(f"--user-agent={USER_AGENT}")
-    
-    d = webdriver.Chrome(options=opts)
+    # Reduce noisy logs
+    opts.add_argument("--disable-logging")
+    opts.add_argument("--log-level=3")
+    opts.add_argument("--no-first-run")
+    opts.add_argument("--no-default-browser-check")
+    # Configure Service to send logs to the null device and avoid creating a
+    # visible child console on Windows.
+    service_kwargs = {'log_path': os.devnull}
+    if os.name == 'nt':
+        service_kwargs['creationflags'] = subprocess.CREATE_NO_WINDOW
+
+    # Create the driver while suppressing stdout/stderr so Chrome/Chromedriver
+    # noisy messages don't appear in the user's terminal.
+    with open(os.devnull, 'w', encoding='utf-8', errors='ignore') as devnull:
+        with contextlib.redirect_stdout(devnull), contextlib.redirect_stderr(devnull):
+            d = webdriver.Chrome(options=opts, service=Service(**service_kwargs))
     d.set_page_load_timeout(PAGE_LOAD_TIMEOUT)
     return d
 
@@ -130,6 +148,7 @@ def load_existing_ids(path: str) -> set:
     """
     p = Path(path)
     if not p.exists():
+        os.makedirs(p.parent, exist_ok=True)
         return set()
     try:
         with open(p, "r", encoding="utf-8") as f:

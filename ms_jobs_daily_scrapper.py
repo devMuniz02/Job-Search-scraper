@@ -44,8 +44,7 @@ def main():
     print(f"[DB] existing records: {len(previous_job_ids)}")
 
     new_job_ids, all_job_ids = scrape_paginated(max_pages=MAX_PAGES, seen_global_ids=previous_job_ids)
-    print(f"[SCRAPE] total rows scraped: {len(new_job_ids)}")
-    print(f"[SCRAPE] sample rows: {new_job_ids}")
+    print(f"[SCRAPE] total new rows scraped: {len(new_job_ids)}")
     print(f"[SCRAPE] total unique job ids: {len(all_job_ids)}")
 
     save_db_atomic(DB_PATH, all_job_ids)

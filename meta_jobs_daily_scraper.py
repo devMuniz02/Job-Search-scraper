@@ -69,7 +69,7 @@ def main():
         all_details = {**existing_details, **new_details}
 
         # Save updated details
-        details_path = os.path.join(os.path.dirname(OUT_PATH) or ".", JOB_DETAILS_FILE)
+        details_path = JOB_DETAILS_FILE
         try:
             os.makedirs(os.path.dirname(details_path) or ".", exist_ok=True)
             with open(details_path, "w", encoding="utf-8") as f:

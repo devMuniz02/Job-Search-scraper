@@ -12,6 +12,8 @@ from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 from typing import Dict, Any, List
 from collections import defaultdict
 import random
+import contextlib
+import subprocess
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -24,6 +26,9 @@ from selenium.common.exceptions import (
     WebDriverException,
     StaleElementReferenceException,
     TimeoutException,
+    ElementClickInterceptedException,
+    JavascriptException,
+    InvalidElementStateException,
 )
 
 # ==================== CONFIGURATION ====================
@@ -266,22 +271,31 @@ def launch_chrome():
     opts.add_argument("--disable-accelerated-mjpeg-decode")
     # Force use of SwiftShader (software GL) as a fallback when GPU is unavailable.
     opts.add_argument("--use-gl=swiftshader")
+    # Additional flags to reduce logging/noise
+    opts.add_argument("--disable-logging")
+    opts.add_argument("--log-level=3")
+    opts.add_argument("--no-first-run")
+    opts.add_argument("--no-default-browser-check")
 
     # Reduce logging/noise from Chrome/Chromedriver
     opts.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
     opts.add_experimental_option('useAutomationExtension', False)
 
-    service_kwargs = {}
-    try:
-        # Windows: null device
-        service_kwargs['log_path'] = 'NUL'
-    except KeyError:
-        # Fallback: let Service decide
-        pass
+    # Ensure chromedriver logs go to the platform null device
+    service_kwargs = {'log_path': os.devnull}
+    # On Windows, prevent child console windows / stdout by using CREATE_NO_WINDOW
+    if os.name == 'nt':
+        service_kwargs['creationflags'] = subprocess.CREATE_NO_WINDOW
 
-    if LOCAL_CHROMEDRIVER:
-        return webdriver.Chrome(service=Service(LOCAL_CHROMEDRIVER, **service_kwargs), options=opts)
-    return webdriver.Chrome(options=opts, service=Service(**service_kwargs))
+    # Create the driver while suppressing stdout/stderr so chrome/chromedriver
+    # messages like 'DevTools listening on ...' or GPU errors don't leak to
+    # the user's terminal.
+    # open devnull with explicit encoding to satisfy static checkers
+    with open(os.devnull, 'w', encoding='utf-8', errors='ignore') as devnull:
+        with contextlib.redirect_stdout(devnull), contextlib.redirect_stderr(devnull):
+            if LOCAL_CHROMEDRIVER:
+                return webdriver.Chrome(service=Service(LOCAL_CHROMEDRIVER, **service_kwargs), options=opts)
+            return webdriver.Chrome(options=opts, service=Service(**service_kwargs))
 
 # ==================== JOB LISTING SCRAPER ====================
 
@@ -403,20 +417,38 @@ def click_next_if_possible(driver) -> bool:
     suitable control is found.
     """
     selectors = [
-        (By.CSS_SELECTOR, 'button[aria-label*="Next"]:not([disabled]):not([aria-disabled="true"])'),
-        (By.XPATH, "//button[(contains(., 'Next') or contains(@aria-label, 'Next')) and not(@disabled) and not(@aria-disabled='true')]"),
-        (By.XPATH, "//a[(contains(., 'Next') or contains(@aria-label, 'Next')) and not(contains(@class,'disabled'))]"),
+        (By.CSS_SELECTOR, 'button[aria-label*="Next"]'),
+        (By.XPATH, "//button[(contains(., 'Next') or contains(@aria-label, 'Next'))]"),
+        (By.XPATH, "//a[(contains(., 'Next') or contains(@aria-label, 'Next'))]")
     ]
+
     for by, sel in selectors:
         try:
-            btn = driver.find_element(by, sel)
-            if not btn.is_displayed():
+            # use find_elements to avoid raising when element is absent
+            candidates = driver.find_elements(by, sel)
+            if not candidates:
                 continue
-            if btn.get_attribute("disabled") or btn.get_attribute("aria-disabled") == "true":
-                continue
-            btn.click()
-            return True
-        except ValueError:
+            for btn in candidates:
+                try:
+                    if not btn.is_displayed():
+                        continue
+                    if btn.get_attribute("disabled") or btn.get_attribute("aria-disabled") == "true":
+                        continue
+                    # Try a normal click first, fallback to JS click if needed
+                    try:
+                        btn.click()
+                    except (ElementClickInterceptedException, InvalidElementStateException, WebDriverException):
+                        try:
+                            driver.execute_script("arguments[0].click();", btn)
+                        except (JavascriptException, WebDriverException):
+                            # If clicking this candidate failed, try next
+                            continue
+                    return True
+                except (StaleElementReferenceException, WebDriverException):
+                    # Element went stale or other webdriver issue - try next candidate
+                    continue
+        except (WebDriverException, JavascriptException):
+            # Catch any unexpected errors for robustness and try the next selector
             continue
     return False
 

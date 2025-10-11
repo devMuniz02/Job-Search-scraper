@@ -23,6 +23,7 @@ JOBS_LIST_URL = config["companies"][1]["searchSettings"]["searchURL"]
 OUTPUT_DIR = f"{config['companies'][1]['companyName']}-jobs"
 OUT_PATH = os.path.join(OUTPUT_DIR, "meta_job_ids.json")
 JOB_DETAILS_FILE = os.path.join(OUTPUT_DIR, "meta_job_details.json")
+MAX_PAGES = config["companies"][1]["searchSettings"].get("numberOfPages", 10)  # Maximum pages to scrape (999 = all pages)
 
 # ==================== SCRAPING SETTINGS ====================
 
@@ -43,9 +44,6 @@ COOKIE_WAIT_TIMEOUT = 3  # seconds to wait for cookie buttons
 # Scrolling settings
 SCROLL_ROUNDS = int(os.getenv("SCROLL_ROUNDS", "6"))  # Number of scroll rounds per page
 SCROLL_PAUSE = 1.0  # Seconds to pause between scrolls
-
-# Pagination settings
-MAX_PAGES = int(os.getenv("MAX_PAGES", "999"))  # Maximum pages to scrape (999 = all pages)
 
 # Delays and rate limiting
 DELAY_BETWEEN_PAGES = 7  # Seconds to wait between pages
@@ -112,19 +110,3 @@ JOB_ID_PATTERN = r"/jobs/(\d+)$"
 
 # Pattern to clean whitespace
 WHITESPACE_PATTERN = r"\s+"
-
-# ==================== ENVIRONMENT VARIABLE DOCUMENTATION ====================
-
-"""
-Environment Variables that can be used to override settings:
-
-- HEADFUL: Set to "1" to run browser in visible mode (default: headless)
-- SCROLL_ROUNDS: Number of scroll rounds per page (default: 6)
-- MAX_PAGES: Maximum pages to scrape, 999 means all (default: 999)
-- OUT: Custom output path for job IDs file (default: meta-jobs/meta_job_ids.json)
-
-Examples:
-    HEADFUL=1 python first-meta-jobs-scrapper.py    # Run with visible browser
-    MAX_PAGES=10 python first-meta-jobs-scrapper.py  # Limit to 10 pages
-    SCROLL_ROUNDS=10 python first-meta-jobs-scrapper.py  # More scrolling per page
-"""

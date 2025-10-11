@@ -85,16 +85,8 @@ If you want to run this repository from your own fork as a daily scraper via Git
 
 - Go to the original repo page and click the "Fork" button to create a copy under your account.
 
-2) (Optional) Clone your fork locally and set upstream
 
-```powershell
-git clone https://github.com/<your-username>/Job-Search-scrapper.git
-cd Job-Search-scrapper
-git remote add upstream https://github.com/devMuniz02/Job-Search-scrapper.git
-git fetch upstream
-```
-
-3) Edit `config.json` in your fork to configure the searches you want the Actions workflow to run. Update `searchURL`, `numberOfPages`, and any other company-specific settings. Example:
+2) Edit `config.json` in your fork to configure the searches you want the Actions workflow to run. Update `searchURL`, `numberOfPages`, and any other company-specific settings. Example:
 
 ```json
 {
@@ -110,7 +102,7 @@ Notes:
 - The GitHub Actions workflow runs using the code and files in your fork. Make sure `config.json` in the default branch of your fork contains the settings you want.
 - If you want the workflow to run for multiple companies or multiple search URLs, you can modify `config.json` schema (or create multiple workflows) accordingly.
 
-4) Enable GitHub Actions in your fork
+3) Enable GitHub Actions in your fork
 
 - In your fork on GitHub, go to the "Actions" tab and enable workflows if prompted. If the repository already contains workflow files under `.github/workflows/`, they will be available in your fork.
 - Inspect the workflow YAML(s) in `.github/workflows/` to confirm the schedule (cron), the runner used, and whether the workflow commits artifacts or JSON output back to the repository. Adjust as needed.

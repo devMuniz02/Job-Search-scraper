@@ -69,7 +69,7 @@ def accept_cookies_if_present(driver):
             btn.click()
             time.sleep(0.5)
             break
-        except Exception:
+        except (TimeoutException, StaleElementReferenceException):
             pass
 
 
@@ -94,7 +94,7 @@ def load_existing_ids(path: str) -> set:
             data = json.load(f)
         # Ensure they're numeric strings
         return {str(x) for x in data if isinstance(x, (str, int)) and str(x).isdigit()}
-    except Exception:
+    except (OSError, json.JSONDecodeError):
         return set()
 
 
@@ -106,7 +106,7 @@ def load_existing_details(path: str) -> Dict[str, Any]:
     try:
         with open(p, "r", encoding="utf-8") as f:
             return json.load(f)
-    except Exception:
+    except (OSError, json.JSONDecodeError):
         return {}
 
 
@@ -147,7 +147,7 @@ def safe_pick(items: Dict[str, List[str]], key: str, idx: int = 0, label: str = 
     """
     try:
         return items[key][idx]
-    except Exception:
+    except (KeyError, IndexError, TypeError):
         print(f"\n[Warn] Could not find key='{key}' idx={idx} in {label}.")
         preview_items(items, label=label)
         return ""
@@ -193,10 +193,9 @@ def scrape_jobs_from_page(driver, page_url: str) -> set:
         print(f"Found {len(found_ids)} job IDs on this page")
         return found_ids
     
-    except Exception as e:
+    except (TimeoutException, StaleElementReferenceException) as e:
         print(f"Error scraping page {page_url}: {e}")
         return found_ids
-
 
 def scrape_multiple_pages(driver, base_url: str, max_pages: int = 999) -> set:
     """
@@ -325,10 +324,7 @@ def scrape_details(list_of_job_ids: List[str], driver) -> Dict[str, Any]:
                 "preferred_qualifications": preferred_qualifications,
                 "compensation": compensation
             }
-    except Exception as e:
+    except (TimeoutException, StaleElementReferenceException, json.JSONDecodeError) as e:
         print("Error:", e)
-    
-    finally:
-        driver.quit()
-    
     return results
+

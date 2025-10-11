@@ -8,12 +8,21 @@ To customize the scraper behavior, modify the values in this file.
 """
 
 import os
+import json
 from typing import List
 
 # ==================== URLS AND PATHS ====================
 
 # Base URL for individual job details
 BASE_URL = "https://www.metacareers.com/jobs/"
+
+with open("config.json", encoding="utf-8") as f:
+    config = json.load(f)
+
+JOBS_LIST_URL = config["companies"][1]["searchSettings"]["searchURL"]
+OUTPUT_DIR = f"{config['companies'][1]['companyName']}-jobs"
+OUT_PATH = os.path.join(OUTPUT_DIR, "meta_job_ids.json")
+JOB_DETAILS_FILE = os.path.join(OUTPUT_DIR, "meta_job_details.json")
 
 # ==================== SCRAPING SETTINGS ====================
 

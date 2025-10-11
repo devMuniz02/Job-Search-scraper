@@ -8,6 +8,7 @@ Usage: python ms-job-scrapper.py
 """
 
 import datetime as dt
+
 from utils.ms_core import (
     scrape_paginated,
     scrape_job_details,
@@ -18,7 +19,16 @@ from utils.ms_core import (
     cleanup_old_job_files,
     load_db,
     save_db_atomic,
-    DB_PATH, DB_PATH_DETAILS, DB_PATH_FILTERED, FOLDER, FILTERS, DAYS_TO_KEEP, MAX_PAGES
+)
+
+from utils.ms_config import (
+    MAX_PAGES,
+    DAYS_TO_KEEP,
+    FILTERS,
+    FOLDER,
+    DB_PATH,
+    DB_PATH_DETAILS,
+    DB_PATH_FILTERED,
 )
 
 def main():

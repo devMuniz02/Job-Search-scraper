@@ -46,14 +46,14 @@ jobs:
 
     - name: Run Microsoft job scraper
       run: |
-        python ms-jobs-daily-scrapper.py
+        python ms_jobs_daily_scraper.py
       env:
         # Set display for headless Chrome
         DISPLAY: :99
 
     - name: Run Meta job scraper
       run: |
-        python meta-jobs-daily-scraper.py
+        python meta_jobs_daily_scraper.py
       env:
         # Set display for headless Chrome
         DISPLAY: :99

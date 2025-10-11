@@ -93,7 +93,7 @@ def main():
             print(f"  - Saved to: {details_path}")
             print(f"  - Yesterday's new jobs saved to: {yesterday_jobs_path}")
 
-        except Exception as e:
+        except (OSError, json.JSONDecodeError) as e:
             print(f"\n❌ Error saving job details: {e}")
     else:
         print("\n✅ No new jobs found - details file unchanged")

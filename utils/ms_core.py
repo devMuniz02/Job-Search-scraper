@@ -6,19 +6,22 @@ import time
 import tempfile
 import datetime as dt
 import requests
+import glob
 from bs4 import BeautifulSoup, NavigableString
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 from typing import Dict, Any, List
 from collections import defaultdict
+import random
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.service import Service
 
 # ==================== CONFIGURATION ====================
-with open("config.json") as f:
+with open("config.json", encoding="utf-8") as f:
     config = json.load(f)
 
 # URLs and paths
@@ -121,7 +124,7 @@ def norm(s: str | None) -> str:
 
 def sleep_a_bit():
     """Sleep for a random duration between requests."""
-    import random
+    time.sleep(random.uniform(*SLEEP_BETWEEN))
     time.sleep(random.uniform(*SLEEP_BETWEEN))
 
 def parse_date(date_str):
@@ -242,8 +245,6 @@ def launch_chrome():
     opts.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
     opts.add_experimental_option('useAutomationExtension', False)
 
-    # On Windows, Chromedriver logs can be silenced by directing to NUL
-    from selenium.webdriver.chrome.service import Service
     service_kwargs = {}
     try:
         # Windows: null device
@@ -767,12 +768,12 @@ def materialize_field_keywords(per_field: Dict[str, List[str]], available_fields
     """Merge wildcard keywords into specific fields."""
     result = {}
     wild = per_field.get("*", [])
-    for f in available_fields:
+    for field in available_fields:
         kws = set(wild)
-        if f in per_field:
-            kws.update(per_field[f])
+        if field in per_field:
+            kws.update(per_field[field])
         if kws:
-            result[f] = sorted(kws)
+            result[field] = sorted(kws)
     return result
 
 def filter_jobs(details_path: str, output_path: str):
@@ -796,13 +797,13 @@ def filter_jobs(details_path: str, output_path: str):
                 continue
 
             matched_fields = {}
-            for f, kws in field_kws.items():
-                blob = field_blob.get(f, "")
+            for field, kws in field_kws.items():
+                blob = field_blob.get(field, "")
                 if not blob:
                     continue
                 found = [kw for kw in kws if kw_boundary_search(blob, kw)]
                 if found:
-                    matched_fields[f] = sorted(set(found))
+                    matched_fields[field] = sorted(set(found))
 
             if matched_fields:
                 bucket = hits_out.setdefault(cls, {"job_ids": [], "matches": {}})
@@ -831,7 +832,6 @@ def filter_jobs(details_path: str, output_path: str):
 
 def cleanup_old_jobs(details_path: str, days: int = 10) -> list[str]:
     """Remove jobs older than 10 days from the database."""
-    import datetime as dt
     
     cutoff_date = dt.date.today() - dt.timedelta(days=days)
     print(f"Removing jobs older than: {cutoff_date}")
@@ -852,8 +852,8 @@ def cleanup_old_jobs(details_path: str, days: int = 10) -> list[str]:
                     job_date = parsed_date.date()
                     if job_date < cutoff_date:
                         jobs_to_remove.append(job_id)
-            except:
-                pass
+            except Exception as e:
+                print(f"Error parsing date for job {job_id}: {e}")
     
     # Remove old jobs
     for job_id in jobs_to_remove:
@@ -903,10 +903,7 @@ def cleanup_main_jobs_db(main_db_path: str, old_job_ids: list = None):
 
 def cleanup_old_job_files(save_path: str) -> int:
     """Remove job files older than 10 days from ms-jobs/jobs_by_date/."""
-    import os
-    import datetime as dt
-    import glob
-    
+
     cutoff_date = dt.date.today() - dt.timedelta(days=10)
     output_dir = f"{save_path}"
     output_dir = os.path.join(output_dir, "jobs_by_date")
@@ -968,7 +965,7 @@ def organize_jobs_by_date(save_path: str, details_path: str, filtered_path: str 
     details_db = load_db_atomic(details_path)
 
     if filtered_path is None or not os.path.exists(filtered_path):
-        print(f"[ORGANIZE] no filtered path provided or file does not exist, skipping filtering step.")
+        print("[ORGANIZE] no filtered path provided or file does not exist, skipping filtering step.")
         wanted_jobs = set(details_db.keys())
     else:
         filtered_db = load_db(filtered_path)

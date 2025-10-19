@@ -1,17 +1,187 @@
 [
   {
-    "job_id": "1892387",
-    "title": "Principal Software Engineer",
+    "job_id": "1861244",
+    "title": "Product Manager II - Azure Core Storage",
     "locations": [
-      "Redmond, Washington, United States"
+      "Multiple Locations, United States + 3 more locations"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1892387/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 6+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices. 6+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets . 6+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes). 2+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making .",
-    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 12+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices. 12+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets . 12+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes). 4+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making . Microsoft will accept applications for the role until October 27th, 2025 . #MSFTSecurity\nRequired Qualifications :\n• Bachelor's Degree in Computer Science, or related technical discipline AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience.\n• 6+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices.\n• 6+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets .\n• 6+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes).\n• 2+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making .\nBachelor's Degree in Computer Science, or related technical discipline AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python\n• OR equivalent experience.\nOR equivalent experience.\nOther Requirements:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:\n• Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.\nAdditional or Preferred Qualifications:\n• Bachelor's Degree in Computer Science or related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience.\n• 12+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices.\n• 12+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets .\n• 12+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes).\n• 4+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making .\n• OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python\n• OR equivalent experience.\nMicrosoft will accept applications for the role until October 27th, 2025 .\n#MSFTSecurity",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. Additional or",
-    "pay_ranges": []
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1861244/",
+    "required_qualifications_text": ": Bachelor's Degree in computer science, Engineering, or related field AND 2+ years experience in product/program management or software development OR equivalent experience 2+ years of experience with cloud storage",
+    "preferred_qualifications_text": ": Bachelor's Degree in computer science, engineering, or related field AND 2+ years experience in product/program management or software development OR equivalent experience. 1+ year(s) of ability of to develop product roadmaps to deliver customer and business value across products and services. 1+ year(s) of project management, leadership, and cross-group collaboration skills; with the ability to hold technical discussions and go deep in technical areas, as needed. 1+ year(s) of experience in or knowledge of Block Storage, filesystems, distributed systems, and virtualization technologies. Product Management IC3-The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1899187",
+    "title": "Firmware Engineer II",
+    "locations": [
+      "Redmond, Washington, United States + 1 more location"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899187/",
+    "required_qualifications_text": ": Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 2+ years technical engineering experience OR equivalent experience. Proficient in C/C++ . Experience debugging and resolving issues spanning multiple subsystems in the embedded ecosystem. Experience with one or more of the following: platform initialization, low level device drivers for peripherals/protocols such as I3C, I2C, SPI, USB, UARTs as well as Memory Management, Scheduling, Interrupts or multi-threading. Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": ": Proficient in embedded RUST, RUST RTOS’s and toolchains Experience with SoC bring-up, OS primitives, memory management, and multi-threading. Experience in working in pre-silicon environments. Firmware Engineering IC3 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $85,100 - $169,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $112,000 - $185,300"
+      }
+    ]
+  },
+  {
+    "job_id": "1899198",
+    "title": "Senior Reliability Engineer",
+    "locations": [
+      "Redmond, Washington, United States + 8 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899198/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. Site Reliability Engineering IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 24th, 2025 # S CHIE # AZURE # Cloud\nRequired/minimum qualifications:\n• Master's Degree in Computer Science, Information Technology, or related field AND 2+ years technical experience in software engineering, network engineering, or systems administration OR Bachelor's Degree in Computer Science, Information Technology, or related field AND 4+ years technical experience in software engineering, network engineering, or systems administration OR equivalent experience.\n• 3+ years of experience in software engineering or operations for large-scale distributed systems.\n• Ability to support a 24x7 data center environment, including participation in an on-call rotation and availability during non-standard business hours(evening, nights, weekends, or holidays) as operational needs require.\n• Proficiency in one or more programming languages (C#, Python, Go, or similar).\n• Understanding of cloud infrastructure (Azure preferred), networking, and system design.\n• Familiarity with monitoring tools, incident management frameworks, and DevOps practices.\n• OR equivalent experience.\nOther Requirements:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:\nMicrosoft Cloud Background Check:\nThis position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.\nSite Reliability Engineering IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 24th, 2025\n# S CHIE # AZURE # Cloud",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1899213",
+    "title": "Senior Firmware Development Engineer",
+    "locations": [
+      "Mountain View, California, United States + 2 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899213/",
+    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience. 4 + years of Experience in Firmware and or Embedded Software development experience, particularly in a multi-core platform environment. 4 + years of programming experience in C/C++ Experience working with multiple teams on root cause analysis, troubleshooting, and debugging skills resulting into solving complex Hardware/Firmware interface issues.",
+    "preferred_qualifications_text": ": 8 + years of Experience in Firmware and or Embedded Software development experience, particularly in a multi-core platform environment. 6 + years of Programming experience in C/C++ Knowledge of operating systems including drivers, memory management, boot loaders, and scheduling. Basic Verilog (or any other HDL) programming & waveform debugging. Debugging skills with GDB or equivalent. Experience developing firmware in pre-silicon environments and on test benches. Shipped products running firmware or embedded software you’ve written. Experience with one or more of these: drivers, DMA, PCIe, NVMe , image video encoders/decoders, memory controllers/training, boot flows, or power management. Firmware Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $106,400 - $203,600"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $137,600 - $222,600"
+      }
+    ]
+  },
+  {
+    "job_id": "1899183",
+    "title": "Senior Firmware Engineer",
+    "locations": [
+      "Redmond, Washington, United States + 9 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899183/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Experience with one or more of the following: driver development, Linux driver initialization, peripherals such as PCIe, memory interfaces. OS primitives, memory management, scheduling, interrupts, threading. Experience with penetration testing. Firmware Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $106,400 - $203,600"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $137,600 - $222,600"
+      }
+    ]
+  },
+  {
+    "job_id": "1897581",
+    "title": "Principal Data Scientist",
+    "locations": [
+      "Redmond, Washington, United States + 2 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897581/",
+    "required_qualifications_text": ": Doctorate in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 5+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Master's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 7+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Bachelor's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 10+ years data science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR equivalent experience. Advanced knowledge of probability, statistics, experimental design, and product analytics, with a strong track record in designing and leading A/B tests, funnel analysis, and metric frameworks. Proficiency in large-scale data management and analysis using tools such as SQL, Python, R, Spark, or similar technologies. Good communication skills with the ability to collaborate effectively across teams and influence senior leadership. Strong business insight to translate data-driven findings into strategic and product outcomes.",
+    "preferred_qualifications_text": ": Doctorate in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 8+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Master's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 10+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Bachelor's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 12+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR equivalent experience. Data Science IC5 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $139,900 - $274,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $188,000 - $304,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1899190",
+    "title": "Senior Firmware Engineer",
+    "locations": [
+      "Redmond, Washington, United States + 1 more location"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899190/",
+    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience. Proficient in C/C++ . Experience debugging and resolving issues spanning multiple subsystems in the embedded ecosystem. Experience with one or more of the following: Platform initialization, low level device drivers for peripherals/protocols such as I3C, I2C, SPI, USB, UARTs as well as Memory Management, Scheduling, Interrupts or multi-threading Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. P referred Qualifications: Bachelor's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 5+ years firmware engineering experience with focus on embedded systems and RTOS OR Master's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 4+ years firmware engineering experience with focus on embedded systems and RTOS Proficient in embedded RUST, RUST RTOS’s and toolchains Experience with SoC bring-up, OS primitives, memory management, and multi-threading. Experience in working in pre silicon environments. Firmware Engineering IC4 - The typical base pay range for this role across the U.S. is USD $106,400 - $203,600 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $137,600 - $222,600 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for these roles on an ongoing basis.\nRequired Qualifications:\n• Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience.\n• Proficient in C/C++ .\n• Experience debugging and resolving issues spanning multiple subsystems in the embedded ecosystem.\n• Experience with one or more of the following: Platform initialization, low level device drivers for peripherals/protocols such as I3C, I2C, SPI, USB, UARTs as well as Memory Management, Scheduling, Interrupts or multi-threading\n• OR equivalent experience.\nOther Qualifications:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.\nP referred Qualifications:\n• Bachelor's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 5+ years firmware engineering experience with focus on embedded systems and RTOS OR Master's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 4+ years firmware engineering experience with focus on embedded systems and RTOS\n• Proficient in embedded RUST, RUST RTOS’s and toolchains\n• Experience with SoC bring-up, OS primitives, memory management, and multi-threading.\n• Experience in working in pre silicon environments.\n• OR Master's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 4+ years firmware engineering experience with focus on embedded systems and RTOS\nFirmware Engineering IC4 - The typical base pay range for this role across the U.S. is USD $106,400 - $203,600 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $137,600 - $222,600 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay\nMicrosoft will accept applications for these roles on an ongoing basis.",
+    "preferred_qualifications_text": "",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $106,400 - $203,600"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $137,600 - $222,600"
+      }
+    ]
+  },
+  {
+    "job_id": "1899154",
+    "title": "Senior Hardware Engineer",
+    "locations": [
+      "Redmond, Washington, United States + 9 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899154/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Direct hardware experience with FPGA designs. Hardware Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
   },
   {
     "job_id": "1894480",
@@ -37,40 +207,63 @@
     ]
   },
   {
-    "job_id": "1896529",
-    "title": "Principal Software Engineer/Architect - Azure Blob Storage",
-    "locations": [
-      "Multiple Locations, United States"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1896529/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, or Python OR equivalent experience. 5+ years of systems experience in hands-on development of reliable and performant distributed systems Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
-    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, OR Python OR Master's Degree in Computer Science or related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, or Python OR equivalent experience. 1+ years experience with storage system internals in areas such as availability, remote replication, durability schemes, and high-performance I/O. 1+ years experience with in one or more of the following domains: Database internals (e.g., query execution engines, transaction processing, storage engines) Indexing and search techniques (e.g., B-Trees, LSM Trees, inverted indexes, vector search) Caching and data placement strategies (e.g., tiered storage, content-aware caching, hot/cold data separation) Metadata and namespace management at scale 1+ years experience in leading technical direction and influence architecture across teams. A mindset oriented toward innovation, performance, and building at planetary scale. Software Engineering IC6 - The",
-    "other_requirements_text": "",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $163,000 - $296,400"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $220,800 - $331,200"
-      }
-    ]
-  },
-  {
-    "job_id": "1899187",
-    "title": "Firmware Engineer II",
+    "job_id": "1899179",
+    "title": "Senior Firmware Engineer",
     "locations": [
       "Redmond, Washington, United States + 1 more location"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899187/",
-    "required_qualifications_text": ": Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 2+ years technical engineering experience OR equivalent experience. Proficient in C/C++ . Experience debugging and resolving issues spanning multiple subsystems in the embedded ecosystem. Experience with one or more of the following: platform initialization, low level device drivers for peripherals/protocols such as I3C, I2C, SPI, USB, UARTs as well as Memory Management, Scheduling, Interrupts or multi-threading. Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
-    "preferred_qualifications_text": ": Proficient in embedded RUST, RUST RTOS’s and toolchains Experience with SoC bring-up, OS primitives, memory management, and multi-threading. Experience in working in pre-silicon environments. Firmware Engineering IC3 - The",
-    "other_requirements_text": "",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899179/",
+    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience. 4+ years of professional experience in design/development, integration, validation, or system level debugging in embedded systems. Problem solving, debugging, and troubleshooting skills. Experience with programing in Python or C or C++.",
+    "preferred_qualifications_text": ": Demonstrated experience in system level debug and validation (including validation infrastructure setup) for complext embedded systems (Boards, FPGA, Emulation, Simulation etc.) Have experience of system level debugging (including partner issues) with an understanding of managing and triaging production level issues. Experience with PCIe, I2C, SPI, and other low-level interfaces in AI server space Familiarity with silicon bring-up and validation flows. Experience of creating or working with automated testing pipeline aka CI/CD (integration + validation) Knowledge of hardware debuggers like JTAG, Oscilloscope, and Logic Analyzer etc. Kn owledge of automation framework setup and deployment. Firmware Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $106,400 - $203,600"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $137,600 - $222,600"
+      }
+    ]
+  },
+  {
+    "job_id": "1884272",
+    "title": "Business Manager",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884272/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "",
+    "other_requirements_text": "Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check. Preferred/Additional Qualifications 6+ years experience in financial management, business planning, operations management, strategy, project management, human resources, or business-related roles OR Bachelor's Degree in relevant field (e.g., Liberal Arts, Business Administration, Management, Computer Science) Knowledge of corporate organization and culture and ability to navigate it successfully. Cross-team collaboration & organizational skills. Project management skills, with the proven ability to drive for results across a distributed set of stakeholders and projects. Business Management IC4 - The typical base pay range for this role across the U.S. is USD $96,500 - $188,400 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $123,500 - $206,400 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 26, 2025. #azdat #azuredata\nRequired/Minimum Qualifications\n• Bachelor's Degree in relevant field (e.g., Liberal Arts, Business Administration, Management, Computer Science) AND 4+ years experience in financial management, business planning, operations management, strategy, project management, human resources, or business-related roles OR equivalent experience.\n• Formal training or experience in project and process management, financial accounting, business management and/or operations.\nOther Requirements\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check.\nPreferred/Additional Qualifications\n• 6+ years experience in financial management, business planning, operations management, strategy, project management, human resources, or business-related roles OR Bachelor's Degree in relevant field (e.g., Liberal Arts, Business Administration, Management, Computer Science)\n• Knowledge of corporate organization and culture and ability to navigate it successfully.\n• Cross-team collaboration & organizational skills.\n• Project management skills, with the proven ability to drive for results across a distributed set of stakeholders and projects.\nBusiness Management IC4 - The typical base pay range for this role across the U.S. is USD $96,500 - $188,400 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $123,500 - $206,400 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 26, 2025.\n#azdat\n#azuredata",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $96,500 - $188,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $123,500 - $206,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1899207",
+    "title": "Firmware Development Engineer",
+    "locations": [
+      "Mountain View, California, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899207/",
+    "required_qualifications_text": ": Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 2+ years technical engineering experience OR equivalent experience. 1 + years of Experience in FW and or Embedded Software development experience, particularly in a multi-core platform environment. 1 + years of programming experience in C/C++. Demonstrated experience of hardware and firmware architecture, design, and coding for solutions at scale",
+    "preferred_qualifications_text": ": Knowledge of operating systems including drivers, memory management, boot loaders, and scheduling. Basic Verilog (or any other HDL) programming & waveform debugging Debugging skills with GDB or equivalent. Experience developing firmware in pre-silicon environments and on test benches. Shipped products running firmware or embedded software you’ve written. Experience with one or more of these: drivers, DMA, PCIe, NVMe , image video encoders/decoders, memory controllers/training, boot flows, or power management. Firmware Engineering IC3 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
@@ -106,121 +299,6 @@
     ]
   },
   {
-    "job_id": "1899154",
-    "title": "Senior Hardware Engineer",
-    "locations": [
-      "Redmond, Washington, United States + 9 more locations"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899154/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": ": Direct hardware experience with FPGA designs. Hardware Engineering IC4 - The",
-    "other_requirements_text": "",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
-      }
-    ]
-  },
-  {
-    "job_id": "1899183",
-    "title": "Senior Firmware Engineer",
-    "locations": [
-      "Redmond, Washington, United States + 9 more locations"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899183/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": ": Experience with one or more of the following: driver development, Linux driver initialization, peripherals such as PCIe, memory interfaces. OS primitives, memory management, scheduling, interrupts, threading. Experience with penetration testing. Firmware Engineering IC4 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $106,400 - $203,600"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $137,600 - $222,600"
-      }
-    ]
-  },
-  {
-    "job_id": "1899179",
-    "title": "Senior Firmware Engineer",
-    "locations": [
-      "Redmond, Washington, United States + 1 more location"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899179/",
-    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience. 4+ years of professional experience in design/development, integration, validation, or system level debugging in embedded systems. Problem solving, debugging, and troubleshooting skills. Experience with programing in Python or C or C++.",
-    "preferred_qualifications_text": ": Demonstrated experience in system level debug and validation (including validation infrastructure setup) for complext embedded systems (Boards, FPGA, Emulation, Simulation etc.) Have experience of system level debugging (including partner issues) with an understanding of managing and triaging production level issues. Experience with PCIe, I2C, SPI, and other low-level interfaces in AI server space Familiarity with silicon bring-up and validation flows. Experience of creating or working with automated testing pipeline aka CI/CD (integration + validation) Knowledge of hardware debuggers like JTAG, Oscilloscope, and Logic Analyzer etc. Kn owledge of automation framework setup and deployment. Firmware Engineering IC4 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $106,400 - $203,600"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $137,600 - $222,600"
-      }
-    ]
-  },
-  {
-    "job_id": "1899186",
-    "title": "Senior Firmware Engineer",
-    "locations": [
-      "Redmond, Washington, United States + 2 more locations"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899186/",
-    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience. OR equivalent experience. 4+ years of professional experience in architecting, designing and developing firmware/software solutions. Experience in Embedded Linux, U-Boot or Board Support Packages (BSP) porting. 4+ years of experience with any of the following: Platform initialization, low level drivers for peripherals such as PCIe, I2C, eMMC, SPI, USB, UARTs, Memory Management, Scheduling, Interrupts or multi-threading technologies.",
-    "preferred_qualifications_text": ": Knowledge of hardware and firmware interfaces: OpenBMC , DMTF MCTP, Redfish, PLDM, SPDM and RAS. Collaboration (aligned with team, across teams). Passionate about coaching team members and helping them grow. Seeks new technological challenges and thrives in ambiguous situations. Problem solving, debugging troubleshooting skills, advanced design, and development skills. Detailed knowledge of core networking protocols and REST API frameworks. Other Requirements: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Firmware Engineering IC4 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Firmware Engineering IC4 - The typical base pay range for this role across the U.S. is USD $106,400 - $203,600 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $137,600 - $222,600 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 24th, 2025. #SCHIE\nRequired Qualifications:\n• Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience. OR equivalent experience.\n• 4+ years of professional experience in architecting, designing and developing firmware/software solutions.\n• Experience in Embedded Linux, U-Boot or Board Support Packages (BSP) porting.\n• 4+ years of experience with any of the following: Platform initialization, low level drivers for peripherals such as PCIe, I2C, eMMC, SPI, USB, UARTs, Memory Management, Scheduling, Interrupts or multi-threading technologies.\n• OR equivalent experience.",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $106,400 - $203,600"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $137,600 - $222,600"
-      }
-    ]
-  },
-  {
-    "job_id": "1899207",
-    "title": "Firmware Development Engineer",
-    "locations": [
-      "Mountain View, California, United States"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899207/",
-    "required_qualifications_text": ": Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 2+ years technical engineering experience OR equivalent experience. 1 + years of Experience in FW and or Embedded Software development experience, particularly in a multi-core platform environment. 1 + years of programming experience in C/C++. Demonstrated experience of hardware and firmware architecture, design, and coding for solutions at scale",
-    "preferred_qualifications_text": ": Knowledge of operating systems including drivers, memory management, boot loaders, and scheduling. Basic Verilog (or any other HDL) programming & waveform debugging Debugging skills with GDB or equivalent. Experience developing firmware in pre-silicon environments and on test benches. Shipped products running firmware or embedded software you’ve written. Experience with one or more of these: drivers, DMA, PCIe, NVMe , image video encoders/decoders, memory controllers/training, boot flows, or power management. Firmware Engineering IC3 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $85,100 - $169,800"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $112,000 - $185,300"
-      }
-    ]
-  },
-  {
     "job_id": "1899232",
     "title": "Software Engineer II - Azure Storage",
     "locations": [
@@ -244,86 +322,17 @@
     ]
   },
   {
-    "job_id": "1899190",
-    "title": "Senior Firmware Engineer",
-    "locations": [
-      "Redmond, Washington, United States + 1 more location"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899190/",
-    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience. Proficient in C/C++ . Experience debugging and resolving issues spanning multiple subsystems in the embedded ecosystem. Experience with one or more of the following: Platform initialization, low level device drivers for peripherals/protocols such as I3C, I2C, SPI, USB, UARTs as well as Memory Management, Scheduling, Interrupts or multi-threading Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. P referred Qualifications: Bachelor's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 5+ years firmware engineering experience with focus on embedded systems and RTOS OR Master's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 4+ years firmware engineering experience with focus on embedded systems and RTOS Proficient in embedded RUST, RUST RTOS’s and toolchains Experience with SoC bring-up, OS primitives, memory management, and multi-threading. Experience in working in pre silicon environments. Firmware Engineering IC4 - The typical base pay range for this role across the U.S. is USD $106,400 - $203,600 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $137,600 - $222,600 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for these roles on an ongoing basis.\nRequired Qualifications:\n• Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience OR equivalent experience.\n• Proficient in C/C++ .\n• Experience debugging and resolving issues spanning multiple subsystems in the embedded ecosystem.\n• Experience with one or more of the following: Platform initialization, low level device drivers for peripherals/protocols such as I3C, I2C, SPI, USB, UARTs as well as Memory Management, Scheduling, Interrupts or multi-threading\n• OR equivalent experience.\nOther Qualifications:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.\nP referred Qualifications:\n• Bachelor's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 5+ years firmware engineering experience with focus on embedded systems and RTOS OR Master's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 4+ years firmware engineering experience with focus on embedded systems and RTOS\n• Proficient in embedded RUST, RUST RTOS’s and toolchains\n• Experience with SoC bring-up, OS primitives, memory management, and multi-threading.\n• Experience in working in pre silicon environments.\n• OR Master's Degree in Electrical Engineering , Computer Engineering, Computer Science, or related field AND 4+ years firmware engineering experience with focus on embedded systems and RTOS\nFirmware Engineering IC4 - The typical base pay range for this role across the U.S. is USD $106,400 - $203,600 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $137,600 - $222,600 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay\nMicrosoft will accept applications for these roles on an ongoing basis.",
-    "preferred_qualifications_text": "",
-    "other_requirements_text": "",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $106,400 - $203,600"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $137,600 - $222,600"
-      }
-    ]
-  },
-  {
-    "job_id": "1899198",
-    "title": "Senior Reliability Engineer",
-    "locations": [
-      "Redmond, Washington, United States + 8 more locations"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899198/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": "",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. Site Reliability Engineering IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 24th, 2025 # S CHIE # AZURE # Cloud\nRequired/minimum qualifications:\n• Master's Degree in Computer Science, Information Technology, or related field AND 2+ years technical experience in software engineering, network engineering, or systems administration OR Bachelor's Degree in Computer Science, Information Technology, or related field AND 4+ years technical experience in software engineering, network engineering, or systems administration OR equivalent experience.\n• 3+ years of experience in software engineering or operations for large-scale distributed systems.\n• Ability to support a 24x7 data center environment, including participation in an on-call rotation and availability during non-standard business hours(evening, nights, weekends, or holidays) as operational needs require.\n• Proficiency in one or more programming languages (C#, Python, Go, or similar).\n• Understanding of cloud infrastructure (Azure preferred), networking, and system design.\n• Familiarity with monitoring tools, incident management frameworks, and DevOps practices.\n• OR equivalent experience.\nOther Requirements:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:\nMicrosoft Cloud Background Check:\nThis position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.\nSite Reliability Engineering IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 24th, 2025\n# S CHIE # AZURE # Cloud",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
-      }
-    ]
-  },
-  {
-    "job_id": "1884272",
-    "title": "Business Manager",
+    "job_id": "1897796",
+    "title": "Product Manager II",
     "locations": [
       "Redmond, Washington, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1884272/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": "",
-    "other_requirements_text": "Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check. Preferred/Additional Qualifications 6+ years experience in financial management, business planning, operations management, strategy, project management, human resources, or business-related roles OR Bachelor's Degree in relevant field (e.g., Liberal Arts, Business Administration, Management, Computer Science) Knowledge of corporate organization and culture and ability to navigate it successfully. Cross-team collaboration & organizational skills. Project management skills, with the proven ability to drive for results across a distributed set of stakeholders and projects. Business Management IC4 - The typical base pay range for this role across the U.S. is USD $96,500 - $188,400 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $123,500 - $206,400 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 26, 2025. #azdat #azuredata\nRequired/Minimum Qualifications\n• Bachelor's Degree in relevant field (e.g., Liberal Arts, Business Administration, Management, Computer Science) AND 4+ years experience in financial management, business planning, operations management, strategy, project management, human resources, or business-related roles OR equivalent experience.\n• Formal training or experience in project and process management, financial accounting, business management and/or operations.\nOther Requirements\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check.\nPreferred/Additional Qualifications\n• 6+ years experience in financial management, business planning, operations management, strategy, project management, human resources, or business-related roles OR Bachelor's Degree in relevant field (e.g., Liberal Arts, Business Administration, Management, Computer Science)\n• Knowledge of corporate organization and culture and ability to navigate it successfully.\n• Cross-team collaboration & organizational skills.\n• Project management skills, with the proven ability to drive for results across a distributed set of stakeholders and projects.\nBusiness Management IC4 - The typical base pay range for this role across the U.S. is USD $96,500 - $188,400 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $123,500 - $206,400 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 26, 2025.\n#azdat\n#azuredata",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $96,500 - $188,400"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $123,500 - $206,400"
-      }
-    ]
-  },
-  {
-    "job_id": "1861244",
-    "title": "Product Manager II - Azure Core Storage",
-    "locations": [
-      "Multiple Locations, United States + 3 more locations"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1861244/",
-    "required_qualifications_text": ": Bachelor's Degree in computer science, Engineering, or related field AND 2+ years experience in product/program management or software development OR equivalent experience 2+ years of experience with cloud storage",
-    "preferred_qualifications_text": ": Bachelor's Degree in computer science, engineering, or related field AND 2+ years experience in product/program management or software development OR equivalent experience. 1+ year(s) of ability of to develop product roadmaps to deliver customer and business value across products and services. 1+ year(s) of project management, leadership, and cross-group collaboration skills; with the ability to hold technical discussions and go deep in technical areas, as needed. 1+ year(s) of experience in or knowledge of Block Storage, filesystems, distributed systems, and virtualization technologies. Product Management IC3-The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897796/",
+    "required_qualifications_text": ": Bachelor's Degree AND 2+ years' experience in product/service/project/program management or software development OR equivalent experience. 1-3 years' experience with VMware technologies including ESXi , vCenter, NSX, and vSAN OR e xposure to cloud computing platforms—preferably Azure, but AWS or GCP experience is also valued . Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": ": Bachelor's Degree AND 5+ years experience in product/service/program management or software development OR equivalent experience. 2+ years experience improving product metrics for a product, feature, or experience in a market (e.g., growing customer base, expanding customer usage, avoiding customer churn). 2+ years experience disrupting a market for a product, feature, or experience (e.g., competitive disruption, taking the place of an established competing product). Interest or experience in AI-driven infrastructure management and workload optimization . Strong communication and organizational skills, with a proactive and collaborative mindset. Product Management IC3 - The",
+    "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
@@ -332,6 +341,66 @@
       {
         "region": "SF Bay Area / NYC",
         "range": "USD $131,400 - $215,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1899216",
+    "title": "Principal Firmware Development Engineer",
+    "locations": [
+      "Mountain View, California, United States + 2 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899216/",
+    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 3+ years technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 6+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 8+ years technical engineering experience OR equivalent experience. 7 + years’ experience in software development with C++. 7+ years’ experience in post-silicon SoC or system validation or diagnostic/stress test content development. Experience with one or more of these: DMAs, PCIe, Memory (DDR, HBM) , Network Controllers, Image decoders.",
+    "preferred_qualifications_text": "",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Preferred Q ualifications: Experience in build systems such as CMake and f amiliarity with CI/CD systems. Knowledge of power and thermal profiling, TDP/PnP, and PVT characterization. Knowledge of or experience with AI models /kernels such NCCL and Mistral. Experience with Cuda or GPU or tensor-based programming. Firmware Engineering IC5 - The typical base pay range for this role across the U.S. is USD $130,900 - $251,900 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $165,600 - $272,300 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: US corporate pay information | Microsoft Careers Microsoft will accept applications for the role until October 24th, 2025. #SCHIE\nRequired Qualifications:\n• Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 3+ years technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 6+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 8+ years technical engineering experience OR equivalent experience.\n• 7 + years’ experience in software development with C++.\n• 7+ years’ experience in post-silicon SoC or system validation or diagnostic/stress test content development.\n• Experience with one or more of these: DMAs, PCIe, Memory (DDR, HBM) , Network Controllers, Image decoders.\n• OR equivalent experience.\nOther Requirements:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings:\n• Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.\nPreferred Q ualifications:\n• Experience in build systems such as CMake and f amiliarity with CI/CD systems.\n• Knowledge of power and thermal profiling, TDP/PnP, and PVT characterization.\n• Knowledge of or experience with AI models /kernels such NCCL and Mistral.\n• Experience with Cuda or GPU or tensor-based programming.\nFirmware Engineering IC5 - The typical base pay range for this role across the U.S. is USD $130,900 - $251,900 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $165,600 - $272,300 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: US corporate pay information | Microsoft Careers Microsoft will accept applications for the role until October 24th, 2025.\n#SCHIE",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $130,900 - $251,900"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $165,600 - $272,300"
+      }
+    ]
+  },
+  {
+    "job_id": "1892387",
+    "title": "Principal Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1892387/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 6+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices. 6+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets . 6+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes). 2+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making .",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 12+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices. 12+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets . 12+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes). 4+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making . Microsoft will accept applications for the role until October 27th, 2025 . #MSFTSecurity\nRequired Qualifications :\n• Bachelor's Degree in Computer Science, or related technical discipline AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience.\n• 6+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices.\n• 6+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets .\n• 6+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes).\n• 2+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making .\nBachelor's Degree in Computer Science, or related technical discipline AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python\n• OR equivalent experience.\nOR equivalent experience.\nOther Requirements:\nAbility to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:\n• Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.\nAdditional or Preferred Qualifications:\n• Bachelor's Degree in Computer Science or related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience.\n• 12+ years of experience designing, developing, or maintaining secure software systems , with applied knowledge of authentication , data protection , access control , and secure coding practices.\n• 12+ years of experience working with distributed data processing frameworks such as Apache Spark , Databricks , or similar technologies to transform and manage large - scale datasets .\n• 12+ years of experience designing and developing scalable solutions using microservices architecture and related technologies (e.g., REST, gRPC, Docker, Kubernetes).\n• 4+ years of e xperience building consensus and resolving conflicts across cross - functional teams to drive alignment and effective decision - making .\n• OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python\n• OR equivalent experience.\nMicrosoft will accept applications for the role until October 27th, 2025 .\n#MSFTSecurity",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. Additional or",
+    "pay_ranges": []
+  },
+  {
+    "job_id": "1896529",
+    "title": "Principal Software Engineer/Architect - Azure Blob Storage",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 18, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1896529/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, or Python OR equivalent experience. 5+ years of systems experience in hands-on development of reliable and performant distributed systems Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, OR Python OR Master's Degree in Computer Science or related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, or Python OR equivalent experience. 1+ years experience with storage system internals in areas such as availability, remote replication, durability schemes, and high-performance I/O. 1+ years experience with in one or more of the following domains: Database internals (e.g., query execution engines, transaction processing, storage engines) Indexing and search techniques (e.g., B-Trees, LSM Trees, inverted indexes, vector search) Caching and data placement strategies (e.g., tiered storage, content-aware caching, hot/cold data separation) Metadata and namespace management at scale 1+ years experience in leading technical direction and influence architecture across teams. A mindset oriented toward innovation, performance, and building at planetary scale. Software Engineering IC6 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $163,000 - $296,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $220,800 - $331,200"
       }
     ]
   },
@@ -359,25 +428,25 @@
     ]
   },
   {
-    "job_id": "1897581",
-    "title": "Principal Data Scientist",
+    "job_id": "1899186",
+    "title": "Senior Firmware Engineer",
     "locations": [
       "Redmond, Washington, United States + 2 more locations"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 18, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1897581/",
-    "required_qualifications_text": ": Doctorate in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 5+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Master's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 7+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Bachelor's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 10+ years data science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR equivalent experience. Advanced knowledge of probability, statistics, experimental design, and product analytics, with a strong track record in designing and leading A/B tests, funnel analysis, and metric frameworks. Proficiency in large-scale data management and analysis using tools such as SQL, Python, R, Spark, or similar technologies. Good communication skills with the ability to collaborate effectively across teams and influence senior leadership. Strong business insight to translate data-driven findings into strategic and product outcomes.",
-    "preferred_qualifications_text": ": Doctorate in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 8+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Master's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 10+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR Bachelor's Degree in Data Science, Mathematics, Statistics, Econometrics, Economics, Operations Research, Computer Science, or related field AND 12+ years data-science experience (e.g., managing structured and unstructured data, applying statistical techniques and reporting results) OR equivalent experience. Data Science IC5 - The",
-    "other_requirements_text": "",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899186/",
+    "required_qualifications_text": ": Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience. OR equivalent experience. 4+ years of professional experience in architecting, designing and developing firmware/software solutions. Experience in Embedded Linux, U-Boot or Board Support Packages (BSP) porting. 4+ years of experience with any of the following: Platform initialization, low level drivers for peripherals such as PCIe, I2C, eMMC, SPI, USB, UARTs, Memory Management, Scheduling, Interrupts or multi-threading technologies.",
+    "preferred_qualifications_text": ": Knowledge of hardware and firmware interfaces: OpenBMC , DMTF MCTP, Redfish, PLDM, SPDM and RAS. Collaboration (aligned with team, across teams). Passionate about coaching team members and helping them grow. Seeks new technological challenges and thrives in ambiguous situations. Problem solving, debugging troubleshooting skills, advanced design, and development skills. Detailed knowledge of core networking protocols and REST API frameworks. Other Requirements: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Firmware Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to, the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter. Firmware Engineering IC4 - The typical base pay range for this role across the U.S. is USD $106,400 - $203,600 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $137,600 - $222,600 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 24th, 2025. #SCHIE\nRequired Qualifications:\n• Doctorate in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 1+ year(s) technical engineering experience OR Master's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 4+ years technical engineering experience OR Bachelor's Degree in Electrical Engineering, Computer Engineering, Computer Science, or related field AND 5+ years technical engineering experience. OR equivalent experience.\n• 4+ years of professional experience in architecting, designing and developing firmware/software solutions.\n• Experience in Embedded Linux, U-Boot or Board Support Packages (BSP) porting.\n• 4+ years of experience with any of the following: Platform initialization, low level drivers for peripherals such as PCIe, I2C, eMMC, SPI, USB, UARTs, Memory Management, Scheduling, Interrupts or multi-threading technologies.\n• OR equivalent experience.",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $139,900 - $274,800"
+        "range": "USD $106,400 - $203,600"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $188,000 - $304,200"
+        "range": "USD $137,600 - $222,600"
       }
     ]
   }

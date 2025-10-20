@@ -124,6 +124,7 @@ celerybeat.pid
 .venv
 env/
 venv-scrapper/
+venv*/
 venv/
 ENV/
 env.bak/
@@ -193,3 +194,4 @@ Thumbs.db
 old*.py
 temp*.py
 temp*.ipynb
+temp*

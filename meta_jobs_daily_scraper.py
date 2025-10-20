@@ -9,6 +9,7 @@ from utils.meta_config import (
     JOB_DETAILS_FILE,
     MAX_PAGES,
     HEADLESS,
+    OUTPUT_DIR,
 )
 
 # Import shared helper functions from utils.meta_core
@@ -18,6 +19,7 @@ from utils.meta_core import (
     load_existing_ids,
     load_existing_details,
     scrape_new_jobs_until_known_id,
+    cleanup_old_job_files
 )
 
 
@@ -98,6 +100,9 @@ def main():
     else:
         print("\n✅ No new jobs found - details file unchanged")
         print("All jobs on current pages are already in our database!")
+
+    files_removed = cleanup_old_job_files(OUTPUT_DIR)
+    print(f"Total files removed in jobs by date: {files_removed}")
 
 if __name__ == "__main__":
     main()

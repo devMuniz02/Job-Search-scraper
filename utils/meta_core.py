@@ -4,6 +4,8 @@ meta_core.py
 Utility functions for scraping job listings and details from Meta Careers.
 """
 
+import datetime as dt
+import glob
 import re
 import json
 import time
@@ -451,3 +453,64 @@ def scrape_details(list_of_job_ids: List[str], driver) -> Dict[str, Any]:
         print("Error:", e)
     return results
 
+def cleanup_old_job_files(save_path: str) -> int:
+    """Delete per-day job files older than 10 days from the jobs_by_date dir.
+
+    The function expects files named like `jobs_dd_month_yyyy.json` and removes
+    those older than the cutoff date.
+    """
+
+    cutoff_date = dt.date.today() - dt.timedelta(days=10)
+    output_dir = f"{save_path}"
+    output_dir = os.path.join(output_dir, "jobs_by_date")
+    os.makedirs(output_dir, exist_ok=True)
+    
+    if not os.path.exists(output_dir):
+        return 0
+    
+    # Find all job files
+    pattern = os.path.join(output_dir, "jobs_*.json")
+    job_files = glob.glob(pattern)
+    
+    files_removed = 0
+    
+    for filepath in job_files:
+        filename = os.path.basename(filepath)
+        
+        # Extract date from filename (jobs_dd_month_yyyy.json)
+        try:
+            # Remove 'jobs_' prefix and '.json' suffix
+            date_part = filename[5:-5]  # Remove 'jobs_' and '.json'
+            
+            # Parse the date format: dd_month_yyyy
+            parts = date_part.split('_')
+            if len(parts) >= 3:
+                day = int(parts[0])
+                month_name = parts[1]
+                year = int(parts[2])
+                
+                # Convert month name to number
+                month_names = {
+                    'january': 1, 'february': 2, 'march': 3, 'april': 4,
+                    'may': 5, 'june': 6, 'july': 7, 'august': 8,
+                    'september': 9, 'october': 10, 'november': 11, 'december': 12
+                }
+                
+                month = month_names.get(month_name.lower())
+                if month:
+                    file_date = dt.date(year, month, day)
+                    
+                    if file_date < cutoff_date:
+                        os.remove(filepath)
+                        files_removed += 1
+                        print(f"Removed old file: {filename} (date: {file_date})")
+        except (ValueError, IndexError, KeyError) as e:
+            print(f"Could not parse date from filename {filename}: {e}")
+            continue
+    
+    if files_removed > 0:
+        print(f"Removed {files_removed} old job files")
+    else:
+        print("No old job files found to remove")
+    
+    return files_removed

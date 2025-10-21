@@ -1,24 +1,24 @@
 [
   {
-    "job_id": "1898495",
-    "title": "Senior Software Engineer - Azure Storage",
+    "job_id": "1875971",
+    "title": "Principal Computer Architect",
     "locations": [
-      "Multiple Locations, United States"
+      "Hillsboro, Oregon, United States + 1 more location"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 20, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1898495/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. 3+ years of hands-on experience with Storage products and cloud-native architectures. 3+ years of experience in software development with a focus on large distributed systems.",
-    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 8+ years technical engineering experience with coding in llanguages including, but not limited to, C# or Java OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. Software Engineering IC4 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1875971/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Experience with TCO (Total Cost of Ownership) modeling. Experience with server platform and workload analysis . Experience with Compute SOC performance and power analysis. Expertise in high level modeling and simulatio n of architecture features. Expertise in Data Analysis Knowledge of sustainability metrics. Hardware Engineering IC5 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
+        "range": "USD $139,900 - $274,800"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
+        "range": "USD $188,000 - $304,200"
       }
     ]
   },
@@ -46,48 +46,25 @@
     ]
   },
   {
-    "job_id": "1897847",
-    "title": "Principal Software Engineer - Azure Storage",
+    "job_id": "1879685",
+    "title": "Cloud Solution Architect - Director",
     "locations": [
       "Multiple Locations, United States"
     ],
-    "travel": "0-25 %",
+    "travel": "25-50 %",
     "date_posted": "Oct 20, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1897847/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. 5+ years of hands-on experience with Storage products and cloud-native architectures. 5+ years of experience in software development with a focus on large distributed systems. Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
-    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. Software Engineering IC5 - The",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1879685/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "Bachelor's Degree in Computer Science, Information Technology, Engineering, Business, Liberal Arts, or related field AND 12+ years experience in cloud/infrastructure technologies, information technology (IT) consulting/support, systems administration, network operations, software development/support, technology solutions, practice development, architecture, and/or consulting OR Master's Degree in Computer Science, Information Technology, Engineering, Business, Liberal Arts, or related field AND 8+ years experience in cloud/infrastructure technologies, technology solutions, practice development, architecture, and/or consulting OR equivalent experience. Technical Certification in Cloud (e.g., Azure, Amazon Web Services, Google, security certifications). 5+ years people management experience, including managing consultant practice managers, technical sales managers, and/or technical architect managers. Cloud Solution Architecture M5 - The",
     "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $139,900 - $274,800"
+        "range": "USD $130,900 - $251,900"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $188,000 - $304,200"
-      }
-    ]
-  },
-  {
-    "job_id": "1875971",
-    "title": "Principal Computer Architect",
-    "locations": [
-      "Hillsboro, Oregon, United States + 1 more location"
-    ],
-    "travel": "0-25 %",
-    "date_posted": "Oct 20, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1875971/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": ": Experience with TCO (Total Cost of Ownership) modeling. Experience with server platform and workload analysis . Experience with Compute SOC performance and power analysis. Expertise in high level modeling and simulatio n of architecture features. Expertise in Data Analysis Knowledge of sustainability metrics. Hardware Engineering IC5 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
-    "pay_ranges": [
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $139,900 - $274,800"
-      },
-      {
-        "region": "SF Bay Area / NYC",
-        "range": "USD $188,000 - $304,200"
+        "range": "USD $165,600 - $272,300"
       }
     ]
   },
@@ -115,25 +92,48 @@
     ]
   },
   {
-    "job_id": "1879685",
-    "title": "Cloud Solution Architect - Director",
+    "job_id": "1898495",
+    "title": "Senior Software Engineer - Azure Storage",
     "locations": [
       "Multiple Locations, United States"
     ],
-    "travel": "25-50 %",
+    "travel": "0-25 %",
     "date_posted": "Oct 20, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1879685/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": "Bachelor's Degree in Computer Science, Information Technology, Engineering, Business, Liberal Arts, or related field AND 12+ years experience in cloud/infrastructure technologies, information technology (IT) consulting/support, systems administration, network operations, software development/support, technology solutions, practice development, architecture, and/or consulting OR Master's Degree in Computer Science, Information Technology, Engineering, Business, Liberal Arts, or related field AND 8+ years experience in cloud/infrastructure technologies, technology solutions, practice development, architecture, and/or consulting OR equivalent experience. Technical Certification in Cloud (e.g., Azure, Amazon Web Services, Google, security certifications). 5+ years people management experience, including managing consultant practice managers, technical sales managers, and/or technical architect managers. Cloud Solution Architecture M5 - The",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1898495/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. 3+ years of hands-on experience with Storage products and cloud-native architectures. 3+ years of experience in software development with a focus on large distributed systems.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 8+ years technical engineering experience with coding in llanguages including, but not limited to, C# or Java OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1897847",
+    "title": "Principal Software Engineer - Azure Storage",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 20, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897847/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. 5+ years of hands-on experience with Storage products and cloud-native architectures. 5+ years of experience in software development with a focus on large distributed systems. Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science OR related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C# or Java OR equivalent experience. Software Engineering IC5 - The",
     "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $130,900 - $251,900"
+        "range": "USD $139,900 - $274,800"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $165,600 - $272,300"
+        "range": "USD $188,000 - $304,200"
       }
     ]
   }

@@ -1,5 +1,289 @@
 [
   {
+    "job_id": "1859499",
+    "title": "Principal Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1859499/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": 5+ years of experience in cloud services or AI systems. Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Experience building and shipping AI features for world-class production systems. Knowledge of machine learning tools and libraries like PyTorch or TensorFlow or similar Hands on experience in programming languages such C, Java, C++, or equivalent programming languages. Excellent communication skills and ability to collaborate within a multi-disciplinary team. Software Engineering IC5 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $139,900 - $274,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $188,000 - $304,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1898465",
+    "title": "Principal Applied Science Manager",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1898465/",
+    "required_qualifications_text": ": Bachelor's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 8+ years related experience (e.g., statistics, predictive analytics, research) OR Master's Degree in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 6+ years related experience (e.g., statistics, predictive analytics, research) OR Doctorate in Statistics, Econometrics, Computer Science, Electrical or Computer Engineering, or related field AND 5+ years related experience (e.g., statistics, predictive analytics, research) OR equivalent experience. 3+ years of people management experience. 3+ years of experience training/fine tuning AI/ML models, LLMs/SLMs (small language model). 3+ years' experience with productization or shipping ML and/or AI components at internet scale.",
+    "preferred_qualifications_text": ": 5+ years of people management experience. 5+ years experience creating publications (e.g., patents, libraries, peer-reviewed academic papers). 2+ years experience presenting at conferences or other events in the outside research/industry community as an invited speaker. 5+ years experience conducting research as part of a research program (in academic or industry settings). 3+ years experience developing and deploying live production systems, as part of a product team. 3+ years experience developing and deploying products or systems at multiple points in the product cycle from ideation to shipping. Applied Sciences M6 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $163,000 - $296,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $220,800 - $331,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1897565",
+    "title": "Principal Product Manager - Microsoft Planner",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897565/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": ": Experience in work management, productivity, or collaboration tools. Track record of driving cultural improvements and inclusive practices. Proven ability to lead complex projects and influence without authority. Analytical skills and experience using data and research to inform decisions. Ability to navigate ambiguity and make high-impact decisions under pressure. Effective communication and executive presence. Product Management IC5 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $139,900 - $274,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $188,000 - $304,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1889468",
+    "title": "Data Center Project Manager",
+    "locations": [
+      "Wenatchee, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1889468/",
+    "required_qualifications_text": ": High School Qualification or equivalent AND 2+ years experience supporting IT equipment or related technology or delivering server and network deployment projects in large-scale environments OR equivalent experience. 1+yrs experience managing IT or network infrastructure projects from planning through execution, including stakeholder escalation and risk mitigation.",
+    "preferred_qualifications_text": ": Bachelor's or Technical College Degree in Computer Science, Math, Telecommunications, Electrical/Mechanical Engineering, Supply Chain Management or related field AND 5+ years experience in working in physical IT infrastructures (e.g., Servers, SANs, Networking, Capacity, DC Rack/Enclosures, structured cabling) o OR High School Qualification or equivalent AND 7+ years experience working in physical IT infrastructures (e.g., Servers, SANs, Networking, Capacity, DC Rack/Enclosures, structured cabling) o OR equivalent experience. Applicable certifications: ASICS (Inventory Control), CompTIA (Computing Technology Industry Association), Microsoft, Network Certifications, PMP (Project Management Professional), ITIL (Information Technology Infrastructure Library), CDCP (Certified Data Center Professional). Experience working in complex and agile environments, with a proven ability to adapt to rapidly changing requirements and priorities. Data Center Operations Management IC3 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $81,400 - $161,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $109,800 - $183,100"
+      }
+    ]
+  },
+  {
+    "job_id": "1884634",
+    "title": "Principal Software Engineer/Architect - Azure Core",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884634/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C++, C#, Java or Python OR equivalent experience 5+ years of experience in architecting large scale distributed systems. 5+ years operational experience in running a service in one of the large-scale clouds like Microsoft Azure (Azure), or similar. 5+ years experience providing technical leadership, raising the technical bar, maintaining data and results-driven culture while closely working with cross function teams, for the same connected mission. 2+ years of experience problem-solving skills in the space of AI, large datasets, Spark, Ray or other computing technologies.",
+    "preferred_qualifications_text": ": 5+ years of hands-on working knowledge of building true cloud-scale services. 2+ years of exposure to the internals of databases, stores 4+ years of exposure to the internals of Spark, Kubernetes, GraphX, Pandas, Structured Streaming etc. Software Engineering IC5 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $139,900 - $274,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $188,000 - $304,200"
+      }
+    ]
+  },
+  {
+    "job_id": "1899511",
+    "title": "Senior Product Manager",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899511/",
+    "required_qualifications_text": ": Bachelor's Degree AND 5+ years experience in product/service/program management or software development OR equivalent experience. Experience with hardware and software-based solutions with a focus on product fundamentals, such as performance, telemetry, and diagnostics. Preferred/Additional Qualifications : Demonstrated knowledge or hands-on experience applying AI technologies to enhance endpoint management, including areas such as predictive analytics, automated remediation, and/or intelligent policy enforcement. The ability to communicate clearly and effectively with diverse audiences, including through all levels of an organization, technical and non-technical. Experience working on an initiative through a full product lifecycle. 5+ years of collaboration and relationship management skills for making change happen in a highly matrixed environment. Product Management IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications and processes offers for these roles on an ongoing basis. #W+DJOBS\nRequired Qualifications :\n• Bachelor's Degree AND 5+ years experience in product/service/program management or software development OR equivalent experience.\n• Experience with hardware and software-based solutions with a focus on product fundamentals, such as performance, telemetry, and diagnostics.\n• OR equivalent experience.\nPreferred/Additional Qualifications :\n• Demonstrated knowledge or hands-on experience applying AI technologies to enhance endpoint management, including areas such as predictive analytics, automated remediation, and/or intelligent policy enforcement.\n• The ability to communicate clearly and effectively with diverse audiences, including through all levels of an organization, technical and non-technical.\n• Experience working on an initiative through a full product lifecycle.\n• 5+ years of collaboration and relationship management skills for making change happen in a highly matrixed environment.\nDemonstrated knowledge or hands-on experience applying AI technologies to enhance endpoint management, including areas such as predictive analytics, automated remediation, and/or intelligent policy enforcement.\nProduct Management IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay\nMicrosoft will accept applications and processes offers for these roles on an ongoing basis.\n#W+DJOBS",
+    "preferred_qualifications_text": "",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1864761",
+    "title": "Strategic Account Technologist",
+    "locations": [
+      "Multiple Locations, United States + 3 more locations"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1864761/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, Information Technology, Engineering, Business or related field AND 7+ years technical consulting, technical consultative selling, practice building, or related technical/sales/industry experience OR equivalent experience.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science, Information Technology, Engineering, Business or related field AND 14+ years technical consulting, technical consultative selling, practice building, or related technical/sales/industry experience OR equivalent experience. 5+ years experience in digital transformation or using technology to drive customer business outcomes. 4+ years experience in business consulting, consultative selling, or change management. 5+ years experience leading technical, support, and/or partner teams. 3+ years of Healthcare payer and/or provider industry experience (selling into or working with healthcare insurance or provider organizations Strategic Account Technology IC5 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $130,900 - $251,900"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $165,600 - $272,300"
+      }
+    ]
+  },
+  {
+    "job_id": "1897298",
+    "title": "Security Activation Go To Market Manager, Small and Medium Business",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897298/",
+    "required_qualifications_text": "8+ years marketing strategy, business planning, sales enablement, business development, technical pre-sales or related work experience. 5+ years of experience working with channel customers. 5+ years experience managing and expanding a product/solution portfolio and driving demand generation and pipeline acceleration within a complex (e.g., multinational or matrixed) organization. Preferred Qualificatio ns 12+ years marketing strategy, business planning, sales enablement, business development, technical pre-sales, or related work experience AND Bachelor's Degree in Business , Marketing, Computer Science, or related field OR equivalent experience. 8+ years experience managing and expanding a product/solution portfolio and driving demand generation and pipeline acceleration within a complex (e.g., multinational or matrixed) organization. Field Product Marketing IC5 - The typical base pay range for this role across the U.S. is USD $130,900 - $251,900 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $165,600 - $272,300 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications for the role until October 26, 2025\nRequired Qualifications\n• 8+ years marketing strategy, business planning, sales enablement, business development, technical pre-sales or related work experience.\n• 5+ years of experience working with channel customers.\n• 5+ years experience managing and expanding a product/solution portfolio and driving demand generation and pipeline acceleration within a complex (e.g., multinational or matrixed) organization.\nPreferred Qualificatio ns\n• 12+ years marketing strategy, business planning, sales enablement, business development, technical pre-sales, or related work experience AND Bachelor's Degree in Business , Marketing, Computer Science, or related field\n• OR equivalent experience.\n• 8+ years experience managing and expanding a product/solution portfolio and driving demand generation and pipeline acceleration within a complex (e.g., multinational or matrixed) organization.\nField Product Marketing IC5 - The typical base pay range for this role across the U.S. is USD $130,900 - $251,900 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $165,600 - $272,300 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay\nMicrosoft will accept applications for the role until October 26, 2025",
+    "preferred_qualifications_text": "",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $130,900 - $251,900"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $165,600 - $272,300"
+      }
+    ]
+  },
+  {
+    "job_id": "1897632",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897632/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 4+ years of experience as a software engineer/leader designing, implementing, and shipping cloud services or software products. 4+ years OOP (object-oriented) development experience.",
+    "preferred_qualifications_text": ": Exposure to COM, WinRT, NT Services, and Windows OS development. Expertise in modern C++ and/or C# .net. Expertise in modern web frameworks like React or Microsoft FAST. Solid problem-solving and end-to-end ownership skills, including live site engineering, telemetry, and collaboration across multiple components and teams. Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1899226",
+    "title": "Senior Software Engineer, Minecraft",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899226/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science , or related technical discipline AND 4+ years technical engineering experience with coding in languages including, but not limited to, C++, JavaScript, TypeScript OR equivalent experience. 1+ year of experience building large-scale applications.",
+    "preferred_qualifications_text": ": Experience in React and UX (User Experience) development . Communication and problem-solving skills, as well as a natural collaborator and team player. Experience working in product teams that build user-facing features. Software Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1836064",
+    "title": "Software Engineer II and Senior Software Engineer (Multiple Positions)",
+    "locations": [
+      "Mountain View, California, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1836064/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 2+ years software development experience in C++ or C# OR equivalent experience. 2+ years experience in application platform and architecture. Proficiency in object-oriented design, debugging, analytics and problem solving. Experience working with rich telemetry, making data driven decisions, rapid experimentation. Experience building software with scale, performance, efficiency, and reliability. Experience working closely together on every detail of design and implementation of the product. From fast evolving new features to long-range infrastructure and architecture investments.",
+    "preferred_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C# OR Master's Degree in Computer Science or related technical field AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C# OR equivalent experience. Ability to work cross group and across disciplines. Academic or Industry experience with building, finetuning or building systems with models (any category). Leadership skills to influence others, with the ability to understand team dynamics, retain, attract, and develop team members. Grounded in growth mindset, and advocate for inclusion. Customer obsessed and passionate about product impact. Software Engineering IC3 - The",
+    "other_requirements_text": ": Candidates must be able to meet Microsoft, customer and/or government security screening requirements that are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1896545",
+    "title": "Sr Sales Excellence Manager – Cloud & AI Platforms",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1896545/",
+    "required_qualifications_text": "4+ years experience in sales, sales operations/management, account management, program management, business development, marketing, consulting, or a related field OR equivalent experience. 3+ years of experience using data to drive business outcomes or inform business decisions. 3+ years of experience managing relationships with stakeholders, clients, and/or customers.",
+    "preferred_qualifications_text": "Bachelor’s Degree in a related field. 3+ years managing projects, including planning, managing timelines, and tracking progress, and/or change management experience. Experience in cloud sales, AI solution enablement, consumption forecasting, or partner orchestration. Familiarity with Microsoft's MCAPS framework, Cloud and AI Consumed Revenue (ACR), Net New Revenue(NNR) metrics, and sales execution engines. Sales Excellence IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $106,400 - $203,600"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $137,600 - $222,600"
+      }
+    ]
+  },
+  {
     "job_id": "1891815",
     "title": "Software Engineer",
     "locations": [
@@ -37,16 +321,16 @@
     ]
   },
   {
-    "job_id": "1897565",
-    "title": "Principal Product Manager - Microsoft Planner",
+    "job_id": "1897510",
+    "title": "Principal Product Manager – AI Data Platform",
     "locations": [
       "Redmond, Washington, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 21, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1897565/",
-    "required_qualifications_text": "",
-    "preferred_qualifications_text": ": Experience in work management, productivity, or collaboration tools. Track record of driving cultural improvements and inclusive practices. Proven ability to lead complex projects and influence without authority. Analytical skills and experience using data and research to inform decisions. Ability to navigate ambiguity and make high-impact decisions under pressure. Effective communication and executive presence. Product Management IC5 - The",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1897510/",
+    "required_qualifications_text": ": Bachelor's Degree AND 8+ years experience in product management, working with cloud services, AI, data, and product development OR equivalent experience. 3+ years of hands-on experience with Azure (or similar cloud) services, including resource provisioning, IAM, networking, and scripting (PowerShell or Azure CLI). 6+ years experience managing cross-functional and/or cross-team projects.",
+    "preferred_qualifications_text": ": Bachelor’s Degree AND 10+ years experience in product/technical program management, data analysis, or product development OR equivalent experience. 10+ years experience managing cross-functional and/or cross-team projects. Deep expertise in AI/ML data pipelines—pre-training, fine-tuning, evaluation, and deployment. Track record of leading cross-functional efforts at scale in high-stakes, fast-paced environments. Startup founder/early-stage experience Demonstrated expertise in Azure logging/monitoring, private networking (Private Endpoints/Links), and large-scale data-ingestion pipelines. Proven experience in product management for large-scale data or AI platforms. Proven technical background in data lifecycle management, security, and compliance. Demonstrated ability to lead cross-functional teams and drive strategic initiatives. Excellent communication and stakeholder management skills. Experience with cloud data platforms (Azure, AWS, GCP). Entrepreneurial mindset; thrives in fast-paced, ambiguous environments. Experience with automation, data pipelines, and human-in-the-loop systems. Product Management IC5 - The",
     "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
     "pay_ranges": [
       {
@@ -56,98 +340,143 @@
       {
         "region": "SF Bay Area / NYC",
         "range": "USD $188,000 - $304,200"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $163,000 - $296,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $220,800 - $331,200"
       }
     ]
   },
   {
-    "job_id": "1899511",
-    "title": "Senior Product Manager",
+    "job_id": "1899096",
+    "title": "Senior Business Development Program Manager, Minecraft",
     "locations": [
       "Redmond, Washington, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 21, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1899511/",
-    "required_qualifications_text": ": Bachelor's Degree AND 5+ years experience in product/service/program management or software development OR equivalent experience. Experience with hardware and software-based solutions with a focus on product fundamentals, such as performance, telemetry, and diagnostics. Preferred/Additional Qualifications : Demonstrated knowledge or hands-on experience applying AI technologies to enhance endpoint management, including areas such as predictive analytics, automated remediation, and/or intelligent policy enforcement. The ability to communicate clearly and effectively with diverse audiences, including through all levels of an organization, technical and non-technical. Experience working on an initiative through a full product lifecycle. 5+ years of collaboration and relationship management skills for making change happen in a highly matrixed environment. Product Management IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year. Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay Microsoft will accept applications and processes offers for these roles on an ongoing basis. #W+DJOBS\nRequired Qualifications :\n• Bachelor's Degree AND 5+ years experience in product/service/program management or software development OR equivalent experience.\n• Experience with hardware and software-based solutions with a focus on product fundamentals, such as performance, telemetry, and diagnostics.\n• OR equivalent experience.\nPreferred/Additional Qualifications :\n• Demonstrated knowledge or hands-on experience applying AI technologies to enhance endpoint management, including areas such as predictive analytics, automated remediation, and/or intelligent policy enforcement.\n• The ability to communicate clearly and effectively with diverse audiences, including through all levels of an organization, technical and non-technical.\n• Experience working on an initiative through a full product lifecycle.\n• 5+ years of collaboration and relationship management skills for making change happen in a highly matrixed environment.\nDemonstrated knowledge or hands-on experience applying AI technologies to enhance endpoint management, including areas such as predictive analytics, automated remediation, and/or intelligent policy enforcement.\nProduct Management IC4 - The typical base pay range for this role across the U.S. is USD $119,800 - $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 - $258,000 per year.\nCertain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us-corporate-pay\nMicrosoft will accept applications and processes offers for these roles on an ongoing basis.\n#W+DJOBS",
-    "preferred_qualifications_text": "",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899096/",
+    "required_qualifications_text": ": Bachelor's Degree in Business, Liberal Arts, Sciences, or related field AND 5+ years relevant work experience (e.g., investment banking, consulting, finance, marketing, corporate strategy, sales, venture capital, legal, business development, product management, project management, software development, or related field OR equivalent experience. Experience in business development and deal-making processes within the gaming, entertainment, or similar industries.",
+    "preferred_qualifications_text": ": 6+ years of experience in business development, business affairs, partnerships, or program/project management, preferably in the entertainment industry or related to a major entertainment IP (Intellectual Property ) brand or studio. Negotiating and deal support skills with a clear understanding of contract terms. Business Development IC4 - The",
     "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
+        "range": "USD $106,400 - $203,600"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
+        "range": "USD $137,600 - $222,600"
       }
     ]
   },
   {
-    "job_id": "1859499",
-    "title": "Principal Software Engineer",
+    "job_id": "1893474",
+    "title": "Digital Solution Area Specialists | Cloud & AI",
     "locations": [
-      "Redmond, Washington, United States"
+      "Las Colinas, Texas, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 21, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1859499/",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1893474/",
+    "required_qualifications_text": "Bachelor's Degree in Information Technology, Business Administration, or related field AND 5+ years of technology-related sales or account management experience OR 6+ years of technology-related sales or account management experience. 4+ years of experience with cloud platforms, including experience of Microsoft Azure infrastructure, data services, and AI application platforms, with the ability to design and clearly articulate technical solutions to both business and IT stakeholders Fluent in both English and Spanish , with the ability to communicate effectively in professional and technical contexts.",
+    "preferred_qualifications_text": "Master's Degree in Business Administration (e.g., MBA), Information Technology, or related field AND 5+ years of technology-related sales or account management experience OR Bachelor's Degree in Information Technology, or related field AND 6+ years of technology-related sales or account management experience OR 8+ years of technology-related sales or account management experience. 3+ years of solution sales or consulting services sales experience Digital Solution Area Specialists IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": []
+  },
+  {
+    "job_id": "1892074",
+    "title": "Director of Compliance - Worldwide Sales and Solutions (WSS)",
+    "locations": [
+      "Redmond, Washington, United States + 1 more location"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1892074/",
     "required_qualifications_text": "",
-    "preferred_qualifications_text": ": 5+ years of experience in cloud services or AI systems. Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 10+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Experience building and shipping AI features for world-class production systems. Knowledge of machine learning tools and libraries like PyTorch or TensorFlow or similar Hands on experience in programming languages such C, Java, C++, or equivalent programming languages. Excellent communication skills and ability to collaborate within a multi-disciplinary team. Software Engineering IC5 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": "Master's Degree in Business, Operations, Finance, or related field AND 12+ years experience in program management, process management, or process improvement OR Bachelor's Degree in Business, Operations, Finance, or related field AND 15+ years experience in program management, process management, or process improvement OR equivalent experience. Analytical and problem-solving skills and experience with solid finance/business acumen. Ability to accurately assess and synthesize qualitative and quantitative information (e.g., Return on Investment, Key Performance Indicators, business performance-to-value drivers, core data analytics, etc.), draw conclusions, present solutions to management and drive overall execution across a complex program. Adept at traversing business, people, and P&L (profits & loss) priorities with proven success in leading and executing across multiple, concurrent workstreams/initiatives. Track record in building partnerships and influencing stakeholder groups, as well as experience with internal advocacy in a large, dynamic and highly matrixed environment. Work experience from business management, program/project management, finance, management consulting and/or change management preferred. Business Program Management IC6 - The",
+    "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $139,900 - $274,800"
+        "range": "USD $130,900 - $277,200"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $188,000 - $304,200"
+        "range": "USD $165,600 - $303,600"
       }
     ]
   },
   {
-    "job_id": "1897632",
-    "title": "Senior Software Engineer",
+    "job_id": "1884198",
+    "title": "Senior Product Marketing Manager",
     "locations": [
       "Redmond, Washington, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 21, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1897632/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 4+ years of experience as a software engineer/leader designing, implementing, and shipping cloud services or software products. 4+ years OOP (object-oriented) development experience.",
-    "preferred_qualifications_text": ": Exposure to COM, WinRT, NT Services, and Windows OS development. Expertise in modern C++ and/or C# .net. Expertise in modern web frameworks like React or Microsoft FAST. Solid problem-solving and end-to-end ownership skills, including live site engineering, telemetry, and collaboration across multiple components and teams. Software Engineering IC4 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1884198/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "Master's Degree in Marketing, Computer Science, Business or related field AND 6+ years experience in business OR Bachelor's Degree in Marketing, Computer Science, Business or related field AND 8+ years experience in business OR equivalent experience. Excellent communication, presentation, storytelling and writing skills, with the ability to tailor messages to different audiences and channels. Strong collaboration, influence and cross-team coordination skills, with the ability to work effectively with diverse stakeholders and partners across the organization. Product Marketing IC4 - The",
+    "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $119,800 - $234,700"
+        "range": "USD $106,400 - $203,600"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $158,400 - $258,000"
+        "range": "USD $137,600 - $222,600"
       }
     ]
   },
   {
-    "job_id": "1884634",
-    "title": "Principal Software Engineer/Architect - Azure Core",
+    "job_id": "1898895",
+    "title": "Software Engineer II",
     "locations": [
-      "Multiple Locations, United States"
+      "Redmond, Washington, United States"
     ],
     "travel": "0-25 %",
     "date_posted": "Oct 21, 2025",
-    "url": "https://jobs.careers.microsoft.com/global/en/job/1884634/",
-    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C++, C#, Java or Python OR equivalent experience 5+ years of experience in architecting large scale distributed systems. 5+ years operational experience in running a service in one of the large-scale clouds like Microsoft Azure (Azure), or similar. 5+ years experience providing technical leadership, raising the technical bar, maintaining data and results-driven culture while closely working with cross function teams, for the same connected mission. 2+ years of experience problem-solving skills in the space of AI, large datasets, Spark, Ray or other computing technologies.",
-    "preferred_qualifications_text": ": 5+ years of hands-on working knowledge of building true cloud-scale services. 2+ years of exposure to the internals of databases, stores 4+ years of exposure to the internals of Spark, Kubernetes, GraphX, Pandas, Structured Streaming etc. Software Engineering IC5 - The",
-    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1898895/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline AND 2+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ years of experience in programming, design and problem-solving skills, with a solid bias for quality and engineering excellence 1+ year of experience with modern software development and/or micro service technologies Other Qualifications: Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 3+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 5+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Demonstrated ability to learn and grasps concepts quickly in a fast-paced environment. Experience identifying and resolving technical issues in production and development environments. Hands-on experience with Microsoft Azure or other cloud platforms. Practical programming experience in GoLang/C# Languages with Data Structures and Algorithms. Experience with containers and Kubernetes. Software Engineering IC3 - The",
+    "other_requirements_text": "",
     "pay_ranges": [
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $139,900 - $274,800"
+        "range": "USD $100,600 - $199,000"
       },
       {
         "region": "SF Bay Area / NYC",
-        "range": "USD $188,000 - $304,200"
+        "range": "USD $131,400 - $215,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1898870",
+    "title": "Product Designer II, Minecraft",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 21, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1898870/",
+    "required_qualifications_text": ": Bachelor's Degree in Industrial Design, Product Design, Human Computer Interaction, User Experience, Interaction Design, or related field AND 3+ years experience working in product or service design OR equivalent experience (e.g., demonstrated experience working in product or service design or using design thinking to solve problems). Experience in design and prototyping tools such as Figma, Protopie, After Effects, Illustrator, PowerPoint, or similar. Experience with AI-powered productivity solutions including Microsoft Copilot, ChatGPT, Claude, Perplexity or similar. Experience creating user-centered interfaces and/or experiences for mobile gaming platforms with a focus on optimizing player flows, controls, and touch-based interactions to enhance engagement and usability.",
+    "preferred_qualifications_text": ": 2 years experience in services and cloud deal management working on high value transactions. Demonstrated ability to build and maintain successful business partnerships. Product Design IC3 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $100,600 - $199,000"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $131,400 - $215,400"
       }
     ]
   }

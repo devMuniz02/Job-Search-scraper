@@ -77,7 +77,7 @@ def main():
             with open(details_path, "w", encoding="utf-8") as f:
                 json.dump(all_details, f, ensure_ascii=False, indent=2)
             # Also save yesterday's new job details to jobs_by_date folder
-            yesterday_str = (time.strftime('%d %B %Y')).lower()
+            yesterday_str = (time.strftime('%d %B %Y')).lower().replace(' ', '_')
             jobs_by_date_dir = os.path.join(os.path.dirname(OUT_PATH) or ".", "jobs_by_date")
             yesterday_jobs_path = os.path.join(jobs_by_date_dir, f"jobs_{yesterday_str}.json")
 

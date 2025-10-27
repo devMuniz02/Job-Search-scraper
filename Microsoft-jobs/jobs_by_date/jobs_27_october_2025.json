@@ -1,0 +1,25 @@
+[
+  {
+    "job_id": "1902531",
+    "title": "Principal Software Engineer",
+    "locations": [
+      "Mountain View, California, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Oct 27, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1902531/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 4+ years of experience working on high performance applications and performance debug and optimization on CPU's/GPU's",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 15+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Technical background and solid foundation in software engineering principles, computer architecture, GPU architecture, HW neural net acceleration Experience in end-to-end performance analysis and optimization of state of the art LLMs, HPC applications including proficiency using GPU profiling tools Experience in DNN/LLM inference and experience in one or more DL frameworks such as PyTorch, Tensorflow, or ONNX Runtime and familiarity with CUDA, ROCm, Triton Software Engineering IC6 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $163,000 - $296,400"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $220,800 - $331,200"
+      }
+    ]
+  }
+]

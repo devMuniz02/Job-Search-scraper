@@ -245,57 +245,84 @@ def upsert_record(rec: Dict[str, Any], db: Dict[str, Any]) -> None:
 session = requests.Session()
 session.headers.update({"User-Agent": "MS-Careers-Scraper/1.5 (+you@example.com)"})
 
+# utils/ms_core.py
+
+import os
+import subprocess
+import contextlib
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.chrome.service import Service
+
+# Expect this to be defined elsewhere or set to "" if unused
+# LOCAL_CHROMEDRIVER = "/path/to/chromedriver"  # example
+
+def _is_file(p: str) -> bool:
+    try:
+        return bool(p) and os.path.isfile(p)
+    except Exception:
+        return False
+
 def launch_chrome():
     """Create and return a configured Selenium Chrome WebDriver for scraping.
 
-    Applies several flags to improve reliability in headless or server
-    environments, reduces logging, and optionally uses a local chromedriver
-    binary if configured.
-
-    Returns:
-        A selenium.webdriver.Chrome instance.
+    Uses Selenium Manager to auto-resolve a compatible ChromeDriver when
+    no LOCAL_CHROMEDRIVER is supplied. Purges env overrides that could
+    force a mismatched, preinstalled chromedriver.
     """
     opts = ChromeOptions()
-    # Headless and basic flags
+    # Headless + stability flags for CI/containers
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
     opts.add_argument("--window-size=1400,2000")
-
-    # Disable GPU and use software rasterizer to avoid GLES3/GLES2 errors on some virtualized
-    # or GPU-less environments. Also disable features that may try to use hardware acceleration.
     opts.add_argument("--disable-gpu")
     opts.add_argument("--disable-software-rasterizer")
     opts.add_argument("--disable-accelerated-2d-canvas")
     opts.add_argument("--disable-accelerated-jpeg-decoding")
     opts.add_argument("--disable-accelerated-mjpeg-decode")
-    # Force use of SwiftShader (software GL) as a fallback when GPU is unavailable.
     opts.add_argument("--use-gl=swiftshader")
-    # Additional flags to reduce logging/noise
     opts.add_argument("--disable-logging")
     opts.add_argument("--log-level=3")
     opts.add_argument("--no-first-run")
     opts.add_argument("--no-default-browser-check")
 
-    # Reduce logging/noise from Chrome/Chromedriver
+    # Quieter Chrome banners
     opts.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
     opts.add_experimental_option('useAutomationExtension', False)
 
-    # Ensure chromedriver logs go to the platform null device
-    service_kwargs = {'log_path': os.devnull}
-    # On Windows, prevent child console windows / stdout by using CREATE_NO_WINDOW
-    if os.name == 'nt':
-        service_kwargs['creationflags'] = subprocess.CREATE_NO_WINDOW
+    # Allow overriding Chrome binary (e.g., GitHub Actions)
+    chrome_bin = os.environ.get("GOOGLE_CHROME_BIN")
+    if chrome_bin:
+        opts.binary_location = chrome_bin
 
-    # Create the driver while suppressing stdout/stderr so chrome/chromedriver
-    # messages like 'DevTools listening on ...' or GPU errors don't leak to
-    # the user's terminal.
-    # open devnull with explicit encoding to satisfy static checkers
+    # IMPORTANT: nuke any env that could force an old chromedriver
+    for var in ("WEBDRIVER_CHROME_DRIVER", "CHROMEDRIVER", "webdriver.chrome.driver"):
+        os.environ.pop(var, None)
+
+    # Prepare service kwargs (quiet logs, no console on Windows)
+    service_kwargs = {'log_path': os.devnull}
+    if os.name == 'nt':
+        service_kwargs['creationflags'] = getattr(subprocess, "CREATE_NO_WINDOW", 0)
+
+    # Build the Service:
+    # 1) If a valid LOCAL_CHROMEDRIVER path is provided, use it explicitly.
+    # 2) Otherwise, let Selenium Manager resolve a matching driver (recommended).
+    use_local = _is_file(globals().get("LOCAL_CHROMEDRIVER", ""))
+
     with open(os.devnull, 'w', encoding='utf-8', errors='ignore') as devnull:
         with contextlib.redirect_stdout(devnull), contextlib.redirect_stderr(devnull):
-            if LOCAL_CHROMEDRIVER:
-                return webdriver.Chrome(service=Service(LOCAL_CHROMEDRIVER, **service_kwargs), options=opts)
-            return webdriver.Chrome(options=opts, service=Service(**service_kwargs))
+            if use_local:
+                return webdriver.Chrome(
+                    service=Service(globals()["LOCAL_CHROMEDRIVER"], **service_kwargs),
+                    options=opts
+                )
+            # Selenium Manager path (no executable_path provided)
+            return webdriver.Chrome(
+                options=opts,
+                service=Service(**service_kwargs)
+            )
+
 
 # ==================== JOB LISTING SCRAPER ====================
 

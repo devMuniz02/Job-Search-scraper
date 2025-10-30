@@ -2,13 +2,10 @@ name: Daily Microsoft & Meta Jobs Scraper
 
 on:
   schedule:
-    # Run daily at 7:00 AM UTC (adjust timezone as needed)
+    # Run daily at 7:00 AM UTC
     - cron: '0 7 * * *'
-
-  # Allow manual triggering
   workflow_dispatch:
 
-# Grant necessary permissions for the workflow
 permissions:
   contents: write
   actions: read
@@ -16,184 +13,181 @@ permissions:
 jobs:
   scrape-jobs:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      with:
-        # Fetch full history for proper git operations
-        fetch-depth: 0
-        # Use a personal access token for pushing changes
-        token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        cache: 'pip'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+      - name: Install Python dependencies (Selenium Manager enabled)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          # Ensure Selenium new enough to auto-resolve a matching driver
+          pip install "selenium>=4.25"
 
-    - name: Install Chrome
-      run: |
-        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-        echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
+      # --- CRITICAL: remove any stale chromedriver so Selenium Manager is used ---
+      - name: Purge stale chromedrivers from PATH
+        run: |
+          set -eux
+          for p in \
+            /usr/bin/chromedriver \
+            /usr/local/bin/chromedriver \
+            /usr/local/share/chromedriver-linux64/chromedriver \
+            /opt/hostedtoolcache/**/chromedriver*; do
+            sudo rm -f $p 2>/dev/null || true
+          done
+          # Show if any chromedriver still lingers on PATH (should be none)
+          command -v chromedriver || echo "No chromedriver on PATH (expected)"
 
-    - name: Run Microsoft job scraper
-      run: |
-        python ms_jobs_daily_scraper.py
-      env:
-        # Set display for headless Chrome
-        DISPLAY: :99
+      # Install Chrome only (do NOT install chromedriver)
+      - name: Set up Chrome (stable)
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
 
-    - name: Run Meta job scraper
-      run: |
-        python meta_jobs_daily_scraper.py
-      env:
-        # Set display for headless Chrome
-        DISPLAY: :99
+      # Helpful debug: confirm installed versions at runtime
+      - name: Show Chrome version
+        run: |
+          which google-chrome || true
+          google-chrome --version || true
 
-    - name: Configure Git
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+      # Run scrapers (your code should call webdriver.Chrome(options=...) without a Service path)
+      - name: Run Microsoft job scraper
+        run: |
+          python ms_jobs_daily_scraper.py
 
-    - name: Check for changes
-      id: git-check
-      run: |
-        git add .
-        if git diff --staged --quiet; then
-          echo "changes=false" >> $GITHUB_OUTPUT
-        else
-          echo "changes=true" >> $GITHUB_OUTPUT
-        fi
+      - name: Run Meta job scraper
+        run: |
+          python meta_jobs_daily_scraper.py
 
-    - name: Commit and push changes
-      if: steps.git-check.outputs.changes == 'true'
-      run: |
-        git commit -m "🤖 Daily job scraping update - $(date +'%Y-%m-%d %H:%M UTC')"
-        git push
+      - name: Configure Git
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
 
-    - name: Create summary
-      if: always()
-      run: |
-        python - <<'PY'
-        import json
-        import os
-        import glob
-        from pathlib import Path
-        from datetime import datetime
+      - name: Check for changes
+        id: git-check
+        run: |
+          git add .
+          if git diff --staged --quiet; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "changes=true" >> $GITHUB_OUTPUT
+          fi
 
-        cfg = json.load(open('config.json'))
-        out_path = os.environ.get('GITHUB_STEP_SUMMARY', None)
-        if not out_path:
-            # Fallback to stdout if the environment variable is missing
-            import sys
-            _out = sys.stdout
-        else:
-            _out = open(out_path, 'a', encoding='utf-8')
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git commit -m "🤖 Daily job scraping update - $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
 
-        def write(s=''):
-            _out.write(s + '\n')
+      - name: Create summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os, glob
+          from pathlib import Path
+          from datetime import datetime
 
-        company_names = ', '.join(c.get('companyName', '') for c in cfg.get('companies', []))
-        write(f"## Daily {company_names} Jobs Scraping Results")
-        write()
-        write(f"**Date:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
-        write()
+          cfg = json.load(open('config.json'))
+          out_path = os.environ.get('GITHUB_STEP_SUMMARY')
+          _out = open(out_path, 'a', encoding='utf-8') if out_path else None
+          def write(s=''):
+              (_out.write(s + '\n') if _out else print(s))
 
-        # Look for any folders that end with '-jobs' and try to match company name to folder name (case-insensitive)
-        jobs_folders = [p for p in glob.glob('*-jobs')]
+          company_names = ', '.join(c.get('companyName', '') for c in cfg.get('companies', []))
+          write(f"## Daily {company_names} Jobs Scraping Results")
+          write()
+          write(f"**Date:** {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}")
+          write()
 
-        for comp in cfg.get('companies', []):
-            name = comp.get('companyName')
-            write(f"### 🏢 {name} Jobs")
+          jobs_folders = [p for p in glob.glob('*-jobs')]
 
-            # find best matching folder
-            candidates = [p for p in jobs_folders if name.lower() in p.lower()]
-            folder = Path(candidates[0]) if candidates else None
+          for comp in cfg.get('companies', []):
+              name = comp.get('companyName')
+              write(f"### 🏢 {name} Jobs")
+              candidates = [p for p in jobs_folders if name.lower() in p.lower()]
+              folder = Path(candidates[0]) if candidates else None
 
-            if folder and folder.exists():
-                # total ids file (look for *_ids.json)
-                ids_files = list(folder.glob('*_ids.json'))
-                if ids_files:
-                    try:
-                        data = json.load(open(ids_files[0], encoding='utf-8'))
-                        write(f"**Total Jobs in Database:** {len(data)}")
-                    except Exception:
-                        write(f"**Total Jobs in Database:** (could not read {ids_files[0].name})")
+              if folder and folder.exists():
+                  ids_files = list(folder.glob('*_ids.json'))
+                  if ids_files:
+                      try:
+                          data = json.load(open(ids_files[0], encoding='utf-8'))
+                          write(f"**Total Jobs in Database:** {len(data)}")
+                      except Exception:
+                          write(f"**Total Jobs in Database:** (could not read {ids_files[0].name})")
 
-                # details file (look for *_details.json)
-                details_files = list(folder.glob('*_details.json'))
-                if details_files:
-                    try:
-                        data = json.load(open(details_files[0], encoding='utf-8'))
-                        write(f"**Jobs with Details:** {len(data)}")
-                    except Exception:
-                        write(f"**Jobs with Details:** (could not read {details_files[0].name})")
+                  details_files = list(folder.glob('*_details.json'))
+                  if details_files:
+                      try:
+                          data = json.load(open(details_files[0], encoding='utf-8'))
+                          write(f"**Jobs with Details:** {len(data)}")
+                      except Exception:
+                          write(f"**Jobs with Details:** (could not read {details_files[0].name})")
 
-                # filtered / avoid files
-                avoid_files = [p for p in folder.glob('*avoid*.json')]
-                if avoid_files:
-                    write()
-                    write("**Filtered Categories:**")
-                    try:
-                        data = json.load(open(avoid_files[0], encoding='utf-8'))
-                        if isinstance(data, dict):
-                            for k, v in data.items():
-                                count = 0
-                                if isinstance(v, dict):
-                                    count = len(v.get('job_ids', []))
-                                write(f"- {k}: {count}")
-                        else:
-                            write(f"- (unexpected format in {avoid_files[0].name})")
-                    except Exception:
-                        write(f"- (could not read {avoid_files[0].name})")
+                  avoid_files = [p for p in folder.glob('*avoid*.json')]
+                  if avoid_files:
+                      write()
+                      write("**Filtered Categories:**")
+                      try:
+                          data = json.load(open(avoid_files[0], encoding='utf-8'))
+                          if isinstance(data, dict):
+                              for k, v in data.items():
+                                  count = len(v.get('job_ids', [])) if isinstance(v, dict) else 0
+                                  write(f"- {k}: {count}")
+                          else:
+                              write(f"- (unexpected format in {avoid_files[0].name})")
+                      except Exception:
+                          write(f"- (could not read {avoid_files[0].name})")
 
-                # jobs_by_date listing
-                bydate = folder / 'jobs_by_date'
-                if bydate.exists() and bydate.is_dir():
-                    write()
-                    write(f"**{name} Jobs by Date Files:**")
-                    files = sorted([f.name for f in bydate.glob('*.json')], reverse=True)[:5]
-                    for fn in files:
-                        write(f"- {fn}")
-            else:
-                write(f"(No job folder found for {name})")
+                  bydate = folder / 'jobs_by_date'
+                  if bydate.exists() and bydate.is_dir():
+                      write()
+                      write(f"**{name} Jobs by Date Files:**")
+                      files = sorted([f.name for f in bydate.glob('*.json')], reverse=True)[:5]
+                      for fn in files:
+                          write(f"- {fn}")
+              else:
+                  write(f"(No job folder found for {name})")
+              write()
 
-            write()
+          if _out: _out.close()
+          PY
 
-        if out_path:
-            _out.close()
-        PY
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: job-scraping-results-${{ github.run_number }}
+          path: |
+            Microsoft-jobs/ms_job_ids.json
+            Microsoft-jobs/ms_job_details.json
+            Microsoft-jobs/ms_job_avoid_hits_by_field.json
+            Microsoft-jobs/jobs_by_date/
+            Meta-jobs/meta_job_ids.json
+            Meta-jobs/meta_job_details.json
+            Meta-jobs/jobs_by_date/
+          retention-days: 30
 
-    - name: Upload artifacts
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: job-scraping-results-${{ github.run_number }}
-        path: |
-          Microsoft-jobs/ms_job_ids.json
-          Microsoft-jobs/ms_job_details.json
-          Microsoft-jobs/ms_job_avoid_hits_by_field.json
-          Microsoft-jobs/jobs_by_date/
-          Meta-jobs/meta_job_ids.json
-          Meta-jobs/meta_job_details.json
-          Meta-jobs/jobs_by_date/
-        retention-days: 30
-
-    - name: Notify on failure
-      if: failure()
-      run: |
-        echo "❌ Job scraping failed. Check the logs for details." >> $GITHUB_STEP_SUMMARY
-        echo "" >> $GITHUB_STEP_SUMMARY
-        echo "**Possible issues:**" >> $GITHUB_STEP_SUMMARY
-        echo "- Website structure changes" >> $GITHUB_STEP_SUMMARY
-        echo "- Network connectivity issues" >> $GITHUB_STEP_SUMMARY
-        echo "- Chrome/Selenium compatibility issues" >> $GITHUB_STEP_SUMMARY
-        echo "- Rate limiting from the target website" >> $GITHUB_STEP_SUMMARY
+      - name: Notify on failure
+        if: failure()
+        run: |
+          {
+            echo "❌ Job scraping failed. Check the logs for details."
+            echo
+            echo "**Possible issues:**"
+            echo "- Website structure changes"
+            echo "- Network connectivity issues"
+            echo "- Chrome/Selenium compatibility issues"
+            echo "- Rate limiting from the target website"
+          } >> "$GITHUB_STEP_SUMMARY"

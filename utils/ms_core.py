@@ -247,15 +247,11 @@ session.headers.update({"User-Agent": "MS-Careers-Scraper/1.5 (+you@example.com)
 
 # utils/ms_core.py
 
-import os
 import subprocess
-import contextlib
+import contextlib, os, shutil, subprocess
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.chrome.service import Service
-
-# Expect this to be defined elsewhere or set to "" if unused
-# LOCAL_CHROMEDRIVER = "/path/to/chromedriver"  # example
 
 def _is_file(p: str) -> bool:
     try:
@@ -265,13 +261,9 @@ def _is_file(p: str) -> bool:
 
 def launch_chrome():
     """Create and return a configured Selenium Chrome WebDriver for scraping.
-
-    Uses Selenium Manager to auto-resolve a compatible ChromeDriver when
-    no LOCAL_CHROMEDRIVER is supplied. Purges env overrides that could
-    force a mismatched, preinstalled chromedriver.
+    Uses Selenium Manager; never uses any stale chromedriver on PATH.
     """
     opts = ChromeOptions()
-    # Headless + stability flags for CI/containers
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
@@ -286,42 +278,27 @@ def launch_chrome():
     opts.add_argument("--log-level=3")
     opts.add_argument("--no-first-run")
     opts.add_argument("--no-default-browser-check")
-
-    # Quieter Chrome banners
     opts.add_experimental_option('excludeSwitches', ['enable-logging', 'enable-automation'])
     opts.add_experimental_option('useAutomationExtension', False)
 
-    # Allow overriding Chrome binary (e.g., GitHub Actions)
-    chrome_bin = os.environ.get("GOOGLE_CHROME_BIN")
+    # Point to actual chrome binary (setup-chrome puts google-chrome on PATH)
+    chrome_bin = os.environ.get("GOOGLE_CHROME_BIN") or shutil.which("google-chrome") or shutil.which("chromium-browser")
     if chrome_bin:
         opts.binary_location = chrome_bin
 
-    # IMPORTANT: nuke any env that could force an old chromedriver
+    # Nuke env overrides that force an old driver
     for var in ("WEBDRIVER_CHROME_DRIVER", "CHROMEDRIVER", "webdriver.chrome.driver"):
         os.environ.pop(var, None)
 
-    # Prepare service kwargs (quiet logs, no console on Windows)
-    service_kwargs = {'log_path': os.devnull}
-    if os.name == 'nt':
-        service_kwargs['creationflags'] = getattr(subprocess, "CREATE_NO_WINDOW", 0)
-
-    # Build the Service:
-    # 1) If a valid LOCAL_CHROMEDRIVER path is provided, use it explicitly.
-    # 2) Otherwise, let Selenium Manager resolve a matching driver (recommended).
+    # If you purposely ship a local driver, use it; else let Selenium Manager handle it.
     use_local = _is_file(globals().get("LOCAL_CHROMEDRIVER", ""))
 
-    with open(os.devnull, 'w', encoding='utf-8', errors='ignore') as devnull:
-        with contextlib.redirect_stdout(devnull), contextlib.redirect_stderr(devnull):
-            if use_local:
-                return webdriver.Chrome(
-                    service=Service(globals()["LOCAL_CHROMEDRIVER"], **service_kwargs),
-                    options=opts
-                )
-            # Selenium Manager path (no executable_path provided)
-            return webdriver.Chrome(
-                options=opts,
-                service=Service(**service_kwargs)
-            )
+    if use_local:
+        from selenium.webdriver.chrome.service import Service
+        return webdriver.Chrome(service=Service(globals()["LOCAL_CHROMEDRIVER"], log_path=os.devnull), options=opts)
+
+    # IMPORTANT: do NOT pass Service() here
+    return webdriver.Chrome(options=opts)
 
 
 # ==================== JOB LISTING SCRAPER ====================

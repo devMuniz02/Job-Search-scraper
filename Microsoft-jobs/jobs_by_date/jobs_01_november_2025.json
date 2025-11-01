@@ -1,0 +1,48 @@
+[
+  {
+    "job_id": "1880777",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Nov 01, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1880777/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science, or related technical discipline AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) of hardware-software interfaces and communication protocols understanding, such as Inter-Integrated Circuit (I2C), Serial Peripheral Interface (SPI), Peripheral Component Interconnect Express (PCIe), or Google Remote Procedure Call (gRPC).",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) of experience with open-source technologies such as SONIC, Switch Abstraction Interface (SAI), Linux, Docker is desirable. 1+ year(s) of familiarity with thermal control logic and managing liquid cooling system components is a plus. 1+ year(s) of proficiency with networking concepts, protocols, hardware architectures and device drivers or interrupts is highly desirable. Software Engineering IC4 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1880544",
+    "title": "Senior Cloud Network Engineer",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Nov 01, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1880544/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "(PQs) Doctorate Degree in Electrical Engineering, Optical Engineering, Computer Science, Information Technology, or related field AND 3+ years technical experience in network design, development, and automation OR Master's Degree in Electrical Engineering, Optical Engineering, Computer Science, Information Technology, or related field AND 6+ years technical experience in network design, development, and automation OR Bachelor's Degree in Electrical Engineering, Optical Engineering, Computer Science, Information Technology, or related field AND 8+ years technical experience in network design, development, and automation OR equivalent experience 1+ year(s) experience delivering network designs into production and experience with live site accountability for a network. 4+ years experience in networking, scripting, and software development. Familiarity/hands on experience with any network device operating systems (Sonic, Arista, Cisco, Juniper) Cisco CCNA (or equivalent) and experience with Linux/Unix operating systems and Windows servers Managing and troubleshooting network issues. Experience working on large scale networks. Leadership, coordination, and teamwork skills. Ability to work independently on complex tasks. Motivated to drive leading edge technologies. Understanding of TCP/IP, BGP and AnyCast Cloud Network Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  }
+]

@@ -1,5 +1,51 @@
 [
   {
+    "job_id": "1899770",
+    "title": "Account Technology Specialist - Strategic",
+    "locations": [
+      "Multiple Locations, United States"
+    ],
+    "travel": "25-50 %",
+    "date_posted": "Nov 05, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1899770/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "Bachelor's Degree in Computer Science, Information Technology, Engineering, Business or related field AND 14+ years technical consulting, technical consultative selling, practice building, or related technical/sales/industry experience OR equivalent experience. 4+ years experience in business consulting, consultative selling, or change management. 5+ years experience leading technical, support, and/or partner teams. Strategic Account Technology IC5 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $130,900 - $251,900"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $165,600 - $272,300"
+      }
+    ]
+  },
+  {
+    "job_id": "1896994",
+    "title": "Principal Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Nov 05, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1896994/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year experience hands on experience working with Generative AI.",
+    "preferred_qualifications_text": ": Master's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 12+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Solid background in developing scalable applications and services on Azure (or other major cloud platforms) with a focus on reliability, resilience, security, and performance. Hands-on experience developing modern applications using React and TypeScript. Ability to deal with ambiguity, deliver in an agile environment, be willing to learn and adopt new technologies/industry trends and have good cross group collaboration skills. Software Engineering IC5 - The",
+    "other_requirements_text": ": Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check : This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $139,900 - $274,800"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $188,000 - $304,200"
+      }
+    ]
+  },
+  {
     "job_id": "1891542",
     "title": "Business Program Manager",
     "locations": [
@@ -19,6 +65,75 @@
       {
         "region": "SF Bay Area / NYC",
         "range": "USD $123,500 - $206,400"
+      }
+    ]
+  },
+  {
+    "job_id": "1892645",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "0-25 %",
+    "date_posted": "Nov 05, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1892645/",
+    "required_qualifications_text": "Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 1+ year(s) experience with cloud technologies, including, but not limited to Azure, AWS, Google Cloud. Currently programming/coding in your current or most recent role. Hands on experience with asynchronous programming and concurrency (threads, tasks, futures, async/await).",
+    "preferred_qualifications_text": "Bachelor's Degree in Computer Science or related technical field AND 8+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript or Python OR Master's Degree in Computer Science or related technical field AND 6+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. Familiarity with graph-based indexing and vector similarity search in high-dimensional spaces. Contributions to open-source projects or published research in the areas of ANN (Approximate Nearest Neighbor) search or database systems. Experience in systems-level software engineering with a focus on database internals, including query execution, indexing, and storage engine design. Understanding of vector indexing techniques, particularly DiskANN (Disk-based Approximate Nearest Neighbor) and SPANN (Scalable Product Approximate Nearest Neighbor), with hands-on experience implementing or optimizing these algorithms in production environments. Proficiency in performance tuning and latency-sensitive system design, especially in large-scale distributed data platforms. Experience with Helm. Experience in shipping products and services. Software Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
+      }
+    ]
+  },
+  {
+    "job_id": "1896954",
+    "title": "Strategic Account Technology Strategist - Financial Services",
+    "locations": [
+      "San Jose, California, United States + 1 more location"
+    ],
+    "travel": "25-50 %",
+    "date_posted": "Nov 05, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1896954/",
+    "required_qualifications_text": "",
+    "preferred_qualifications_text": "Bachelor's Degree in Computer Science, Information Technology, Engineering, Business or related field AND 14+ years technical consulting, technical consultative selling, practice building, or related technical/sales/industry experience OR equivalent experience. 4+ years experience in business consulting, consultative selling, or change management. 5+ years experience leading technical, support, and/or partner teams. Strategic Account Technology IC5 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $130,900 - $251,900"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $165,600 - $272,300"
+      }
+    ]
+  },
+  {
+    "job_id": "1859937",
+    "title": "Senior Software Engineer",
+    "locations": [
+      "Redmond, Washington, United States"
+    ],
+    "travel": "None",
+    "date_posted": "Nov 05, 2025",
+    "url": "https://jobs.careers.microsoft.com/global/en/job/1859937/",
+    "required_qualifications_text": ": Bachelor's Degree in Computer Science or related technical field AND 4+ years technical engineering experience with coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, or Python OR equivalent experience. 2+ years of experience in developing and maintaining web services or APIs as part of a full-stack application, such as ASP.NET REST API, Service Fabric, Azure Function, etc. Experience in full-stack development, including both frontend (e.g., Web Components, HTML/CSS, JavaScript/TypeScript) and backend (e.g., Node.js, .NET, or Azure-based services).",
+    "preferred_qualifications_text": ": Experienced with infrastructure fundamentals, CI/CD pipelines, and deployment strategies, including CDN (Azure Frontdoor or Akamai), container, app services, Logic App, etc, as well as monitoring and alerting systems (e.g., Azure Monitor, Application Insights). Knowledge of modern web architecture and performance optimization techniques. Experience with SEO best practices for web applications. Hands-on experience or knowledge with caching and data stores such as Redis. Experience with data processing and analysis workflows, and working experience with basic query languages (e.g., SQL, KQL), as well as powerbi for data visualization and reporting. Understanding of accessibility standards such as WAI-ARIA and inclusive design principles. Knowledge of security best practices. Software Engineering IC4 - The",
+    "other_requirements_text": "",
+    "pay_ranges": [
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $119,800 - $234,700"
+      },
+      {
+        "region": "SF Bay Area / NYC",
+        "range": "USD $158,400 - $258,000"
       }
     ]
   }

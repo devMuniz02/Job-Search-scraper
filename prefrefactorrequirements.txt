@@ -1,0 +1,22 @@
+# Core web scraping dependencies
+requests
+beautifulsoup4
+selenium
+
+# HTML/XML parsing optimization
+lxml
+
+# WebDriver management
+webdriver-manager
+
+# Data manipulation and analysis
+pandas
+
+# Testing framework
+pytest
+
+# Standard library typing extensions (for Python < 3.11)
+typing-extensions
+
+# Additional utilities for file and path handling
+pathlib
